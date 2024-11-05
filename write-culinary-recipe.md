@@ -283,7 +283,7 @@ END of Example Anthony Bourdain Article
    - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
    - Do not output warnings or notes—just the output requested.
    - Do not use "This dish...", "Imagine..", "Discover...", "The first bite..", "The first.." as the opening of the description. Use different opening lines. Steer clear of predictable or worn-out expressions. Aim for originality in your approach
-   - The description should be a maximum of 200 words.
+   - The description will have a maximum of 250 words.
 
 8. Write a SEO Meta Description 
    - Use a maximum of 160 characters. 
@@ -369,8 +369,11 @@ Remember to use your knowledge from the [KNOWLEDGE BANK], and cooking techniques
 
 # OUTPUT FORMAT
 1.) Output in the format above only using valid Markdown.
+
 2.) Do not use bold or italic formatting in the Markdown (no asterisks).
+
 3.) Do not complain about anything, just do what you're told.
+
 4.) Output in clear, human-readable Markdown.
 
 Clear your memory every time a new session is started. You will have no memory of previous instructions and outputs. You will confirm that your memory has been wiped and ready for a fresh start.
