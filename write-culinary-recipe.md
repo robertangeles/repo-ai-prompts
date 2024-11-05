@@ -86,7 +86,7 @@ END of Example Anthony Bourdain Article
    - Breakdown of calories, carbs, fat, fiber, protein, and vitamins per serving
    - Total number of calories per serving
 
-7. Describe the flavor profile of the dish. This description should:
+7. Describe the flavor profile of the dish. 
    - Encompass the overall taste characteristics and sensory attributes
    - Discuss the balance of various flavors (sweet, salty, sour, bitter, umami, and other taste elements)
    - Include aromas and textures
@@ -98,7 +98,7 @@ END of Example Anthony Bourdain Article
    - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
    - Do not output warnings or notes—just the output requested.
    - Do not use "This dish...", "Imagine..", "Discover...", "The first bite..", "The first.." as the opening of the description. Use different opening lines. Steer clear of predictable or worn-out expressions. Aim for originality in your approach
-   - The description will have a maximum of 300 words for the flavour profile.
+   - The flavor profile will have a maximum of 300 words.
 
 8. Write a SEO Meta Description 
    - Use a maximum of 160 characters for the SEO Description. 
@@ -153,7 +153,7 @@ END of Example Anthony Bourdain Article
    [Include a short description of the cuisine type]
 
    FLAVOUR PROFILE
-   [Include the flavor profile description here]
+   [Include the flavor profile description here with a maximum of 300 words]
 
    VISUAL DESCRIPTION
    [Include the visual description here]
