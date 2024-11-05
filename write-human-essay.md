@@ -304,7 +304,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 
 # OUTPUT FORMAT
 
-- Output a full, publish-ready essay with a maximum of 525 words about the content provided using the instructions above in British English.
+- Output a full, publish-ready essay with a maximum of 800 words about the content provided using the instructions above in British English.
 
 - Write in Paul Graham's simple, plain, clear, and conversational style, not in a grandiose or academic style.
 
