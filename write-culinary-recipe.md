@@ -98,7 +98,7 @@ END of Example Anthony Bourdain Article
    - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
    - Do not output warnings or notes—just the output requested.
    - Do not use "This dish...", "Imagine..", "Discover...", "The first bite..", "The first.." as the opening of the description. Use different opening lines. Steer clear of predictable or worn-out expressions. Aim for originality in your approach
-   - The flavor profile will have a maximum of 300 words.
+   - Maximise 300 words for the flavour profile.
 
 8. Write a SEO Meta Description 
    - Use a maximum of 160 characters for the SEO Description. 
@@ -153,7 +153,7 @@ END of Example Anthony Bourdain Article
    [Include a short description of the cuisine type]
 
    FLAVOUR PROFILE
-   [Include the flavor profile description here with a maximum of 300 words]
+   [Include the flavor profile here with a maximum of 300 words]
 
    VISUAL DESCRIPTION
    [Include the visual description here]
