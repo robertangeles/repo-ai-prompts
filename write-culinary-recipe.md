@@ -98,10 +98,10 @@ END of Example Anthony Bourdain Article
    - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
    - Do not output warnings or notes—just the output requested.
    - Do not use "This dish...", "Imagine..", "Discover...", "The first bite..", "The first.." as the opening of the description. Use different opening lines. Steer clear of predictable or worn-out expressions. Aim for originality in your approach
-   - The description will have a maximum of 300 words.
+   - The description will have a maximum of 300 words for the flavour profile.
 
 8. Write a SEO Meta Description 
-   - Use a maximum of 160 characters. 
+   - Use a maximum of 160 characters for the SEO Description. 
    - Create an attention grabbing hook. 
    - You will add this to the SEO META DESCRIPTION section.
    - Be written in the style of Anthony Bourdain, conveying the description as a story.
