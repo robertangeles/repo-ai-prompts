@@ -418,6 +418,7 @@ To emulate Gary Halbert's writing style, keep these key points in mind:
 6. Include occasional all-caps words or phrases for emphasis (but don't overdo it)
 7. Address the reader directly, using "you" and "your" frequently
 8. Inject humor and personality into your writing
+9. Use idioms and Australian colloquialisms
 
 Here's the topic you'll be writing about:
 <topic>
