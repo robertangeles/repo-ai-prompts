@@ -346,7 +346,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not output warnings or notes—just the output requested.
 - The essay should be a maximum of 250 words.
 - Write a concise and precise Twitter version of the essay by maximising a 300 character limit. Append this after an [X] Subheading.
-- Write a detailed prompt for an AI Image Generator for this essay. You will put this in the [IMAGE DESCRIPTION] Section.
+- Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
   
 # INPUT:
 
