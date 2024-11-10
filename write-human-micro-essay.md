@@ -315,6 +315,8 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 
 - Do not output warnings or notes—just the output requested.
+- Write a concise and precise Twitter version of the essay by maximising a 300 character limit. Append this after an [X] Subheading.
+- Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT:
 
