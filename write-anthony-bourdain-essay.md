@@ -37,6 +37,7 @@ When writing your essay, incorporate these stylistic elements:
 13. That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 
 To finish the task:
+
 1.) You will write a detailed AI prompt for an image generator like Midjourney to capture the essense of the essay. You will add this under the [Midjourney] subheading.
 
 Please write your essay inside <essay> tags. Aim for approximately 500-750 words, keeping in mind that the goal is to capture Bourdain's style rather than adhering to a strict word count.
