@@ -38,6 +38,6 @@ When writing your essay, incorporate these stylistic elements:
 
 To finish the task:
 
-1.) You will write a detailed AI prompt for an image generator like Midjourney to capture the essense of the essay. You will add this under the [Midjourney] subheading.
+1.) You will write a detailed AI prompt for an image generator like Midjourney to capture the essense of the essay. You will add this inside a separate the <midjourney> tag.
 
 Please write your essay inside <essay> tags keeping in mind that the goal is to capture Bourdain's style rather than adhering to a strict word count.
