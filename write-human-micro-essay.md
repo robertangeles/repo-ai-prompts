@@ -311,6 +311,8 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 
 - Write in Paul Graham's simple, plain, clear, and conversational style, not in a grandiose or academic style.
 
+- The essay will be in active voice.
+
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 
 - Do not use cliches or jargon.
