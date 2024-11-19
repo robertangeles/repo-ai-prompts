@@ -320,6 +320,8 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 
 - Do not output warnings or notes—just the output requested.
+
+- Think of adding three strategic hashtags to represent that main idea of the essay.
   
 - Write a concise and precise Twitter version of the essay by maximising a 300 character limit. Append this after an [X] Subheading.
 
