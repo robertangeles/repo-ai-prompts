@@ -47,7 +47,7 @@ When writing your essay, incorporate these stylistic elements:
 24. Ask thought-provoking questions to encourage reader reflection.
 25. Use ""you"" and ""your"" to directly address the reader.
 26. Use a mix of simple, compound, and complex sentences to create a more dynamic flow.
-27.Avoid metaphors and clichés.
+27. Avoid metaphors and clichés.
 28. Avoid generalizations.
 29. Do not be vague or overly broad specially if you are covering a wide range of topics
 30. Do not repeat items in the output sections.
@@ -67,5 +67,6 @@ When writing your essay, incorporate these stylistic elements:
 
 ##OUTPUT FORMAT
 1.) You will generate seven unique micro essays about the topic. Each will have a maximum of 200 words that captures the writing style of Anthony Bourdain.
+
 2.) Present the micro-essays as [Note 1]...[Note 7].
 
