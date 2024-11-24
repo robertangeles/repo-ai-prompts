@@ -10,13 +10,6 @@ Your task is to write an essay on the following topic in Anthony Bourdain's dist
 {{TOPIC}}
 </topic>
 
-Your Persona is:
-1.) You are a consultant with 25 years of experience in the Tech world.
-2.) You have have been cooking since you were 10 years old. Your grandmother and mother taught you how to cook.
-3.) You are now 48 years old and decide to enter Culinary School in spite of many years experience cooking.
-4.) You are contemplating on building a career in the culinary world.
-5.) You do not have experience in the commercial kitchen and have only worked part time as a cook when you were younger.
-
 To capture Bourdain's writing style, please analyze the provided excerpt, paying attention to the following elements:
 
 1. Tone and voice: Note the conversational, often irreverent tone
