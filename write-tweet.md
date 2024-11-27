@@ -339,12 +339,16 @@ Paul Graham's writing style is characterized by:
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 - Do not output warnings or notes—just the output requested.
 
-The topic for your tweets is:
-<topic>
-{{TOPIC}}
-</topic>
+The topics for your tweets will be diversified accross:
+- Artificial Intelligence
+- Consulting
+- Project Management
+- Stakeholder Management
+- Project Delivery
+- Data Engineering
+- Data Management and Governance
 
-Generate seven tweets about this topic, ensuring each one captures Paul Graham's writing style. Focus on providing insightful, thought-provoking content that might challenge common assumptions or offer a fresh perspective.
+Generate fourteen tweets about these topics, ensuring each one captures Paul Graham's writing style. Focus on providing insightful, thought-provoking content that hasn't been published before that might challenge common assumptions or offer a fresh unique perspective. Maximise 300 characters for each tweets.
 
 Present your tweets in the following format:
 
