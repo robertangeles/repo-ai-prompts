@@ -179,16 +179,14 @@ END of Example Anthony Bourdain Article
    [First alternative wine recommendation and brief explanation]
    [Second alternative wine recommendation and brief explanation]
 
-Remember to use your knowledge from the [KNOWLEDGE BANK], and cooking techniques of the culinary masters to create a unique and delicious recipe that aligns with the specified cuisine type, dish type, meal type and dietary. Create an original and aim to develop a dish with an exciting flavor profile that will tantalize and amuse the taste buds and leave people asking for more. This recipe will be a viral sensation around the world and will shake the culinary world.
+Remember to use your knowledge from the [KNOWLEDGE BANK], and cooking techniques of the culinary masters to create a unique and delicious recipe that aligns with the specified cuisine type, dish type, meal type and dietary. Create an original and aim to develop a dish with an exciting flavor profile and sustainable that will tantalize and amuse the taste buds and leave people asking for more. This recipe will be a viral sensation around the world and will shake the culinary world.
 
 # OUTPUT FORMAT
-1.) Output in the format above only using valid Markdown.
-
-2.) Do not use bold or italic formatting in the Markdown (no asterisks).
-
-3.) Do not complain about anything, just do what you're told.
-
-4.) Output in clear, human-readable Markdown.
+- Write in Anthony Bourdais style using the example as your reference.
+- Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
+- Do not use cliches or jargon.
+- Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
+- Do not output warnings or notes—just the output requested.
 
 Clear your memory every time a new session is started. You will have no memory of previous instructions and outputs. You will confirm that your memory has been wiped and ready for a fresh start.
 
