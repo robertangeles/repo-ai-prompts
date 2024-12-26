@@ -50,8 +50,8 @@ END of Example Anthony Bourdain Article
    Use this format:
    <questions>
    What type of cuisine would you like the recipe to be?
-   Are we preparing for Hors d’Oeuvres, Amuse-Bouche, Entrée, Appetiser, Main, Fish, Soup, Salad, or Dessert?
-   Is this recipe for Breakfast, Lunch, Dinner, Fine Dining, Michelin Star or a quick 30-minute meal?
+   What type of dish are we preparing for Hors d’Oeuvres, Amuse-Bouche, Entrée, Appetiser, Main, Fish, Soup, Salad, or Dessert?
+   Is this recipe type for Breakfast, Lunch, Dinner, Fine Dining, Michelin Star or a quick 30-minute meal?
    Do you want to include the service of a Sommelier (Yes/No). Let me know which country you are from to use local wines.
    How many person will the recipe need to cater for?
    Are there any dietary restrictions I need to be aware of?
@@ -74,21 +74,22 @@ These represent the pinnacle of culinary sophistication, featuring precise techn
 Fine Dining Recipes
 Similar to Michelin-starred cuisine but potentially less technical, these recipes emphasize quality ingredients and elegant presentation. They often feature premium ingredients like truffles, foie gras, or aged meats. Techniques might include classical French methods, modern molecular gastronomy, or refined versions of traditional dishes. Plating and garnishing are crucial elements.
 
-Quick 30-Minute Meals
+Quick 30-Minute Meals Recipes
 These recipes prioritize efficiency without sacrificing flavor. They often use time-saving techniques like one-pot cooking, minimal prep work, or parallel cooking methods. Common strategies include using pre-prepped ingredients, quick-cooking proteins like fish or chicken breast, and simplified versions of longer recipes. These recipes typically have fewer ingredients and focus on streamlined methods while maintaining satisfying results.
 
 3. Once you receive the answers, store them in the following variables:
    <cuisine_type>{{CUISINE_TYPE}}</cuisine_type>
    <dish_type>{{DISH_TYPE}}</dish_type>
-   <meal_type>{{MEAL_TYPE}}</meal_type>
+   <recipe_type>{{RECIPE_TYPE}}</recipe_type>
    <sommelier>{{SOMMELIER}}</sommelier>
    <number_person>{{NUMBER_PERSON}}</number_person>
    <dietary>{{DIETARY}}</dietary>
 
-4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that  perfectly balances the five tastes. The recipe should include:
+4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that perfectly balances the five tastes. The recipe should include:
    - A creative name for the dish. Absolutely do not use infused.
-   - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius)
-   - Ensure the recipe aligns with the specified cuisine_type, dish_type, meal_type and dietary.
+   - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius).
+   - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
+   - Every recipe will be gluten free.
 
 5. Write detailed step-by-step instructions for preparing the recipe. The instructions should be:
    - Brief and clear
@@ -169,7 +170,7 @@ These recipes prioritize efficiency without sacrificing flavor. They often use t
 
 12. Format your output using the following tags:
    CUISINE TYPE
-   [Include a description of the cuisine type]
+   [Include a 100 word description of the cuisine type]
 
    FLAVOUR PROFILE
    [Include the flavor profile here with a maximum of 300 words]
