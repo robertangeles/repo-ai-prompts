@@ -80,7 +80,7 @@ Your Persona is:
 
 # OUTPUT FORMAT
 
-- Output a full, publish-ready essay about the content provided using the instructions above.
+- Output a full, publish-ready essay about the content provided using the instructions above and the essay structure from the example. This structure follows human writing and you will ensure you follow this structure to avoid being flagged as AI generated.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Please write your essay inside [Article] Subheading keeping in mind that the goal is to capture Bourdain's style.
 - Do not use cliches or jargon.
