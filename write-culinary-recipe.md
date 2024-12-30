@@ -4,34 +4,27 @@ Your goal is to use your references from the [KNOWLEDGE BANK] as inspiration, an
 
 [KNOWLEDGE BANK]
 
-1.) The Flavor Bible by Karen Page
+- The Flavor Bible by Karen Page
+- The Food Lab Better Home Cooking Through Science by J. Kenji López-Alt
+- Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking by Samin Nosrat
+- Mastering the Art of French Cooking by Julia Child, Louisette Bertholle, and Simone Beck
+- The Joy of Cooking by Irma S. Rombauer
+- On Food and Cooking by Harold McGee
+- The French Laundry Cookbook by Thomas Keller
+- Larousse Gastronomique by Prosper Montagné
+- White Heat by Marco Pierre White
+- Essentials of Classic Italian Cooking by Marcella Hazan
+- The Whole Beast: Nose to Tail Eating by Fergus Henderson
+- Modernist Cuisine by Nathan Myhrvold, Chris Young, and Maxime Bilet
+- El Bulli: 1998-2002 by Ferran Adrià
+- Noma 2.0 by Rene Redzepi, Mette Soberg, Junichi Takahashi
+- Le Guide Culinaire by Auguste Escoffier
+- Le Livre des Menus by Auguste Escoffier
+- Le Riz: L'aliment le meilleur, le plus nutritif by Auguste Escoffier
+- Ma Cuisine by Auguste Escoffier
+- Les Fleurs en Cire by Auguste Escoffier
 
-2.) The Food Lab Better Home Cooking Through Science by J. Kenji López-Alt
-
-3.) Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking by Samin Nosrat
-
-4.) Mastering the Art of French Cooking by Julia Child, Louisette Bertholle, and Simone Beck
-
-5.) The Joy of Cooking by Irma S. Rombauer
-
-6.) On Food and Cooking by Harold McGee
-
-7.) The French Laundry Cookbook by Thomas Keller
-
-8.) Larousse Gastronomique by Prosper Montagné
-
-9.) White Heat by Marco Pierre White
-
-10.) Essentials of Classic Italian Cooking by Marcella Hazan
-
-11.) The Whole Beast: Nose to Tail Eating by Fergus Henderson
-
-12.) Modernist Cuisine by Nathan Myhrvold, Chris Young, and Maxime Bilet
-
-13.) El Bulli: 1998-2002 by Ferran Adrià
-
-14.) Noma 2.0 by Rene Redzepi, Mette Soberg, Junichi Takahashi
-
+END OF KNOWLEDGE BANK
 
 EXAMPLE of Anthony Bourdain Article
 
@@ -86,7 +79,7 @@ These recipes prioritize efficiency without sacrificing flavor. They often use t
    <dietary>{{DIETARY}}</dietary>
 
 4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that perfectly balances the five tastes. The recipe should include:
-   - A creative name for the dish. Absolutely do not use infused.
+   - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
    - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius).
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
    - Every recipe will be gluten free.
@@ -107,7 +100,7 @@ These recipes prioritize efficiency without sacrificing flavor. They often use t
    - Breakdown of calories, carbs, fat, fiber, protein, and vitamins per serving
    - Total number of calories per serving
 
-8. Describe a detailed flavor profile of the dish with a maximum of 300 words. Follow the instructions below for you flavour profile output.
+8. Describe the detailed flavor profile of the dish with a maximum of 300 words and store it in {{FLAVOR_PROFILE}}. Follow the instructions below for you flavour profile output.
    - Encompass the overall taste characteristics and sensory attributes
    - Discuss the balance of various flavors (sweet, salty, sour, bitter, umami, and other taste elements)
    - Include aromas and textures
@@ -170,10 +163,10 @@ These recipes prioritize efficiency without sacrificing flavor. They often use t
 
 12. Format your output using the following tags:
    CUISINE TYPE
-   [Include a 100 word description of the cuisine type]
+   [Include a 100 word description of the {{CUISINE_TYPE}}]
 
    FLAVOUR PROFILE
-   [Include the flavor profile here with a maximum of 300 words]
+   {{FLAVOR_PROFILE}}
 
    VISUAL DESCRIPTION
    [Include the visual description here]
@@ -185,7 +178,7 @@ These recipes prioritize efficiency without sacrificing flavor. They often use t
    [Include the recipe name, ingredients, and measurements here]
   
    STEP-BY-STEP INSTRUCTIONS
-   [Include the step-by-step instructions here with estimated timings]
+   [Include the step-by-step instructions here with estimated timings for each step]
 
    COOKING METHODS
    [Include special cooking techniques, optional spice blends, and flavor boosters here]
