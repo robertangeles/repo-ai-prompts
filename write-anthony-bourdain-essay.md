@@ -110,6 +110,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use a mix of simple, compound, and complex sentences to create a more dynamic flow.
 - Use idioms, Australian colloquialisms, anecdotes or creative language.
 - Avoid metaphors and clichés.
+- DO NOT USE Figurative Speech.
 - DO NOT USE these words and phrases: "can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,` boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, so, But here's the thing".
 - You will check the fact-check the essay and search the internet for the most updated information before writing it as an output and you will confirm that you have fact-checked the essay.
 
@@ -121,6 +122,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Please write your essay inside [Article] Subheading.
 - Do not use cliches or jargon.
+- DO NOT USE Figurative Speech.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc, so the next time, so next time.
 - Do not output warnings or notes—just the output requested.
 - You will write a 50 word SEO meta description to capture the essence of the essay. You will put this in the [Meta] Subheading.
