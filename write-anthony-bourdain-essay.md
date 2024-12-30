@@ -105,6 +105,11 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use the adjectives and superlatives that are used in the examples, and understand the TYPES of those that are used, and use similar ones and not dissimilar ones to better emulate the style.
 - That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 - Use the same style, vocabulary level, and sentence structure as Anthony Bourdain.
+- Use ""you"" and ""your"" to directly address the reader.
+- Use active voice; avoid passive voice.
+- Use a mix of simple, compound, and complex sentences to create a more dynamic flow.
+- Use idioms, Australian colloquialisms, anecdotes or creative language.
+- Avoid metaphors and clichés.
 - DO NOT USE these words and phrases: "can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,` boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, so, But here's the thing".
 - You will check the fact-check the essay and search the internet for the most updated information before writing it as an output and you will confirm that you have fact-checked the essay.
 
@@ -118,7 +123,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc, so the next time, so next time.
 - Do not output warnings or notes—just the output requested.
-- You will write a 50 word viral magnetic hook meta description to capture the attention of the reader. You will put this in the [Meta] Subheading.
+- You will write a 50 word SEO meta description to capture the essence of the essay. You will put this in the [Meta] Subheading.
 - You will write a detailed AI prompt for an image generator like Midjourney to represent the essense of the essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT:
