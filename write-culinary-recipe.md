@@ -82,7 +82,7 @@ These recipes prioritize efficiency without sacrificing flavor. They often use t
    - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
    - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius).
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
-   - Every recipe will be gluten free.
+   - Every recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
 
 5. Write detailed step-by-step instructions for preparing the recipe. The instructions should be:
    - Brief and clear
