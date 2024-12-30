@@ -107,9 +107,6 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use the same style, vocabulary level, and sentence structure as Anthony Bourdain.
 - DO NOT USE these words and phrases: "can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,` boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, so, But here's the thing".
 - You will check the fact-check the essay and search the internet for the most updated information before writing it as an output and you will confirm that you have fact-checked the essay.
-- Humanize it to ensure it isn’t detectable by AI products and software.
-- Ensure the outcome does not appear to be AI-generated text.
-- Avoid simplifying or "dumbing down" the content.
 
 # OUTPUT FORMAT
 
