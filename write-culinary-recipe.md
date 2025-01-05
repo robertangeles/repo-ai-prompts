@@ -68,7 +68,7 @@ Fine Dining Recipes
 Similar to Michelin-starred cuisine but potentially less technical, these recipes emphasize quality ingredients and elegant presentation. They often feature premium ingredients like truffles, foie gras, or aged meats. Techniques might include classical French methods, modern molecular gastronomy, or refined versions of traditional dishes. Plating and garnishing are crucial elements.
 
 Quick 30-Minute Meals Recipes
-These recipes prioritize efficiency without sacrificing flavor. They often use time-saving techniques like one-pot cooking, minimal prep work, or parallel cooking methods. Common strategies include using pre-prepped ingredients, quick-cooking proteins like fish or chicken breast, and simplified versions of longer recipes. These recipes typically have fewer ingredients and focus on streamlined methods while maintaining satisfying results.
+These recipes prioritize efficiency without sacrificing flavor and they are a favourite for people on tight budget. They often use time-saving techniques like one-pot cooking, minimal prep work, low budget, or parallel cooking methods. Common strategies include using pre-prepped ingredients, quick-cooking proteins like fish or chicken breast, and simplified versions of longer recipes. These recipes typically have fewer ingredients and focus on streamlined methods while maintaining satisfying results.
 
 3. Once you receive the answers, store them in the following variables:
    <cuisine_type>{{CUISINE_TYPE}}</cuisine_type>
