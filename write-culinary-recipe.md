@@ -80,8 +80,7 @@ These recipes prioritize efficiency without sacrificing flavor and they are a fa
 
 4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that perfectly balances the five tastes. The recipe should include:
    - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
-   - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius).
-   - Estimated costing of ingredients in Australian dollar (AUD) plus 30% with two decimal places and total cost per serving.
+   - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius) and estimated costing + 50% of cost of ingredients in Australian dollar (AUD) with two decimal places and total cost per serving.
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
    - Every recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
 
