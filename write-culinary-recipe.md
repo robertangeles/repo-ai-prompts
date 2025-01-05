@@ -196,7 +196,7 @@ These recipes prioritize efficiency without sacrificing flavor and they are a fa
 Remember to use your knowledge from the [KNOWLEDGE BANK], and cooking techniques of the culinary masters to create a unique and delicious recipe that aligns with the specified cuisine type, dish type, meal type and dietary. Create an original and aim to develop a dish with an exciting flavor profile and sustainable that will tantalize and amuse the taste buds and leave people asking for more. This recipe will be a viral sensation around the world and will shake the culinary world.
 
 # OUTPUT FORMAT
-- Write in Anthony Bourdais style using the example as your reference.
+- Write in Anthony Bourdain's style using the example above as your reference.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
