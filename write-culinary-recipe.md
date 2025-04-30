@@ -100,7 +100,8 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
 
 4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that perfectly balances the five tastes. The recipe should include:
    - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
-   - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius) and estimated costing 50% of cost of ingredients in Australian dollar (AUD$) with two decimal places. Add 60% to the costing per ingredient and include the total cost per serving.
+   - Ensure every component of the dish type is present. Reflect what these components are before developing the recipe.
+   - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius) and estimated cost of ingredients in Australian dollar (AUD$) with two decimal places.
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
    - Every recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
 
