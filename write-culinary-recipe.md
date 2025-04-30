@@ -70,6 +70,26 @@ Similar to Michelin-starred cuisine but potentially less technical, these recipe
 30-Minute Meals Recipes
 These recipes prioritize efficiency without sacrificing flavor and they are a favourite for people on tight budget. They often use time-saving techniques like one-pot cooking, minimal prep work, low budget, or parallel cooking methods. Common strategies include using pre-prepped ingredients, quick-cooking proteins like fish or chicken breast, and simplified versions of longer recipes. These recipes typically have fewer ingredients and focus on streamlined methods while maintaining satisfying results. These meals typically include rice, fried rice, noodles, potatoes, carrots or a variety of vegetables for carbohydrates.
 
+Components of Main Dish Type:
+
+Centerpiece
+The thing you paid to see: usually a protein—be it pork chop, tofu steak, roasted pumpkin, whatever owns the spotlight. Size, doneness, and seasoning drive the rest of the plate.
+
+Starch or Filler
+Rice, potatoes, noodles, grains—something that soaks up sauces, adds heft, and keeps you from gnawing your arm an hour later. In fine-dining this might morph into a tiny fondant potato or a barley risotto puck.
+
+Vegetable Component
+Color, crunch, freshness. Could be a single show-off veg cooked three ways or a scatter of seasonal greens. Balances richness and adds vitamins your mother would approve of.
+
+Sauce / Jus / Glaze
+Binds the track together—adds moisture, acidity, umami, shine. Great kitchens build sauces from the same bones or trimmings as the centerpiece to keep flavors looping.
+
+Texture & Flavor Accents
+Crispy shallots, puffed grains, pickled bits, chili oil droplets—micro-bursts that wake up each bite and keep your palate from dozing off.
+
+Aromatic or Fresh Finish
+Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bite into a mic-drop. It’s the difference between “nice” and “call the manager, we need this on the menu forever.”
+
 3. Once you receive the answers, store them in the following variables:
    <cuisine_type>{{CUISINE_TYPE}}</cuisine_type>
    <dish_type>{{DISH_TYPE}}</dish_type>
