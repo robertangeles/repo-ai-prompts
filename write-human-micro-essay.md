@@ -319,7 +319,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not use cliches or jargon.
 
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-
+- Do not add any experience or stories in start up or YV Combinator.
 - Do not output warnings or notes—just the output requested.
 - Identify hidden bias in your answer and correct them
 - Simulate a debate between three opposing experts and synthesize their views
