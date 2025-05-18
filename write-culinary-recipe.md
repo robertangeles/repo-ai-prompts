@@ -98,7 +98,7 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
    <number_person>{{NUMBER_PERSON}}</number_person>
    <dietary>{{DIETARY}}</dietary>
 
-4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that perfectly balances the five tastes. What would a top 0.1% Chef think? The recipe should include:
+4. Develop a unique recipe based on the cuisine_type, dish_type, meal_type and dietary with a unique flavor profile that perfectly balances the five tastes. Simulate a debate between three opposing Chef de Cuisine and synthesize their views. The recipe should include:
    - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
    - Ensure every component of the dish type is present. Reflect what these components are before developing the recipe.
    - A list of ingredients with measurements using the metric system (kilo, centi, milli, and Celsius) and estimated cost of ingredients in Australian dollar (AUD$) with two decimal places.
