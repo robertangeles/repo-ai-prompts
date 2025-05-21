@@ -293,80 +293,6 @@ That's it, just two things, build stuff and do well in school.
 
 END EXAMPLE PAUL GRAHAM ESSAYS
 
-# Writing Style Guide
-Stuff to Avoid
-Filler phrases
-
-Instead of: “It’s important to note that the deadline is approaching.”
-Use: “The deadline is approaching.”
-Clichés, jargon, hashtags, semicolons, emojis, and asterisks
-
-Instead of: “Let’s touch base to move the needle on this mission-critical deliverable.”
-Use: “Let’s meet to discuss how to improve this important project.”
-Conditional language (could, might, may) when certainty is possible
-
-Instead of: “This approach might improve results.”
-Use: “This approach improves results.”
-Redundancy and repetition
-
-Remove fluff and repeated ideas.
-Forced keyword placement that disrupts natural reading
-
-AI-giveaway phrases
-
-Avoid: “In today’s fast-moving world” or “In our digital lives.”
-Overuse of adjectives and adverbs
-
-Example to avoid: “We successfully and efficiently completed the difficult task.”
-Better: “We finished the task.”
-Marketing hype and promotional language
-
-Avoid: “This revolutionary product will transform your life.”
-Use: “This product can help you.”
-Fake-friendly tone
-
-Avoid: “Hey there! Just circling back on this awesome idea.”
-Use: “I don’t think that’s the best idea.”
-Passive voice
-
-Instead of: “The report was submitted by the team.”
-Use: “The team submitted the report.”
-What to Do
-Focus on clarity
-
-Make your message easy to understand.
-Example: “Please send the file by Monday.”
-Be direct and concise
-
-Remove unnecessary words.
-Example: “We should meet tomorrow.”
-Use simple language
-
-Write plainly with short sentences.
-Example: “I need help with this issue.”
-Maintain a conversational tone
-
-It’s fine to start sentences with “and” or “but.”
-Example: “And that’s why it matters.”
-Simplify grammar
-
-Don’t stress about perfect punctuation or capitalization.
-Example: “i guess we can try that.”
-Vary sentence lengths
-
-Mix short, medium, and long sentences to create rhythm.
-Address the reader directly
-
-Use “you” and “your.”
-Example: “This technique works best when you apply it consistently.”
-Keep it honest
-
-Avoid forced friendliness or fake enthusiasm.
-Use active voice
-
-Clear subject-action-object construction.
-Example: “The team submitted the report.”
-
 # OUTPUT INSTRUCTIONS
 
 - Write the essay exactly like Paul Graham would write it as seen in the examples above. 
@@ -378,17 +304,15 @@ Example: “The team submitted the report.”
 
 # OUTPUT FORMAT
 
-- Output a full, publish-ready essay with a maximum of 300 words about the content provided using the instructions above in British English. What would a top 0.1% person in this field think?
+- Output a full, publish-ready essay with a maximum of 300 words about the content provided using the instructions above in British English.
 - Write in Paul Graham's simple, plain, clear, and conversational style, not in a grandiose or academic style.
-- The essay will be in active voice.
+- The essay will use an active voice.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 - Do not add any experience or stories in start up or YV Combinator.
 - Do not output warnings or notes—just the output requested.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
-- Write a concise and precise Twitter version of the essay by maximising a 300 character limit. Append this after an [X] Subheading.
-- Write a concise and precise Tiktok version of the essay by maximising a 125 word count limit. Append this after an [Tiktok] Subheading.
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT:
