@@ -299,16 +299,6 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Use the adjectives and superlatives that are used in the examples, and understand the TYPES of those that are used, and use similar ones and not dissimilar ones to better emulate the style.
 - That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 - Use the same style, vocabulary level, and sentence structure as Paul Graham.
-- Focus on clarity. Make your message easy to understand.Example: "Please send the file by Monday."
-- Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
-- Use simple language. Write plainly with short sentences.Example: "I need help with this issue."
-- Maintain a conversational tone. It’s fine to start sentences with "and" or "but.". Example: "And that’s why it matters."
-- Simplify grammar. Don’t stress about perfect punctuation or capitalization. Example: "i guess we can try that."
-- Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
-- Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
-- Keep it honest. Avoid forced friendliness or fake enthusiasm.
-- Use active voice
-- Clear subject-action-object construction. Example: "The team submitted the report."
 - Do NOT use these words:
 """"""can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,`  boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, the best, the future belongs""""""
 
@@ -320,7 +310,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-- Do not add any experience or stories in start up or YV Combinator.
+- Do not add any experience or stories in start ups or YV Combinator.
 - Do not output warnings or notes—just the output requested.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
