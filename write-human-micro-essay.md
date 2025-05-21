@@ -309,25 +309,16 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 # OUTPUT FORMAT
 
 - Output a full, publish-ready essay with a maximum of 250 words about the content provided using the instructions above in British English.
-
 - Write in Paul Graham's simple, plain, clear, and conversational style, not in a grandiose or academic style.
-
 - The essay will be in active voice.
-
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
-
 - Do not use cliches or jargon.
-
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 - Do not add any experience or stories in start up or YV Combinator.
 - Do not output warnings or notes—just the output requested.
-- Identify hidden bias in your answer and correct them
 - Think of adding three strategic hashtags to represent that main idea of the essay.
-  
 - Write a concise and precise Twitter version of the essay by maximising a 300 character limit. Append this after an [X] Subheading.
-
 - Write a concise and precise Tiktok version of the essay by maximising a 125 word count limit. Append this after an [Tiktok] Subheading.
-  
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT:
