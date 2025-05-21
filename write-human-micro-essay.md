@@ -322,7 +322,6 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not add any experience or stories in start up or YV Combinator.
 - Do not output warnings or notes—just the output requested.
 - Identify hidden bias in your answer and correct them
-- Simulate a debate between three opposing experts and synthesize their views
 - Think of adding three strategic hashtags to represent that main idea of the essay.
   
 - Write a concise and precise Twitter version of the essay by maximising a 300 character limit. Append this after an [X] Subheading.
