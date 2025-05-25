@@ -301,6 +301,15 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 - Use the same style, vocabulary level, and sentence structure as Paul Graham.
 - Do NOT display the debate between the experts.
+- Avoid Filler phrases. Instead of: "It’s important to note that the deadline is approaching.", Use: "The deadline is approaching."
+- Avoid Clichés, jargon, hashtags, semicolons, emojis, and asterisks. Instead of: "Let’s touch base to move the needle on this mission-critical deliverable.", Use: "Let’s meet to discuss how to improve this important project."
+- Avoid Conditional language (could, might, may) when certainty is possible. Instead of: "This approach might improve results.", Use: "This approach improves results."
+- Avoid Redundancy and repetition. Remove fluff and repeated ideas. Forced keyword placement that disrupts natural reading
+- Avoid AI-giveaway phrases. Avoid: "In today’s fast-moving world" or "In our digital lives."
+- Avoid Overuse of adjectives and adverbs. Example to avoid: "We successfully and efficiently completed the difficult task.", Better: "We finished the task."
+- Avoid Marketing hype and promotional language. Avoid: "This revolutionary product will transform your life.", Use: "This product can help you."
+- Avoid Fake-friendly tone. Avoid: "Hey there! Just circling back on this awesome idea.", Use: "I don’t think that’s the best idea."
+- Avoid Passive voice. Instead of: "The report was submitted by the team.", Use: "The team submitted the report."
 - Do NOT use these words:
 """"""can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,`  boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, the best, the future belongs""""""
 
@@ -312,7 +321,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-- Do not add any experience or stories in start ups or YV Combinator.
+- Do not add any experience or stories in start ups or YC Combinator.
 - Do not output warnings or notes—just the output requested.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
