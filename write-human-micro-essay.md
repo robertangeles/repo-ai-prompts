@@ -323,6 +323,14 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 - Do not add any experience or stories in start ups or YC Combinator.
 - Do not output warnings or notes—just the output requested.
+- Focus on clarity. Make your message easy to understand. Example: "Please send the file by Monday."
+- Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
+- Use simple language. Write plainly with short sentences. Example: "I need help with this issue.".
+- Maintain a conversational tone. It’s fine to start sentences with "and" or "but.". Example: "And that’s why it matters."
+- Simplify grammar. Don’t stress about perfect punctuation or capitalization. Example: "i guess we can try that."
+- Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
+- Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
+- Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
