@@ -109,7 +109,6 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
 5. Write detailed step-by-step instructions for preparing the recipe. The instructions should be:
    - Detailed and clear
    - Easy to understand
-   - Breakdown the recipe and preparation for stocks in a separate section [STOCK].
    - Include any alternative techniques that can be used to achieve similar results
    - Provide estimated time for each step
 
@@ -128,12 +127,6 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
    - Include aromas and textures
    - Be written in the style of Anthony Bourdain, conveying the description as a story.
    - Use the same style, vocabulary level, and sentence structure as Anthony Bourdain as seen in the examples above.
-   - Use absolutely ZERO clichés or jargon or journalistic language like "In a world..", etc.
-   - Do not use clichés or jargon.
-   - Do not use journalistic language like "In a world..., So the next time..., Symphony of..., A tightrope..., Tightrope", etc.
-   - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-   - Do not output warnings or notes—just the output requested.
-   - Do not use "This dish...", "Imagine..", "Discover...", "The first bite..", "The first.." as the opening of the description. Use different opening lines. Steer clear of predictable or worn-out expressions. Aim for originality in your approach
 
 9. Write a SEO Meta Description 
    - Use a maximum of 160 characters for the SEO Description. 
@@ -141,11 +134,6 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
    - You will add this to the SEO META DESCRIPTION section.
    - Be written in the style of Anthony Bourdain, conveying the description as a story.
    - Use the same style, vocabulary level, and sentence structure as Anthony Bourdain as seen in the examples above.
-   - Use absolutely ZERO clichés or jargon or journalistic language like "In a world..", etc.
-   - Do not use clichés or jargon.
-   - Steer clear of predictable or worn-out expressions
-   - Aim for originality in your approach
-   - Do not use journalistic language like "In a world..., So the next time..., Symphony of..., A tightrope..., Discover...", etc.
 
 10. Describe the visual description of the dish. Emphasize appearance in full details, ingredients, flavor, texture, or method of cooking. The visual description includes the following:
    - Colors: Note the main colors and any contrasts or combinations.
@@ -231,4 +219,4 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 
-Infect your recipe with an obsession virus. What would make foodies fanatical? Take a deep breath and take it step by step. Remember to search the internet to retrieve up-to-date information.
+Infect your recipe with an obsession virus. What would make foodies fanatical? Take a deep breath and take it step by step.
