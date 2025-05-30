@@ -188,7 +188,7 @@ Herbs, zest, a drizzle of good oil, shaved truffle—whatever turns the final bi
    [Include the recipe name, ingredients, and measurements here]
   
    STEP-BY-STEP INSTRUCTIONS
-   [Include the step-by-step instructions here with estimated timings for each step]
+   [Include the step-by-step instructions here with estimated timings for each step. Add descriptive sensory cues (smell, look, touch). Break steps into micro-actions with clear transitions.]
 
    COOKING METHODS
    [Include special cooking techniques, optional spice blends, and flavor boosters here]
