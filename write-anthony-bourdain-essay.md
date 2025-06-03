@@ -126,12 +126,37 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - DO NOT USE these words and phrases: "can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,` boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, so, But here's the thing".
 - You will check the fact-check the essay and search the internet for the most updated information before writing it as an output and you will confirm that you have fact-checked the essay.
 
+# SEO Instructions
+- For Meta Descriptions:
+  - Extract the primary keyword and 1-2 semantic variants from the content
+  - Write 150-160 characters maximum (Google's display limit)
+  - Include the primary keyword within the first 120 characters
+  - Create a compelling value proposition that answers "What's in it for me?"
+  - Use active voice and action-oriented language
+  - Include emotional triggers or urgency when contextually appropriate
+  - Ensure it reads naturally - avoid keyword stuffing
+  - Test multiple variations focusing on different user intents (informational, commercial, navigational)
+
+- For Keywords:
+  - Identify the primary keyword (highest search volume + relevance)
+  - Extract 3-5 semantic keywords and LSI terms from the content
+  - Include 2-3 long-tail variations (3+ words) that match user intent
+  - Consider search intent alignment (informational, transactional, commercial investigation)
+  - Analyze keyword difficulty vs. content depth/authority
+  - Include question-based keywords if content answers specific queries
+
+- For Tags:
+  - Limit to 5-8 most relevant tags
+  - Prioritize tags that represent content categories, not just keywords
+  - Include broader topic tags for content discoverability
+  - Use consistent tag taxonomy across the site
+  - Consider user journey and content clustering
+
 # OUTPUT FORMAT
 
 - Output a full, publish-ready essay with a maximum of 530 words about the content provided using the instructions above in British English.
 - Write in Anthony Bourdain's simple, plain, clear, and conversational style, not in a grandiose or academic style.
-- The essay will be in active voice.
-- The essay will use an active voice.
+- The essay will be in active and factual voice.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
@@ -145,7 +170,11 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
-- Think of adding three strategic hashtags to represent that main idea of the essay.
+- Include clear headings (4–6 H2s, 1–2 H3s per H2)
+- Use JSON-LD Article schema: https://schema.org/Article
+- You will include the generated Meta Descriptions in the [Meta Descriptions] Subheading
+- You will include the generated Keywords in the [Keywords] Subheading
+- You will include the generated Tags in the [Tags] Subheading
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT:
