@@ -138,7 +138,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - Test multiple variations focusing on different user intents (informational, commercial, navigational)
 
 - For Keywords:
-  - Identify the primary keyword (highest search volume + relevance)
+  - Identify the primary keyword (highest search volume + relevance) and should appear in the first paragraph.
   - Extract 3-5 semantic keywords and LSI terms from the content
   - Include 2-3 long-tail variations (3+ words) that match user intent
   - Consider search intent alignment (informational, transactional, commercial investigation)
