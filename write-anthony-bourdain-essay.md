@@ -130,7 +130,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 # SEO Instructions
 - For Keywords:
   - Identify the primary keyword (highest search volume + relevance) and should appear in the first paragraph.
-  - The primary keyword needs to have 1.5% density in the content.
+  - The primary keyword needs to appear in the first paragraph and have a 1.5% density in the content.
   - Extract 3-5 semantic keywords and LSI terms from the content
   - Include 2-3 long-tail variations (3+ words) that match user intent
   - Consider search intent alignment (informational, transactional, commercial investigation)
