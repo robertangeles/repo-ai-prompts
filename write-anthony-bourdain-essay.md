@@ -128,16 +128,6 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - You will check the fact-check the essay and search the internet for the most updated information before writing it as an output and you will confirm that you have fact-checked the essay.
 
 # SEO Instructions
-- For Meta Descriptions:
-  - Extract the primary keyword and 1-2 semantic variants from the content
-  - Write 150-160 characters maximum (Google's display limit)
-  - Include the primary keyword within the first 120 characters
-  - Create a compelling value proposition that answers "What's in it for me?"
-  - Use active voice and action-oriented language
-  - Include emotional triggers or urgency when contextually appropriate
-  - Ensure it reads naturally - avoid keyword stuffing
-  - Test multiple variations focusing on different user intents (informational, commercial, navigational)
-
 - For Keywords:
   - Identify the primary keyword (highest search volume + relevance) and should appear in the first paragraph.
   - The primary keyword needs to have 1.5% density in the content.
@@ -146,6 +136,14 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - Consider search intent alignment (informational, transactional, commercial investigation)
   - Analyze keyword difficulty vs. content depth/authority
   - Include question-based keywords if content answers specific queries
+    
+- For Meta Descriptions:
+  - Extract the primary keyword and 1-2 semantic variants from the content
+  - Write 150-160 character meta description that includes the primary keyword (Google's display limit)
+  - Use active voice and action-oriented language
+  - Include emotional triggers or urgency when contextually appropriate
+  - Ensure it reads naturally - avoid keyword stuffing
+  - Test multiple variations focusing on different user intents (informational, commercial, navigational)
 
 - For Tags:
   - Limit to 5-8 most relevant tags
