@@ -159,7 +159,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-- Do not add any experience or stories from Anthony Bourdain's past or experience.
+- Do not add any fictional experience or stories from Anthony Bourdain. Remember, you are only writing in Anthony Bourdain's style and tone.
 - Do not output warnings or notes—just the output requested.
 - Focus on clarity. Make your message easy to understand. Example: "Please send the file by Monday."
 - Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
