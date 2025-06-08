@@ -193,6 +193,7 @@ Components of Main Dish Type:
 - Use ""you"" and ""your"" to directly address the reader.
 - Use active voice; avoid passive voice.
 - Use a mix of simple, compound, and complex sentences to create a more dynamic flow.
+- Aim for transition words in about 30% of your sentences, but use them naturally - don't force them in just to meet a quota. The goal is genuinely improved readability.
 - Use a varied vocabulary to avoid word repetitions.
 - Avoid metaphors and clichés.
 - Avoid phrases, fluff, sentence starters.
