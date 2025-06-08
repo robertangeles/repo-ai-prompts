@@ -132,6 +132,12 @@ Components of Main Dish Type:
      - Include broader topic tags for content discoverability
      - Use consistent tag taxonomy across the site
      - Consider user journey and content clustering
+    
+  - For SEO/LLM Optimization
+     - Include clear headings (4–6 H2s, 1–2 H3s per H2)
+     - Use JSON-LD Article schema: https://schema.org/Article
+     - Optimize metadata
+     - Write with a direct and factual tone
 
 8. Describe the visual description of the dish. Emphasize appearance in full details, ingredients, flavor, texture, or method of cooking. The visual description includes the following:
    - Colors: Note the main colors and any contrasts or combinations.
