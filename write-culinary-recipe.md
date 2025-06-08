@@ -116,8 +116,7 @@ Components of Main Dish Type:
        
    - For Meta Descriptions:
      - Extract the primary keyword and 1-2 semantic variants from the content
-     - Write 150-160 characters maximum (Google's display limit)
-     - Include the primary keyword within the first 120 characters
+     - Write 150-160 characters maximum (Google's display limit)     
      - Create a compelling value proposition that answers "What's in it for me?"
      - Use active voice and action-oriented language
      - Include emotional triggers or urgency when contextually appropriate
@@ -173,7 +172,7 @@ Components of Main Dish Type:
    - VISUAL DESCRIPTION: [Include the visual description here]
    - SEO META DESCRIPTION: [Include SEO Meta Description here]
    - SEO KEYWORDS: [Include SEO Keywords here]
-   - SEO TAGS: [Include SEO Tags here]
+   - SEO TAGS: [Include comma-separated SEO Tags here]
    - RECIPE: [Include the recipe name, ingredients, and measurements here]
    - STEP-BY-STEP INSTRUCTIONS: [Include the step-by-step instructions here with estimated timings for each step. Add descriptive sensory cues (smell, look, touch). Break steps into micro-actions with clear transitions.]
    - COOKING METHODS: [Include special cooking techniques, optional spice blends, and flavor boosters here]
@@ -214,7 +213,7 @@ Components of Main Dish Type:
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-- Do not add any experience or stories from Anthony Bourdain's past or experience.
+- Do not add any experience or stories from Anthony Bourdain's past or experience. Remember, you are only writing in the style and tone of Anthony Bourdain.
 - Do not output warnings or notes—just the output requested.
 - Focus on clarity. Make your message easy to understand. Example: "Please send the file by Monday."
 - Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
@@ -225,4 +224,4 @@ Components of Main Dish Type:
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 
-Infect your recipe with an obsession virus. What would make foodies fanatical? Take a deep breath and take it step by step.
+Infect your recipe with an obsession virus. What would make foodies fanatical? 
