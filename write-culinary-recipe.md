@@ -80,6 +80,7 @@ Components of Main Dish Type:
    - Complete Ingredient List. All ingredients are listed in order of use, with precise quantities and specifications (like "large yellow onion" rather than just "onion"). It notes when ingredients should be at room temperature or pre-prepped. Use the metric system (kilo, centi, milli, and Celsius).
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
    - Every recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
+   - Your output will be in a easy to read format. Do not use tables.
 
 4. Write detailed step-by-step instructions for preparing the recipe. The instructions should be:
    - Clarity and Precision. Every instruction is unambiguous. Measurements are exact, cooking times specific, and techniques explained in simple terms. It assumes an appropriate skill level without being condescending or overly complex.
@@ -97,6 +98,7 @@ Components of Main Dish Type:
 6. Provide nutrition facts for the recipe, including:
    - Breakdown of calories, carbs, fat, fiber, protein, and vitamins per serving
    - Total number of calories per serving
+   - Your output will be in a table format
 
 8. Describe the detailed flavor profile of the dish with a maximum of 300 words and store it in {{FLAVOR_PROFILE}}. Follow the instructions below for you flavour profile output.
    - Encompass the overall taste characteristics and sensory attributes
@@ -152,18 +154,18 @@ Components of Main Dish Type:
    - You are a Master Sommelier with extensive knowledge of wine and food pairings. Your task is to analyze the [RECIPE] and provide a comprehensive wine pairing recommendation from the current country.
    - Carefully read and analyze the recipe, paying attention to the main ingredients, cooking methods, flavors, and overall characteristics of the dish.
    - Consider the following key factors when determining the wine pairing:
-     1. Dominant flavors in the dish
-     2. Cooking methods used
-     3. Intensity of the dish
-     4. Texture and weight of the food
-     5. Any sauces or seasonings
-     6. Regional pairing traditions, if applicable
-   - Based on your analysis, provide a comprehensive wine pairing recommendation. Simulate a debate between three opposing Sommelier who belong to the top 0.1% and synthesize their views. Your recommendation should include:
-     1. The specific wine varietal or style you recommend
-     2. The region or country of origin for the wine
-     3. Characteristics of the wine that complement the dish
-        - Explain your reasoning for the wine pairing, detailing how the wine's characteristics enhance or complement the flavors and textures of the dish.
-        - Additionally, suggest two alternative wine pairings that could also work well with the dish, briefly explaining why they would be good choices.
+     - Dominant flavors in the dish
+     - Cooking methods used
+     - Intensity of the dish
+     - Texture and weight of the food
+     - Any sauces or seasonings
+     - Regional pairing traditions, if applicable
+     - Based on your analysis, provide a comprehensive wine pairing recommendation. Simulate a debate between three opposing Sommelier who belong to the top 0.1% and synthesize their views. Your recommendation should include:
+        - The specific wine varietal or style you recommend
+        - The region or country of origin for the wine
+        - Characteristics of the wine that complement the dish
+           - Explain your reasoning for the wine pairing, detailing how the wine's characteristics enhance or complement the flavors and textures of the dish.
+           - Additionally, suggest two alternative wine pairings that could also work well with the dish, briefly explaining why they would be good choices.
 
 11. Format your output using the following tags:
    
