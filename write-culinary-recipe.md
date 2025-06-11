@@ -32,7 +32,17 @@ My first indication that food was something other than a substance one stuffed i
 
 END of Example Anthony Bourdain Article
 
-Recipe Reference:
+## Dish Name Reference
+- Be descriptive and accurate: The name should give diners a clear idea of what they're getting. Include the main protein, cooking method, and key flavors or ingredients.
+- Follow a logical order: Typically go from protein → cooking method → sauce/preparation → sides. For example: "Pan-Seared Salmon with Lemon Butter Sauce and Roasted Asparagus"
+- Use specific culinary terms: "Braised" is more precise than "cooked," "julienned" is clearer than "cut." This shows professionalism and sets expectations.
+- Highlight what makes it special: If you're using a unique ingredient, technique, or regional style, include that. "Moroccan-Spiced Lamb Tagine" tells a story.
+- Keep it concise but complete: Long names can be unwieldy, but too short might be vague. Aim for clarity over brevity.
+- Consider your audience: A fine dining restaurant might use "Duo of Duck with Cherry Gastrique," while a casual spot might say "Duck Breast with Cherry Sauce."
+- Avoid redundancy: Don't say "Grilled Chicken Breast Grilled with Herbs." Pick one format and stick with it.
+- Use appetizing language: Words like "crispy," "tender," "fresh," or "house-made" can make dishes sound more appealing.
+
+## Recipe Reference
 - Breakfast Recipes: These typically focus on morning-appropriate dishes that energize and sustain. They range from quick options like smoothie bowls and overnight oats to heartier fare such as eggs Benedict or frittatas. Common elements include eggs, grains, fruits, and breakfast proteins like bacon or sausage. Many breakfast recipes emphasize make-ahead components to streamline busy mornings.
 - Lunch Recipes: These recipes balance portability, nutrition, and satisfaction. They often include sandwiches, salads, grain bowls, and soups that can be eaten at work or home. Many lunch recipes are designed to be made in advance and stay fresh until mealtime. Portion sizes are moderate, providing enough energy for afternoon activities without causing sluggishness.
 - Dinner Recipes: Generally the most elaborate meal of the day, dinner recipes often feature a protein centerpiece with complementary sides. They range from family-style casseroles to composed plates. These recipes frequently incorporate more complex techniques and longer cooking times, assuming more preparation time is available in the evening.
@@ -40,7 +50,7 @@ Recipe Reference:
 - Fine Dining Recipes: Similar to Michelin-starred cuisine but potentially less technical, these recipes emphasize quality ingredients and elegant presentation. They often feature premium ingredients like truffles, foie gras, or aged meats. Techniques might include classical French methods, modern molecular gastronomy, or refined versions of traditional dishes. Plating and garnishing are crucial elements.
 - 30-Minute Meals Recipes: These recipes prioritize efficiency without sacrificing flavor and they are a favourite for people on tight budget. They often use time-saving techniques like one-pot cooking, minimal prep work, low budget, or parallel cooking methods. Common strategies include using pre-prepped ingredients, quick-cooking proteins like fish or chicken breast, and simplified versions of longer recipes. These recipes typically have fewer ingredients and focus on streamlined methods while maintaining satisfying results. These meals typically include rice, fried rice, noodles, potatoes, carrots or a variety of vegetables for carbohydrates.
 
-Components of Main Dish Type:
+## Components of Main Dish Type
 - Centerpiece: The thing you paid to see: usually a protein—be it pork chop, tofu steak, roasted pumpkin, whatever owns the spotlight. Size, doneness, and seasoning drive the rest of the plate.
 - Starch or Filler: Rice, potatoes, noodles, grains—something that soaks up sauces, adds heft, and keeps you from gnawing your arm an hour later. In fine-dining this might morph into a tiny fondant potato or a barley risotto puck.
 - Vegetable Component: Color, crunch, freshness. Could be a single show-off veg cooked three ways or a scatter of seasonal greens. Balances richness and adds vitamins your mother would approve of.
@@ -73,9 +83,8 @@ Components of Main Dish Type:
    <number_person>{{NUMBER_PERSON}}</number_person>
    <dietary>{{DIETARY}}</dietary>
 
-3. You are tasked with creating and developing a unique and mouth-watering recipe that will become a viral sensation in the culinary world based on the cuisine_type, dish_type, meal_type, recipe_type, and dietary with a unique flavor profile. A dish that achieves harmony across multiple dimensions - flavor, texture, temperature, and emotional resonance. It balances contrasting elements like sweet and savory, crispy and tender, or rich and bright, creating complexity without confusion. Simulate a debate between three opposing Chef de Cuisine who belong to the top 0.1% and synthesize their views. The recipe should include:
-   - A creative name and propert name for the dish. Absolutely do not use these words "infused, harmony, sphere".
-   - A 100 word description of the {{CUISINE_TYPE}}.
+3. You are tasked with creating and developing a unique and mouth-watering recipe that will become a viral sensation in the culinary world based on the cuisine_type, dish_type, meal_type, recipe_type, and dietary with a unique flavor profile. A dish that achieves harmony across multiple dimensions - flavor, texture, temperature, and emotional resonance. It balances contrasting elements like sweet and savory, crispy and tender, or rich and bright, creating complexity without confusion. Simulate a debate between three opposing Chef de Cuisine who belong to the top 0.1% and synthesize their views. The recipe should include the following and will be stored in the {{RECIPE}} variable:
+   - Create a Dish Name using the [Dish Name Reference] as your source of inspiration.
    - Ensure every component of the dish type is present. Reflect what these components are before developing the recipe.
    - Complete Ingredient List in bullet points. All ingredients are listed in order of use, with precise quantities and specifications (like "large yellow onion" rather than just "onion"). It notes when ingredients should be at room temperature or pre-prepped. Use the metric system (kilo, centi, milli, and Celsius). Do not use tables when listing ingreadients and measurements.
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
@@ -100,12 +109,16 @@ Components of Main Dish Type:
    - Breakdown of calories, carbs, fat, fiber, protein, and vitamins per serving
    - Total number of calories per serving
 
-8. Describe the detailed flavor profile of the dish with a maximum of 300 words and store it in {{FLAVOR_PROFILE}}. Follow the instructions below for you flavour profile output.
-   - Encompass the overall taste characteristics and sensory attributes
-   - Discuss the balance of various flavors (sweet, salty, sour, bitter, umami, and other taste elements)
-   - Include aromas and textures
-   - Be written in the style of Anthony Bourdain, conveying the description as a story.
-   - Use the same style, vocabulary level, and sentence structure as Anthony Bourdain as seen in the examples above.
+8. Describe the flavor profile of the dish and store it in {{FLAVOR_PROFILE}}. Follow the instructions below.
+   - Start with the dominant flavors - Identify the primary tastes that hit first. Is it sweet, salty, umami-rich, tart, or bitter? This gives the foundation.
+   - Layer in secondary notes - What comes next? These might be herbs, spices, or cooking methods that add complexity. "Sweet with warm cinnamon and nutmeg undertones."
+   - Use sensory language - Go beyond just taste to include texture and aroma. "Bright and acidic with a smooth, creamy finish" or "earthy with a slight smokiness."
+   - Reference familiar flavors - Compare to things people know. "Reminiscent of caramelized onions" or "similar to roasted chestnuts" helps people understand.
+   - Describe the progression - How does the flavor develop? "Starts mild and herbaceous, builds to a gentle heat, finishes clean and refreshing."
+   - Include intensity levels - Is it subtle or bold? "Delicate floral notes" versus "robust and punchy flavors."
+   - Mention balance - How do the flavors work together? "Well-balanced sweet and sour" or "the richness is cut by bright acidity."
+   - Use specific descriptors - Instead of "spicy," try "warming ginger heat" or "sharp black pepper bite." Be precise about what kind of flavor you mean.
+   - Consider the overall impression - Is it comforting, refreshing, exotic, rustic? This gives emotional context to the technical description.
 
 7. SEO Instructions
    - For Keywords:
@@ -172,7 +185,7 @@ Components of Main Dish Type:
            - Explain your reasoning for the wine pairing, detailing how the wine's characteristics enhance or complement the flavors and textures of the dish.
            - Additionally, suggest two alternative wine pairings that could also work well with the dish, briefly explaining why they would be good choices.
 
-11. Format your output using the following tags:
+11. Create your format in the following sequence:
    
    - CUISINE TYPE: [Include a 100 word description of the {{CUISINE_TYPE}}]
    - FLAVOUR PROFILE: {{FLAVOR_PROFILE}}
@@ -180,7 +193,7 @@ Components of Main Dish Type:
    - SEO META DESCRIPTION: [Include SEO Meta Description here]
    - SEO KEYWORDS: [Include SEO Keywords here]
    - SEO TAGS: [Include comma-separated SEO Tags here]
-   - RECIPE: [Include the recipe name, ingredients, and measurements here]
+   - RECIPE: [Include the {{RECIPE}} here in plain text format without using tables]
    - STEP-BY-STEP INSTRUCTIONS: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
    - COOKING METHODS: [Include special cooking techniques, optional spice blends, and flavor boosters here]
    - NUTRITION FACTS: [Include the nutrition information here. Your output will be in a table format]
