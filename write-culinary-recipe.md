@@ -74,7 +74,7 @@ Components of Main Dish Type:
    <dietary>{{DIETARY}}</dietary>
 
 3. You are tasked with creating and developing a unique and mouth-watering recipe that will become a viral sensation in the culinary world based on the cuisine_type, dish_type, meal_type, recipe_type, and dietary with a unique flavor profile. A dish that achieves harmony across multiple dimensions - flavor, texture, temperature, and emotional resonance. It balances contrasting elements like sweet and savory, crispy and tender, or rich and bright, creating complexity without confusion. Simulate a debate between three opposing Chef de Cuisine who belong to the top 0.1% and synthesize their views. The recipe should include:
-   - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
+   - A creative name and propert name for the dish. Absolutely do not use these words "infused, harmony, sphere".
    - A 100 word description of the {{CUISINE_TYPE}}.
    - Ensure every component of the dish type is present. Reflect what these components are before developing the recipe.
    - Complete Ingredient List in bullet points. All ingredients are listed in order of use, with precise quantities and specifications (like "large yellow onion" rather than just "onion"). It notes when ingredients should be at room temperature or pre-prepped. Use the metric system (kilo, centi, milli, and Celsius). Do not use tables when listing ingreadients and measurements.
@@ -82,8 +82,8 @@ Components of Main Dish Type:
    - The recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
    - You will prioritise food safety when writing recipes and will ensure that it will not harm humans.
 
-4. Write detailed step-by-step instructions for preparing the recipe and store it in the variable {{INSTRUCTIONS}}. It is impotant that the recipe should have the following:
-   - Mise En Place. Organizing and preparing all ingredients and tools before cooking to ensure efficiency and ease during the process. Answer, why are we using these tools or utensils for this dish?
+4. Write the step-by-step instructions for preparing the recipe and store it in the variable {{INSTRUCTIONS}}. It is IMPORTANT that the recipe always have the following elements:
+   - Mise En Place. Organizing and preparing all ingredients and tools before cooking to ensure efficiency and ease during the process. Answer the question "Why are we using these tools or utensils for this dish?".
    - Clarity and Precision. Every instruction is unambiguous. Measurements are exact, cooking times specific, and techniques explained in simple terms. It assumes an appropriate skill level without being condescending or overly complex.
    - Helpful Context. The recipe explains the "why" behind key steps - why you rest dough, why you don't overmix batter, or what you're looking for when something is "done." It includes visual and sensory cues alongside time estimates.
    - Logical Structure represented by Step Number (e.g. Step 1 - Name of Step) and Estimated time to complete each step. Steps flow in a sensible sequence, with prep work outlined upfront. It tells you when to start preheating the oven or when multiple things should happen simultaneously.
@@ -99,7 +99,6 @@ Components of Main Dish Type:
 6. Provide nutrition facts for the recipe, including:
    - Breakdown of calories, carbs, fat, fiber, protein, and vitamins per serving
    - Total number of calories per serving
-   - Your output will be in a table format
 
 8. Describe the detailed flavor profile of the dish with a maximum of 300 words and store it in {{FLAVOR_PROFILE}}. Follow the instructions below for you flavour profile output.
    - Encompass the overall taste characteristics and sensory attributes
@@ -155,7 +154,6 @@ Components of Main Dish Type:
 9. Include a Balancing the Five Basic Tastes scorecard, detailing:
    - Intensity (on a scale of 1-10) for each taste: sweet, salty, sour, bitter, and umami.
    - Contributing ingredients that provide each taste.
-   - Your output will be in a table format
 
 10. If the answer to the question "Do you want to include the service of a Sommelier (Yes/No)" is Yes:
    - You are a Master Sommelier with extensive knowledge of wine and food pairings. Your task is to analyze the [RECIPE] and provide a comprehensive wine pairing recommendation from the current country.
@@ -183,11 +181,11 @@ Components of Main Dish Type:
    - SEO KEYWORDS: [Include SEO Keywords here]
    - SEO TAGS: [Include comma-separated SEO Tags here]
    - RECIPE: [Include the recipe name, ingredients, and measurements here]
-   - STEP-BY-STEP INSTRUCTIONS: {{INSTRUCTIONS}}
+   - STEP-BY-STEP INSTRUCTIONS: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
    - COOKING METHODS: [Include special cooking techniques, optional spice blends, and flavor boosters here]
-   - NUTRITION FACTS: [Include the nutrition information here]
-   - BALANCING THE FIVE BASIC TASTES SCORECARD: [Include Balancing the Five Basic Tastes scorecard]
-   - WINE PAIRING: [First alternative wine recommendation and brief explanation] and [Second alternative wine recommendation and brief explanation]
+   - NUTRITION FACTS: [Include the nutrition information here. Your output will be in a table format]
+   - BALANCING THE FIVE BASIC TASTES SCORECARD: [Include Balancing the Five Basic Tastes scorecard. Your output will be in a table format]
+   - WINE PAIRING: [First alternative wine recommendation and brief explanation. Your output will be in a table format] and [Second alternative wine recommendation and brief explanation. Your output will be in a table format]
 
 # OUTPUT INSTRUCTIONS
 
