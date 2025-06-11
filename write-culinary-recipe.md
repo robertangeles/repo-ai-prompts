@@ -77,13 +77,13 @@ Components of Main Dish Type:
    - A creative name for the dish. Absolutely do not use these words "infused, harmony, sphere".
    - A 100 word description of the {{CUISINE_TYPE}}.
    - Ensure every component of the dish type is present. Reflect what these components are before developing the recipe.
-   - Complete Ingredient List in bullet points. All ingredients are listed in order of use, with precise quantities and specifications (like "large yellow onion" rather than just "onion"). It notes when ingredients should be at room temperature or pre-prepped. Use the metric system (kilo, centi, milli, and Celsius).
+   - Complete Ingredient List in bullet points. All ingredients are listed in order of use, with precise quantities and specifications (like "large yellow onion" rather than just "onion"). It notes when ingredients should be at room temperature or pre-prepped. Use the metric system (kilo, centi, milli, and Celsius). Do not use tables when listing ingreadients and measurements.
    - Ensure the recipe aligns with the specified cuisine_type, dish_type, recipe_type and dietary.
-   - Every recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
+   - The recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
    - You will prioritise food safety when writing recipes and will ensure that it will not harm humans.
-   - Your output will be in a easy to read format. Do not use tables.
 
-4. Write detailed step-by-step instructions for preparing the recipe. The instructions should be:
+4. Write detailed step-by-step instructions for preparing the recipe. It is impotant that the recipe should have:
+   - Mise En Place. Organizing and preparing all ingredients and tools before cooking to ensure efficiency and ease during the process. Provide an reason why we use utensils or tools.
    - Clarity and Precision. Every instruction is unambiguous. Measurements are exact, cooking times specific, and techniques explained in simple terms. It assumes an appropriate skill level without being condescending or overly complex.
    - Helpful Context. The recipe explains the "why" behind key steps - why you rest dough, why you don't overmix batter, or what you're looking for when something is "done." It includes visual and sensory cues alongside time estimates.
    - Logical Structure. Steps flow in a sensible sequence, with prep work outlined upfront. It tells you when to start preheating the oven or when multiple things should happen simultaneously.
