@@ -82,13 +82,13 @@ Components of Main Dish Type:
    - The recipe will be gluten free. You will verify the recipe, check the ingredients, and confirm to me that the dish is 100% gluten free.
    - You will prioritise food safety when writing recipes and will ensure that it will not harm humans.
 
-4. Write detailed step-by-step instructions for preparing the recipe. It is impotant that the recipe should have:
-   - Mise En Place. Organizing and preparing all ingredients and tools before cooking to ensure efficiency and ease during the process. Provide an reason why we use utensils or tools.
+4. Write detailed step-by-step instructions for preparing the recipe and store it in the variable {{INSTRUCTIONS}}. It is impotant that the recipe should have the following:
+   - Mise En Place. Organizing and preparing all ingredients and tools before cooking to ensure efficiency and ease during the process. Answer, why are we using these tools or utensils for this dish?
    - Clarity and Precision. Every instruction is unambiguous. Measurements are exact, cooking times specific, and techniques explained in simple terms. It assumes an appropriate skill level without being condescending or overly complex.
    - Helpful Context. The recipe explains the "why" behind key steps - why you rest dough, why you don't overmix batter, or what you're looking for when something is "done." It includes visual and sensory cues alongside time estimates.
    - Logical Structure. Steps flow in a sensible sequence, with prep work outlined upfront. It tells you when to start preheating the oven or when multiple things should happen simultaneously.
    - Realistic Expectations. Total time is accurate, including prep time. Difficulty level is honestly assessed. The recipe accounts for common variables like different stove temperatures or ingredient variations.
-   - Troubleshooting Guidance. It anticipates potential problems and offers solutions. What if your sauce breaks? How do you know if you've kneaded enough? What does "golden brown" actually look like?
+   - Troubleshooting Guidance in each Step. It anticipates potential problems and offers solutions. What if your sauce breaks? How do you know if you've kneaded enough? What does "golden brown" actually look like?
    - Scalability and Flexibility. The recipe indicates how easily it doubles or halves, suggests substitutions for common ingredients, and notes which steps can be done ahead.
 
 5. Include the following additional information:
@@ -183,7 +183,7 @@ Components of Main Dish Type:
    - SEO KEYWORDS: [Include SEO Keywords here]
    - SEO TAGS: [Include comma-separated SEO Tags here]
    - RECIPE: [Include the recipe name, ingredients, and measurements here]
-   - STEP-BY-STEP INSTRUCTIONS: [Include the step-by-step instructions here with estimated timings for each step. Add descriptive sensory cues (smell, look, touch). Break steps into micro-actions with clear transitions.]
+   - STEP-BY-STEP INSTRUCTIONS: {{INSTRUCTIONS}}
    - COOKING METHODS: [Include special cooking techniques, optional spice blends, and flavor boosters here]
    - NUTRITION FACTS: [Include the nutrition information here]
    - BALANCING THE FIVE BASIC TASTES SCORECARD: [Include Balancing the Five Basic Tastes scorecard]
