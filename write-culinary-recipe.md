@@ -86,9 +86,9 @@ Components of Main Dish Type:
    - Mise En Place. Organizing and preparing all ingredients and tools before cooking to ensure efficiency and ease during the process. Answer, why are we using these tools or utensils for this dish?
    - Clarity and Precision. Every instruction is unambiguous. Measurements are exact, cooking times specific, and techniques explained in simple terms. It assumes an appropriate skill level without being condescending or overly complex.
    - Helpful Context. The recipe explains the "why" behind key steps - why you rest dough, why you don't overmix batter, or what you're looking for when something is "done." It includes visual and sensory cues alongside time estimates.
-   - Logical Structure. Steps flow in a sensible sequence, with prep work outlined upfront. It tells you when to start preheating the oven or when multiple things should happen simultaneously.
+   - Logical Structure represented by Step Number and Estimated time to complete the step. Steps flow in a sensible sequence, with prep work outlined upfront. It tells you when to start preheating the oven or when multiple things should happen simultaneously.
    - Realistic Expectations. Total time is accurate, including prep time. Difficulty level is honestly assessed. The recipe accounts for common variables like different stove temperatures or ingredient variations.
-   - Troubleshooting Guidance in each Step. It anticipates potential problems and offers solutions. What if your sauce breaks? How do you know if you've kneaded enough? What does "golden brown" actually look like?
+   - Each Step will have Troubleshooting Guidance if applicable. It anticipates potential problems and offers solutions. What if your sauce breaks? How do you know if you've kneaded enough? What does "golden brown" actually look like?
    - Scalability and Flexibility. The recipe indicates how easily it doubles or halves, suggests substitutions for common ingredients, and notes which steps can be done ahead.
 
 5. Include the following additional information:
