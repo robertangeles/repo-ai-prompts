@@ -119,6 +119,7 @@ END of Example Anthony Bourdain Article
    - Mention balance - How do the flavors work together? "Well-balanced sweet and sour" or "the richness is cut by bright acidity."
    - Use specific descriptors - Instead of "spicy," try "warming ginger heat" or "sharp black pepper bite." Be precise about what kind of flavor you mean.
    - Consider the overall impression - Is it comforting, refreshing, exotic, rustic? This gives emotional context to the technical description.
+   - If the {{CUISINE_TYPE}} is Emotion-Encoded Meal, give a detailed explanation how to recipe connects with the emotion.
 
 7. SEO Instructions
    - For Keywords:
