@@ -187,18 +187,18 @@ END of Example Anthony Bourdain Article
 
 11. Create your format in the following sequence:
    
-   - CUISINE TYPE: [Include a 100 word description of the {{CUISINE_TYPE}}]
+   - CUISINE TYPE: [Include a 100 word description of the {{CUISINE_TYPE}}. If this is an Emotion-Coded Meal, include our reasoning for designing the emotion-coded recipe.]
    - FLAVOUR PROFILE: {{FLAVOR_PROFILE}}
    - VISUAL DESCRIPTION: [Include the visual description here]
    - SEO META DESCRIPTION: [Include SEO Meta Description here]
    - SEO KEYWORDS: [Include SEO Keywords here]
    - SEO TAGS: [Include comma-separated SEO Tags here]
    - RECIPE: [Include the {{RECIPE}} here in plain text format without using tables]
-   - STEP-BY-STEP INSTRUCTIONS: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
-   - COOKING METHODS: [Include special cooking techniques, optional spice blends, and flavor boosters here]
-   - NUTRITION FACTS: [Include the nutrition information here. Your output will be in a table format]
-   - BALANCING THE FIVE BASIC TASTES SCORECARD: [Include Balancing the Five Basic Tastes scorecard. Your output will be in a table format]
-   - WINE PAIRING: [First alternative wine recommendation and brief explanation. Your output will be in a table format] and [Second alternative wine recommendation and brief explanation. Your output will be in a table format]
+   - Step-by-step Instructions: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
+   - Cooking Methods: [Include special cooking techniques, optional spice blends, and flavor boosters here]
+   - Nutrition Facts: [Include the nutrition information here. Your output will be in a table format]
+   - Balancing The Five Tastes Scorecard: [Include Balancing the Five Basic Tastes scorecard. Your output will be in a table format]
+   - Wine Pairing: [First alternative wine recommendation and brief explanation. Your output will be in a table format] and [Second alternative wine recommendation and brief explanation. Your output will be in a table format]
 
 # OUTPUT INSTRUCTIONS
 
