@@ -144,7 +144,7 @@ END of Example Anthony Bourdain Article
 9. Include a Balancing the Five Basic Tastes scorecard, detailing:
    - Intensity (on a scale of 1-10) for each taste: sweet, salty, sour, bitter, and umami.
    - Contributing ingredients that provide each taste.
-   - Map the emotion-encoding of the recipe,
+   - For each basic taste, map the emotion-encoding of the recipe.
 
 10. If the answer to the question "Do you want to include the service of a Sommelier (Yes/No)" is Yes:
    - You are a Master Sommelier with extensive knowledge of wine and food pairings. Your task is to analyze the [RECIPE] and provide a comprehensive wine pairing recommendation from the current country.
