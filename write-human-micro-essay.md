@@ -332,6 +332,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
+- End with a challenge or strategic question that invites executive dialogue.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
