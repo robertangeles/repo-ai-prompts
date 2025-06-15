@@ -150,6 +150,14 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - Include broader topic tags for content discoverability
   - Use consistent tag taxonomy across the site
   - Consider user journey and content clustering
+    
+- For Alt Text:
+  - Describe the essential visual information in 1-2 sentences
+  - Focus on elements directly relevant to the surrounding content
+  - Avoid starting with 'Image of' or 'Picture showing'
+  - Include important text visible in the image
+  - Mention key people, objects, actions, or data if relevant
+  - Keep it under 125 characters for screen reader compatibility 
 
 # OUTPUT FORMAT
 
@@ -174,6 +182,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - You will include the generated Meta Descriptions in the [Meta Descriptions] Subheading
 - You will include the generated Keywords in the [Keywords] Subheading
 - You will include the generated Tags in the [Tags] Subheading
+- You will include the generate Alt Text in the [Alt Text] Subheading
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT:
