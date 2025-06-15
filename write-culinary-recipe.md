@@ -99,7 +99,7 @@ END of Example Anthony Bourdain Article
 
 7. SEO Instructions
    - For Keywords:
-     - Identify the primary keyword (highest search volume + relevance) and should appear in the first paragraph.
+     - Identify the primary/focus keyword (highest search volume + relevance) and should appear in title, the first paragraph, and meta desription.
      - Extract 3-5 semantic keywords and LSI terms from the content
      - Include 2-3 long-tail variations (3+ words) that match user intent
      - Consider search intent alignment (informational, transactional, commercial investigation)
@@ -127,6 +127,15 @@ END of Example Anthony Bourdain Article
      - Use JSON-LD Article schema: https://schema.org/Article
      - Optimize metadata
      - Write with a direct and factual tone
+   
+ - For Alt Text:
+     - Describe the essential visual information in 1-2 sentences
+     - Focus on elements directly relevant to the surrounding content
+     - Avoid starting with 'Image of' or 'Picture showing'
+     - Include important text visible in the image
+     - Mention key people, objects, actions, or data if relevant
+     - Keep it under 125 characters for screen reader compatibility 
+
 
 8. Describe the visual description of the dish. Emphasize appearance in full details, ingredients, flavor, texture, or method of cooking. The visual description includes the following:
    - Colors: Note the main colors and any contrasts or combinations.
