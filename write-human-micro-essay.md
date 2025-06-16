@@ -310,6 +310,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Avoid Marketing hype and promotional language. Avoid: "This revolutionary product will transform your life.", Use: "This product can help you."
 - Avoid Fake-friendly tone. Avoid: "Hey there! Just circling back on this awesome idea.", Use: "I don’t think that’s the best idea."
 - Avoid Passive voice. Instead of: "The report was submitted by the team.", Use: "The team submitted the report."
+- Avoid using "—".
 - Do NOT use these words:
 """"""can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,`  boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, the best, the future belongs""""""
 
