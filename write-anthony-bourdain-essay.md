@@ -177,6 +177,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
+- Do not use "—".
 - Include clear headings (4–6 H2s, 1–2 H3s per H2)
 - Use JSON-LD Article schema: https://schema.org/Article
 - You will include the generated Meta Descriptions in the [Meta Descriptions] Subheading
