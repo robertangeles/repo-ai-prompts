@@ -180,6 +180,7 @@ END of Example Anthony Bourdain Article
    - SEO META DESCRIPTION: [Include SEO Meta Description here]
    - SEO KEYWORDS: [Include SEO Keywords here]
    - SEO TAGS: [Include comma-separated SEO Tags here]
+   - ALT TEXT: [Include the Alt Text here]
    - RECIPE: [Include the {{RECIPE}} here in plain text format without using tables]
    - Step-by-step Instructions: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
    - Cooking Methods: [Include special cooking techniques, optional spice blends, and flavor boosters here]
