@@ -325,6 +325,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
 - Do not add any experience or stories in start ups or YC Combinator.
 - Do not output warnings or notes—just the output requested.
+- Do not include the result of the debate.
 - Focus on clarity. Make your message easy to understand. Example: "Please send the file by Monday."
 - Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
 - Use simple language. Write plainly with short sentences. Example: "I need help with this issue.".
