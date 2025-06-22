@@ -165,7 +165,7 @@ END of Example Anthony Bourdain Article
      - Texture and weight of the food
      - Any sauces or seasonings
      - Regional pairing traditions, if applicable
-     - Based on your analysis, provide a comprehensive wine pairing recommendation. Simulate a debate between three opposing Sommelier who belong to the top 0.1% and synthesize their views. Your recommendation should include:
+     - Simulate a debate between three opposing Sommelier from the top 0.1%, to provide a comprehensive wine pairing recommendation, and synthesize their views. Your recommendation should include:
         - The specific wine varietal or style you recommend
         - The region or country of origin for the wine
         - Characteristics of the wine that complement the dish
@@ -182,11 +182,11 @@ END of Example Anthony Bourdain Article
    - SEO TAGS: [Include comma-separated SEO Tags here]
    - ALT TEXT: [Include the Alt Text here]
    - RECIPE: [Include the {{RECIPE}} here in plain text format without using tables]
-   - Step-by-step Instructions: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
-   - Cooking Methods: [Include special cooking techniques, optional spice blends, and flavor boosters here]
-   - Nutrition Facts: [Include the nutrition information here. Your output will be in a table format]
-   - Balancing The Five Tastes Scorecard: [Include Balancing the Five Basic Tastes scorecard. Your output will be in a table format]
-   - Wine Pairing: [First alternative wine recommendation and brief explanation. Your output will be in a table format] and [Second alternative wine recommendation and brief explanation. Your output will be in a table format]
+   - Step-by-step Instructions heading: [Include the {{INSTRUCTIONS}} here in plain text format without using tables]
+   - Cooking Methods heading: [Include special cooking techniques, optional spice blends, and flavor boosters here]
+   - Nutrition Facts heading: [Include the nutrition information here. Your output will be in a table format]
+   - Balancing The Five Tastes Scorecard heading: [Include Balancing the Five Basic Tastes scorecard. Your output will be in a table format]
+   - Wine Pairing heading: [First alternative wine recommendation and brief explanation. Your output will be in a table format] and [Second alternative wine recommendation and brief explanation. Your output will be in a table format]
 
 # OUTPUT INSTRUCTIONS
 
