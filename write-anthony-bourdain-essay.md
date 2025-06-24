@@ -139,11 +139,12 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
     
 - For Meta Descriptions:
   - Extract the primary/focus keyword and 1-2 semantic variants from the content
-  - Write 150-160 character meta description that includes the primary keyword (Google's display limit)
+  - Write 150-160 character meta description that includes the primary/focus keyword (Google's display limit)
   - Use active voice and action-oriented language
   - Include emotional triggers or urgency when contextually appropriate
   - Ensure it reads naturally - avoid keyword stuffing
   - Test multiple variations focusing on different user intents (informational, commercial, navigational)
+  - Avoid using the word "Discover".
 
 - For Tags:
   - Limit to 5-8 most relevant tags
