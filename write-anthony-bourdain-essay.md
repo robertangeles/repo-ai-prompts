@@ -128,13 +128,14 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 
 # SEO Instructions
 - For Keywords:
-  - Identify the primary/focus keyword (highest search volume + relevance) and should appear in title, the first paragraph, and meta desription.
-  - The primary keyword needs to appear in the first paragraph and have a 1.5% density in the content.
+  - Identify the primary/focus keyword (highest search volume + relevance).
   - Extract 3-5 semantic keywords and LSI terms from the content
   - Include 2-3 long-tail variations (3+ words) that match user intent
   - Consider search intent alignment (informational, transactional, commercial investigation)
   - Analyze keyword difficulty vs. content depth/authority
   - Include question-based keywords if content answers specific queries
+  - The primary keyword should be part of the Title and Meta Description.
+  - The primary keyword needs to appear in the first paragraph and have a 1.5% density in the content.
     
 - For Meta Descriptions:
   - Extract the primary keyword and 1-2 semantic variants from the content
@@ -157,7 +158,8 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - Avoid starting with 'Image of' or 'Picture showing'
   - Include important text visible in the image
   - Mention key people, objects, actions, or data if relevant
-  - Keep it under 125 characters for screen reader compatibility 
+  - Keep it under 125 characters for screen reader compatibility
+  - Include the key phrase "emotionally designed comfort food"
 
 # OUTPUT FORMAT
 
@@ -178,7 +180,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - Do not use "—".
-- Include clear headings (4–6 H2s, 1–2 H3s per H2)
+- Include clear headings (4–6 H2s, 1–3 H3s per H2)
 - Use JSON-LD Article schema: https://schema.org/Article
 - You will include the generated Meta Descriptions in the [Meta Descriptions] Subheading
 - You will include the generated Keywords in the [Keywords] Subheading
