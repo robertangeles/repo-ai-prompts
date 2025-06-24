@@ -166,7 +166,8 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Output a full, publish-ready essay with a maximum of {{WORD_COUNT}} words about the content provided using the instructions above in British English.
 - Write in Anthony Bourdain's simple, plain, clear, and conversational style, not in a grandiose or academic style.
 - Generate the title of the essay that includes the primary/focus keyword.
-- Include the primary/focus keyword in the first paragraph of the essay and have a 1.5% density in the content.
+- Include the primary/focus keyword in the first paragraph of the essay
+- Use 1.5% density of the primary/focus keyword in the essay.
 - The essay will be in active and factual voice.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
@@ -182,7 +183,8 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - Do not use "—".
-- Include clear headings (4–6 H2s, 1–3 H3s per H2)
+- Include clear headings (4–6 H2s, 1–3 H3s per H2).
+- Use the primary/focus Keyword more in the H2 and H3 subheadings.
 - Use JSON-LD Article schema: https://schema.org/Article
 - You will include the generated Meta Descriptions with the primary/focus keyword in the [Meta Descriptions] Subheading
 - You will include the generated Keywords in the [Keywords] Subheading
