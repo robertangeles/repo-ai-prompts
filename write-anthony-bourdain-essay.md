@@ -138,7 +138,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - The primary keyword needs to appear in the first paragraph and have a 1.5% density in the content.
     
 - For Meta Descriptions:
-  - Extract the primary keyword and 1-2 semantic variants from the content
+  - Extract the primary/focus keyword and 1-2 semantic variants from the content
   - Write 150-160 character meta description that includes the primary keyword (Google's display limit)
   - Use active voice and action-oriented language
   - Include emotional triggers or urgency when contextually appropriate
@@ -165,6 +165,8 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 
 - Output a full, publish-ready essay with a maximum of {{WORD_COUNT}} words about the content provided using the instructions above in British English.
 - Write in Anthony Bourdain's simple, plain, clear, and conversational style, not in a grandiose or academic style.
+- Generate the title of the essay that includes the primary/focus keyword.
+- Include the primary/focus keyword in the first paragraph of the essay and have a 1.5% density in the content.
 - The essay will be in active and factual voice.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
 - Do not use cliches or jargon.
@@ -182,7 +184,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Do not use "—".
 - Include clear headings (4–6 H2s, 1–3 H3s per H2)
 - Use JSON-LD Article schema: https://schema.org/Article
-- You will include the generated Meta Descriptions in the [Meta Descriptions] Subheading
+- You will include the generated Meta Descriptions with the primary/focus keyword in the [Meta Descriptions] Subheading
 - You will include the generated Keywords in the [Keywords] Subheading
 - You will include the generated Tags in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
