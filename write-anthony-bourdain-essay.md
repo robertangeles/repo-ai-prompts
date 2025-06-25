@@ -165,19 +165,20 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 # Headline Formula
 
   - Include Primary Keyword - Must contain the focus keyword for SEO
-  - 60 Characters - For optimal display in search results
-  - Common Words: 20-30% - Use everyday words like "and," "the," "why"
-  - Uncommon Words: 10-20% - Add distinctive words like "shocking," "forgotten"
-  - Emotional Words: 10-15% - Include triggers like "shocking," "surprising," "secret"
-  - Power Words: Include 1 - Words that compel action: "discover," "science," "proven"
+  - Generate a maximum of 60 Characters - For optimal display in search results
+  - Include Common Words: 20-30% - Use everyday words like "and," "the," "why"
+  - Include Uncommon Words: 10-20% - Add distinctive words like "shocking," "forgotten"
+  - Inlcude Emotional Words: 10-15% - Include triggers like "shocking," "surprising," "secret"
+  - Include Power Words: Include 1 - Words that compel action: "discover," "science," "proven"
   - Negative Sentiment Often Wins - Words like "forgotten," "lost," "never" grab attention
   - Example Structure: [Primary Keyword] + [Power/Emotional Word] + [Negative/Uncommon Element]
-    - Good Example: "Food and Memory: The Shocking Science Behind Forgotten Words"
+    - Good Example: "The Shocking Science of Food and Memory Behind Forgotten Words"
     - Has primary keyword
     - Power word (shocking, science)
     - Negative element (forgotten)
     - Right word mix percentages
     - Under 60 characters
+    - Does not use ":"
   - Do not use ":"
 
 # OUTPUT FORMAT
