@@ -165,7 +165,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 # Headline Formula
 
   - Include Primary Keyword - Must contain the focus keyword for SEO
-  - Stay Under 60 Characters - For optimal display in search results
+  - 60 Characters - For optimal display in search results
   - Common Words: 20-30% - Use everyday words like "and," "the," "why"
   - Uncommon Words: 10-20% - Add distinctive words like "shocking," "forgotten"
   - Emotional Words: 10-15% - Include triggers like "shocking," "surprising," "secret"
@@ -210,7 +210,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - You will include the generated Keywords in the [Keywords] Subheading
 - You will include the generated Tags in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
-- Write a detailed prompt for an AI Image Generator that captures the essence of this essay without using the word "steam". You will put this in the [Midjourney] Subheading.
+- Write a detailed prompt for an AI Image Generator that captures the essence of this essay without using the word "steam, vapor, vapour". You will put this in the [Midjourney] Subheading.
 
 # INPUT
 - What is the Topic of this Essay? {{TOPIC}}
