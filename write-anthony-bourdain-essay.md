@@ -178,7 +178,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
     - Negative element (forgotten)
     - Right word mix percentages
     - Under 60 characters
-  - Key Insight: The best headlines balance SEO requirements (keywords, length) with psychological triggers (emotion, power words, negative sentiment) to maximize both search visibility and click-through rates.
+  - Do not use ":"
 
 # OUTPUT FORMAT
 
