@@ -161,6 +161,24 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - Mention key people, objects, actions, or data if relevant
   - Keep it under 125 characters for screen reader compatibility
   - Include the key phrase "emotionally designed comfort food"
+ 
+# Headline Formula
+
+  - Include Primary Keyword - Must contain the focus keyword for SEO
+  - Stay Under 60 Characters - For optimal display in search results
+  - Common Words: 20-30% - Use everyday words like "and," "the," "why"
+  - Uncommon Words: 10-20% - Add distinctive words like "shocking," "forgotten"
+  - Emotional Words: 10-15% - Include triggers like "shocking," "surprising," "secret"
+  - Power Words: At least 1 - Words that compel action: "discover," "science," "proven"
+  - Negative Sentiment Often Wins - Words like "forgotten," "lost," "never" grab attention
+  - Example Structure: [Primary Keyword] + [Power/Emotional Word] + [Negative/Uncommon Element]
+    - Good Example: "Food and Memory: The Shocking Science Behind Forgotten Words"
+    - Has primary keyword
+    - Power word (shocking, science)
+    - Negative element (forgotten)
+    - Right word mix percentages
+    - Under 60 characters
+  - Key Insight: The best headlines balance SEO requirements (keywords, length) with psychological triggers (emotion, power words, negative sentiment) to maximize both search visibility and click-through rates.
 
 # OUTPUT FORMAT
 
@@ -187,6 +205,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Include clear headings (4–6 H2s, 1–3 H3s per H2).
 - Use the primary/focus Keyword more in the H2 and H3 subheadings.
 - Use JSON-LD Article schema: https://schema.org/Article
+- You will include the generated Headline in the [Headline] Subheading
 - You will include the generated Meta Descriptions with the primary/focus keyword in the [Meta Descriptions] Subheading
 - You will include the generated Keywords in the [Keywords] Subheading
 - You will include the generated Tags in the [Tags] Subheading
