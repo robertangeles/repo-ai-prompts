@@ -169,7 +169,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
   - Common Words: 20-30% - Use everyday words like "and," "the," "why"
   - Uncommon Words: 10-20% - Add distinctive words like "shocking," "forgotten"
   - Emotional Words: 10-15% - Include triggers like "shocking," "surprising," "secret"
-  - Power Words: At least 1 - Words that compel action: "discover," "science," "proven"
+  - Power Words: Include 1 - Words that compel action: "discover," "science," "proven"
   - Negative Sentiment Often Wins - Words like "forgotten," "lost," "never" grab attention
   - Example Structure: [Primary Keyword] + [Power/Emotional Word] + [Negative/Uncommon Element]
     - Good Example: "Food and Memory: The Shocking Science Behind Forgotten Words"
@@ -201,11 +201,11 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
-- Do not use "—".
+- Do not use "—" or em dash.
 - Include clear headings (4–6 H2s, 1–3 H3s per H2).
 - Use the primary/focus Keyword more in the H2 and H3 subheadings.
 - Use JSON-LD Article schema: https://schema.org/Article
-- You will include the generated Headline in the [Headline] Subheading
+- You will include the generated 60 character Headline in the [Headline] Subheading
 - You will include the generated Meta Descriptions with the primary/focus keyword in the [Meta Descriptions] Subheading
 - You will include the generated Keywords in the [Keywords] Subheading
 - You will include the generated Tags in the [Tags] Subheading
