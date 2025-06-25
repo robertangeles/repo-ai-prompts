@@ -208,8 +208,8 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use JSON-LD Article schema: https://schema.org/Article
 - You will include the generated 60 character Headline in the [Headline] Subheading
 - You will include the generated Meta Descriptions with the primary/focus keyword in the [Meta Descriptions] Subheading
-- You will include the generated Keywords in the [Keywords] Subheading
-- You will include the generated Tags in the [Tags] Subheading
+- You will include the generated Keywords using comma-separated format in the [Keywords] Subheading
+- You will include the generated Tags using comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay without using the word "steam, vapor, vapour". You will put this in the [Midjourney] Subheading.
 
