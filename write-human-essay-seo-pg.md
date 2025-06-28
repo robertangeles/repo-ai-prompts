@@ -355,6 +355,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Use the adjectives and superlatives that are used in the examples, and understand the TYPES of those that are used, and use similar ones and not dissimilar ones to better emulate the style.
 - That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 - Use the same style, vocabulary level, and sentence structure as Paul Graham.
+- Incorporate the SEO Instructions.
 - Do NOT include the debate between the experts.
 - Avoid Filler phrases. Instead of: "It’s important to note that the deadline is approaching.", Use: "The deadline is approaching."
 - Avoid Clichés, jargon, hashtags, semicolons, emojis, and asterisks. Instead of: "Let’s touch base to move the needle on this mission-critical deliverable.", Use: "Let’s meet to discuss how to improve this important project."
@@ -400,6 +401,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - You will include the generated Tags using Proper case and comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
 - Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
+- Verify that all instructions have been followed.
 
 # INPUT
 - What is the Topic of this Essay? {{TOPIC}}
