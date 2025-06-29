@@ -357,6 +357,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Use the same style, vocabulary level, and sentence structure as Paul Graham.
 - Incorporate the SEO Instructions.
 - Do NOT include the debate between the experts.
+- Do NOT explicitly write out what each expert would say.
 - Avoid Filler phrases. Instead of: "It’s important to note that the deadline is approaching.", Use: "The deadline is approaching."
 - Avoid Clichés, jargon, hashtags, semicolons, emojis, and asterisks. Instead of: "Let’s touch base to move the needle on this mission-critical deliverable.", Use: "Let’s meet to discuss how to improve this important project."
 - Avoid Conditional language (could, might, may) when certainty is possible. Instead of: "This approach might improve results.", Use: "This approach improves results."
@@ -382,6 +383,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Do not add any experience or stories in start ups or YC Combinator.
 - Do not output warnings or notes—just the output requested.
 - Do not include the debate.
+- Exclude what each expert would say.
 - Focus on clarity. Make your message easy to understand. Example: "Please send the file by Monday."
 - Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
 - Use simple language. Write plainly with short sentences. Example: "I need help with this issue.".
