@@ -402,7 +402,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - You will include the generated Keywords using comma-separated format in the [Keywords] Subheading
 - You will include the generated Tags using Proper case and comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
-- Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
+- Create a detailed illustration prompt for Midjourney in the [Midjourney] Subheading that captures the essence of this essay, rendered in the distinctive style of Victo Ngai. The artwork should showcase Ngai's signature intricate and versatile design approach, seamlessly blending editorial sophistication with broad commercial appeal. Focus on incorporating the complex layering, rich color palettes, and symbolic storytelling elements that define Ngai's work, while ensuring the illustration effectively communicates the core themes and concepts presented in the essay.
 - Verify that all instructions have been followed.
 
 # INPUT
