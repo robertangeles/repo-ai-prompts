@@ -402,7 +402,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - You will include the generated Keywords using comma-separated format in the [Keywords] Subheading
 - You will include the generated Tags using Proper case and comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
-- Create a detailed illustration prompt for Midjourney in the [Midjourney] Subheading that captures the essence of this essay and append "Generate this image in the style of Stephan Schmitz who specializes in creating deceptively simple compositions and images that pack a huge amount of information. The longer you look at them, the more you get out of them. --ar 7:5 --v 7.0 --p 1ayuy7t --raw" at the end.
+- Create a detailed illustration prompt for Midjourney in the [Midjourney] Subheading that captures the essence of this essay and append "Generate this illustration in the style of Stephan Schmitz who specializes in creating deceptively simple compositions and images that pack a huge amount of information. The longer you look at them, the more you get out of them. --ar 7:5 --v 7.0 --p 1ayuy7t --raw --stylize 500" at the end.
 - Verify that all instructions have been followed.
 
 # INPUT
