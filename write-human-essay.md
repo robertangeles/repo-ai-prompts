@@ -337,7 +337,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - End with a challenge or strategic question that invites executive dialogue.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
-- Write a detailed prompt for an AI Image Generator that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
+- Write a detailed prompt for Midjourney using the style of Hiroshi Nagai that captures the essence of this essay. You will put this in the [Midjourney] Subheading.
 
 # INPUT
 
