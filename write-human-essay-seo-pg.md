@@ -402,7 +402,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - You will include the generated Keywords using comma-separated format in the [Keywords] Subheading
 - You will include the generated Tags using Proper case and comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
-- Write a detailed prompt for Midjourney that captures the essence of this essay in the style of Hiroshi Nagai: minimalist composition, vivid colors with vibrant and pastel tones, clean lines, smooth airbrushed gradients, modernist architecture; absence of people, dreamlike atmosphere, emphasis on light and shadow, evoking nostalgia and tranquility. Append "--ar 1:1 --v 6.1 --raw --q 2 --stylize 500" at the end of the prompt. You will put this in the [Midjourney] Subheading.
+- Write a detailed prompt for Midjourney that captures the essence of this essay in the style of Hiroshi Nagai: minimalist composition, vivid colors with vibrant and pastel tones, clean lines, smooth airbrushed gradients, modernist architecture; absence of people, dreamlike atmosphere, emphasis on light and shadow, evoking nostalgia and tranquility. Append "--ar 7:5 --v 6.1 --raw --q 2 --stylize 500" at the end of the prompt. You will put this in the [Midjourney] Subheading.
 - Verify that all instructions have been followed.
 
 # INPUT
