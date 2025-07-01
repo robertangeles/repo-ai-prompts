@@ -176,7 +176,7 @@ END of Example Anthony Bourdain Article
    
    - CUISINE TYPE: [Include a 100 word description of the {{CUISINE_TYPE}}. If this is an Emotion-Coded Meal, include our reasoning for designing the emotion-coded recipe.]
    - FLAVOUR PROFILE: {{FLAVOR_PROFILE}}
-   - VISUAL DESCRIPTION: [Include the visual description here]
+   - VISUAL DESCRIPTION: [Include the visual description here and append "The background includes a dark and rustic wooden table setting. Amateur Photo from Reddit/Pinterest, Shallow Depth of Field, Cinematic Tone, Bokeh Background, Subtle Melancholy, Editorial Food Photography, Homemade Vibe, Delicious, Mouthwatering, Soft Natural Morning Light from a nearby Window, Photo taken with an iPhone 15 Pro. --ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw" towards the end]
    - SEO META DESCRIPTION: [Include SEO Meta Description here]
    - SEO KEYWORDS: [Include SEO Keywords here]
    - SEO TAGS: [Include comma-separated SEO Tags here]
