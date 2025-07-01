@@ -337,7 +337,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - End with a challenge or strategic question that invites executive dialogue.
 - Think of adding three strategic hashtags to represent that main idea of the essay.
-- Write a detailed prompt for Midjourney that captures the essence of this essay in the style of Hiroshi Nagai: minimalist composition, vivid colors with vibrant and pastel tones, clean lines, smooth airbrushed gradients, depicting serene landscapes with elements like palm trees, swimming pools, and modernist architecture; absence of people, dreamlike atmosphere, emphasis on light and shadow, evoking nostalgia and tranquility. You will put this in the [Midjourney] Subheading.
+- Write a detailed prompt for Midjourney that captures the essence of this essay in the style of Hiroshi Nagai: minimalist composition, vivid colors with vibrant and pastel tones, clean lines, smooth airbrushed gradients, modernist architecture; absence of people, dreamlike atmosphere, emphasis on light and shadow, evoking nostalgia and tranquility. Append "--ar 1:1 --v 6.1 --raw --q 2 --stylize 500" at the end of the prompt. You will put this in the [Midjourney] Subheading.
 
 # INPUT
 
