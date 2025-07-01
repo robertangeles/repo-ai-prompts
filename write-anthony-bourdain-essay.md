@@ -211,7 +211,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - You will include the generated Keywords using comma-separated format in the [Keywords] Subheading
 - You will include the generated Tags using comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
-- Write a detailed prompt for an AI Image Generator that captures the essence of this essay without using the word "steam, vapor, vapour". You will put this in the [Midjourney] Subheading.
+- Write a detailed prompt for Midjourney that captures the essence of this essay without using the word "steam, vapor, vapour" and append "--ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw" towards the end. You will put this in the [Midjourney] Subheading.
 
 # INPUT
 - What is the Topic of this Essay? {{TOPIC}}
