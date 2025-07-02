@@ -328,7 +328,6 @@ END EXAMPLE PAUL GRAHAM ESSAYS
   - Include important text visible in the image
   - Mention key people, objects, actions, or data if relevant
   - Keep it under 125 characters for screen reader compatibility
-  - Include the key phrase "emotionally designed comfort food"
  
 # Headline Formula
 
@@ -340,7 +339,6 @@ END EXAMPLE PAUL GRAHAM ESSAYS
   - Include Power Words: Include 1 - Words that compel action: "discover," "science," "proven"
   - Negative Sentiment Often Wins - Words like "forgotten," "lost," "never" grab attention
   - Example Structure: [Primary Keyword] + [Power/Emotional Word] + [Negative/Uncommon Element]
-    - Good Example: "The Shocking Science of Food and Memory Behind Forgotten Words"
     - Has primary keyword
     - Power word (shocking, science)
     - Negative element (forgotten)
@@ -356,8 +354,8 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 - Use the same style, vocabulary level, and sentence structure as Paul Graham.
 - Incorporate the SEO Instructions.
-- Do NOT include the debate between the experts.
-- Do NOT explicitly write out what each expert would say.
+- Do NOT include the actual debate between the experts. We only need the synthesize view for the content.
+- Do NOT explicitly write out what each expert said in the debate.
 - Avoid Filler phrases. Instead of: "It’s important to note that the deadline is approaching.", Use: "The deadline is approaching."
 - Avoid Clichés, jargon, hashtags, semicolons, emojis, and asterisks. Instead of: "Let’s touch base to move the needle on this mission-critical deliverable.", Use: "Let’s meet to discuss how to improve this important project."
 - Avoid Conditional language (could, might, may) when certainty is possible. Instead of: "This approach might improve results.", Use: "This approach improves results."
