@@ -211,7 +211,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - You will include the generated Keywords using comma-separated format in the [Keywords] Subheading
 - You will include the generated Tags using comma-separated format in the [Tags] Subheading
 - You will include the generate Alt Text in the [Alt Text] Subheading
-- Write a detailed prompt for Midjourney that captures the essence of this essay without using the word "steam, vapor, vapour" and append "--ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw" towards the end. You will put this in the [Midjourney] Subheading.
+- Write a detailed prompt for Midjourney that captures the essence of this essay in the style of Samantha Dion Baker: She fuses loose, expressive ink strokes—embracing wobbles, spontaneity, and nothing overworked—with subtle, transparent watercolor washes that layer in mood without smothering the line art. Think muted reds, dusty blues, olive greens draped over alive, breathing pen work. Append "--ar 7:5 --v 6.1 --raw --q 2 --stylize 500" at the end of the prompt. You will put this in the [Midjourney] Subheading.
 
 # INPUT
 - What is the Topic of this Essay? {{TOPIC}}
