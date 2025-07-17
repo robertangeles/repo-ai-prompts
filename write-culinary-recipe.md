@@ -234,4 +234,4 @@ END of Example Anthony Bourdain Article
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 
-Infect your recipe with an obsession virus. What would make foodies fanatical? 
+What would a top 0.1% Chef think?
