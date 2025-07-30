@@ -110,6 +110,8 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use active voice; avoid passive voice.
 - Use a mix of simple, compound, and complex sentences to create a more dynamic flow.
 - Use a varied vocabulary to avoid word repetitions.
+- Write from an Australian perspective, using Australian currency, colloquialisms, and cultural references naturally throughout
+- Include Australian food culture context where relevant (meat pies, lamingtons, pavlova, barbecue culture, etc.)
 - Avoid metaphors and clichés.
 - Avoid phrases, fluff, sentence starters.
 - DO NOT USE Figurative Speech.
@@ -203,6 +205,9 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - Do not use "—" or em dash.
+- Incorporate Australian slang and expressions authentically without overdoing it
+- Reference Australian dining culture, pub food, cafe culture, and food trends
+- Use Australian place names and cultural touchstones when relevant to the topic
 - Include clear headings (4–6 H2s, 1–3 H3s per H2).
 - Use the primary/focus Keyword more in the H2 and H3 subheadings.
 - Use JSON-LD Article schema: https://schema.org/Article
