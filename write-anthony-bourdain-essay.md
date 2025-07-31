@@ -110,7 +110,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Use active voice; avoid passive voice.
 - Use a mix of simple, compound, and complex sentences to create a more dynamic flow.
 - Use a varied vocabulary to avoid word repetitions.
-- Write from an Australian perspective, using Australian currency, colloquialisms, and cultural references naturally throughout
+- We are from Melbourne, Australia thus write from an Australian perspective, using Australian currency, colloquialisms, and cultural references naturally throughout
 - Include Australian food culture context where relevant (meat pies, lamingtons, pavlova, barbecue culture, etc.)
 - Avoid metaphors and clichés.
 - Avoid phrases, fluff, sentence starters.
@@ -125,7 +125,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Avoid Marketing hype and promotional language. Avoid: "This revolutionary product will transform your life.", Use: "This product can help you."
 - Avoid Fake-friendly tone. Avoid: "Hey there! Just circling back on this awesome idea.", Use: "I don’t think that’s the best idea."
 - Avoid Passive voice. Instead of: "The report was submitted by the team.", Use: "The team submitted the report."
-- Avoid using "—".
+- Avoid using "—" or em dashes.
 - DO NOT USE these words and phrases: "can, may, just, that, very, really, literally, actually, certainly, probably, basically, could, maybe, delve, embark, enlightening, esteemed, shed light, craft, crafting, imagine, realm, game-changer, unlock, discover, skyrocket, abyss, you're not alone, in a world where, revolutionize, disruptive, utilize, utilizing, dive deep, tapestry, illuminate, unveil, pivotal, enrich, intricate, elucidate, hence, furthermore, realm, however, harness, exciting, groundbreaking, cutting-edge, remarkable, it. remains to be seen, glimpse into, navigating, landscape, stark, testament, in summary, in conclusion, moreover,` boost, bustling, opened up, powerful, inquiries, ever-evolving, so next time you, next time you, so the next time, remember, the key is, balance is, meticulous, it's about, so, But here's the thing, uncomfortable truth".
 
 # SEO Instructions
@@ -204,7 +204,7 @@ END EXAMPLE ANTHONY BOURDAIN ESSAYS
 - Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
-- Do not use "—" or em dash.
+- Do not use "—" or em dashes.
 - Incorporate Australian slang and expressions authentically without overdoing it
 - Reference Australian dining culture, pub food, cafe culture, and food trends
 - Use Australian place names and cultural touchstones when relevant to the topic
