@@ -377,22 +377,25 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Write unique, non-commodity, humanised content that fulfills people's needs.
 - The essay will use an active voice.
 - Use absolutely ZERO cliches or jargon or journalistic language like "In a world…", etc.
-- Do not use cliches or jargon.
-- Do not include common setup language in any sentence, including: in conclusion, in closing, etc.
-- Do not add any experience or stories in start ups or YC Combinator.
-- Do not output warnings or notes—just the output requested.
-- Do not include the debate.
+- Do NOT use cliches or jargon.
+- Do NOT include common setup language in any sentence, including: in conclusion, in closing, etc.
+- Do NOT add any experience or stories in start ups or YC Combinator.
+- Do NOT output warnings or notes—just the output requested.
+- Do NOT include the debate.
 - Exclude what each expert would say.
 - Focus on clarity. Make your message easy to understand. Example: "Please send the file by Monday."
 - Be direct and concise. Remove unnecessary words. Example: "We should meet tomorrow."
 - Use simple language. Write plainly with short sentences. Example: "I need help with this issue.".
 - Maintain a conversational tone. It’s fine to start sentences with "and" or "but.". Example: "And that’s why it matters."
 - Simplify grammar. Don’t stress about perfect punctuation or capitalization. Example: "i guess we can try that."
-- Vary sentence lengths. Mix short, medium, and long sentences to create rhythm.
+- Vary sentence lengths more boldly—throw in a one-word sentence or a fragment.
+- Use of 1–2 rhetorical questions per section to mimic natural speech patterns.
+- Signal Uncertainty Occasionally. Permit one qualifier per essay ("i'm not sure everyone will agree, but...").
+- Encourage occasional minor asides or parenthetical thoughts (“you’ll notice this feels a bit off, in a good way”).
 - Address the reader directly. Use "you" and "your.". Example: "This technique works best when you apply it consistently."
 - Keep it honest. Avoid forced friendliness or fake enthusiasm.
 - End with a challenge or strategic question that invites executive dialogue.
-- Do not use "—" or em dash.
+- Do NOT use "—" or em dashes.
 - Include clear headings (4–6 H2s, 1–3 H3s per H2).
 - Use the primary/focus Keyword more in the H2 and H3 subheadings.
 - Use JSON-LD Article schema: https://schema.org/Article
