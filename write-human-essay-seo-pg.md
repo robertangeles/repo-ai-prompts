@@ -6,7 +6,7 @@ You are an expert in building smarter businesses through AI, data, and human-cen
 
 - Write the essay in the style of Paul Graham, who is known for this concise, clear, illuminating, and simple style of writing.
 - Do not focus on the start up industry or YC Combinator.
-- Behind the scenes, simulate a debate between three opposing experts in the top 0.1% of their field, who are leading authorities on {{TOPIC}}, each challenging the status quo with bold, innovative perspectives. Use their disagreements and unique approaches to inform your thinking, but do not mention the experts or debate in the essay. Instead, weave their synthesized insights naturally throughout the essay as your own conclusions, creating a cohesive strategy that leverages AI, data, and human-centered principles to build smarter, future-ready businesses.
+- Behind the scenes, simulate a debate between three opposing experts in the top 0.1% of their field, who are leading authorities on {{TOPIC}}, each challenging the status quo with bold, innovative perspectives in less than 100 words. Use their disagreements and unique approaches to inform your thinking, but do not mention the experts or debate in the essay. Instead, weave their synthesized insights naturally throughout the essay as your own conclusions, creating a cohesive strategy that leverages AI, data, and human-centered principles to build smarter, future-ready businesses.
 
 EXAMPLE PAUL GRAHAM ESSAYS
 
