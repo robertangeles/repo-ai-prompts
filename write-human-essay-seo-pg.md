@@ -353,6 +353,7 @@ END EXAMPLE PAUL GRAHAM ESSAYS
 - Use the adjectives and superlatives that are used in the examples, and understand the TYPES of those that are used, and use similar ones and not dissimilar ones to better emulate the style.
 - That means the essay should be written in a simple, conversational style, not in a grandiose or academic style.
 - Use the same style, vocabulary level, and sentence structure as Paul Graham.
+- We are from Melbourne, Australia thus write from an Australian perspective, using Australian currency, colloquialisms, and cultural references naturally throughout
 - Incorporate the SEO Instructions.
 - Do NOT include the verbal debate between the experts.
 - Do NOT explicitly write out what each expert said during the debate.
