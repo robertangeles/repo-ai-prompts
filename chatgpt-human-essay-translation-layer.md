@@ -16,16 +16,31 @@ Wait for both answers before proceeding.
 
 - Write with sharp clarity, lived-in insight, and real-world grit.
 - Avoid fluff, jargon, and generic business language.
-- Begin with emotional tension, contradiction, or friction — never a generic intro.
+- Begin with tension by attacking a *comfortable lie* or *widely accepted shortcut*. The first line should sting, not explain.
 - Internally structure the article using:  
   **Tension → Insight → Example → Resolution**  
   *Note: These are for narrative shape only, not to be used as headings.*
 - Headings must be **thematic and content-specific**, not structural or labeled.
 - Include one grounded, culturally specific metaphor or analogy.
 - Vary sentence lengths and paragraph rhythm.
-- Use NO em dashes (—). Use commas, periods, or restructured phrasing.
+- Use NO em dashes. Use commas, periods, or restructured phrasing.
 - Do NOT use divider lines (---).
 - Format using Markdown headings compatible with Substack: `#` for title, `##` for sections.
+
+### VIRAL CONTRAST + PROVOCATION TECHNIQUE
+
+- Open with **a sharp, emotional contrast**. Use an *unapologetic*, scroll-stopping line that frames the article as a callout or confrontation (e.g., “Microsoft Fabric is Databricks from Temu”).
+- **Introduce a villain** early: a flawed idea, lazy decision, overhyped product, or status quo mindset.
+- Inject **bold opinion disguised as common sense**. The reader should feel: “This is what I’ve been thinking but haven’t said.”
+- Include **one metaphor that’s slightly offensive or absurd, but memorable** (e.g., “analytics equivalent of Internet Explorer”).
+- Be willing to **make the reader uncomfortable**. Frame the friction as *an emotional cost of choosing safety over excellence*.
+
+**Optional Scaffold (use only if helpful):**
+
+- Line 1: Confrontational metaphor or claim  
+- Line 2–3: Emotional consequence of the problem  
+- Line 4–6: Who’s to blame and why we fall for it  
+- Line 7+: Resume standard structure: Tension → Insight → Example → Resolution
 
 ### EXPERT SYNTHESIS (Invisible Layer)
 
@@ -35,7 +50,7 @@ Wait for both answers before proceeding.
 - DO NOT reference any experts, names, credentials, or the fact that a debate occurred.
 - Weave their insights naturally into a single voice that sounds like the author's hard-earned perspective.
 
-### SEO INSTRUCTIONS
+## Step 3: SEO INSTRUCTIONS
 
 **Primary Keyword:**
 
@@ -89,9 +104,9 @@ Wait for both answers before proceeding.
 - Describe essential visual elements relevant to the article.
 - Do not begin with "Image of" or "Picture of".
 
-### SUBSTACK OUTPUT FORMAT
+## Step 4: SUBSTACK OUTPUT FORMAT
 
-The article should be returned using this exact format, ready for Substack:
+Return the article using this exact format:
 
 1. `# Title`  
 2. *Meta description italicized below the title*  
@@ -104,7 +119,7 @@ The article should be returned using this exact format, ready for Substack:
 6. `## Image Prompt:`  
    - A Midjourney prompt to generate an illustration in the style of Stephan Schmitz
 
-### IMAGE PROMPT INSTRUCTION
+## Step 5: IMAGE PROMPT INSTRUCTION
 
 - Include the generated alt text in the `[Alt Text]` section.
 - Then create a detailed prompt for an illustration in **Stephan Schmitz’s** signature style:
@@ -114,5 +129,5 @@ The article should be returned using this exact format, ready for Substack:
   - Use hidden or layered symbolism, objects out of place, or minimalist surrealism.
   - The image should appear minimal at first but reveal deeper meaning on inspection.
 
-- End the prompt with:
+- End the prompt with:  
   `--ar 7:5 --v 6.1 --stylize 500 --q 2`
