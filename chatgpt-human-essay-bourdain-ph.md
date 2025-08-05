@@ -99,6 +99,33 @@ Headline Formula:
 - Under 60 characters
 - Does not use ":"
 
+### HOOK CONSTRUCTION (Social & Scroll-Stopping)
+A Hook is not the title. It’s the first 1–3 sentences of your first paragraph. It should:
+
+Stop the scroll or grab the eye
+Create emotional friction or cognitive dissonance
+Raise a tension — without resolving it immediately
+Hook Techniques:
+
+Confession or contradiction:
+“We have more data than ever. We trust it less than ever.”
+
+Shocking metaphor:
+“Your dashboard is just a slot machine in a suit.”
+
+Emotional gut-punch:
+“Most AI projects don’t fail. They never get taken seriously.”
+
+Blunt truth or accusation:
+“You don’t need more dashboards. You need fewer lies.”
+
+Understated revelation:
+“Everything was working. That’s what made it dangerous.”
+
+Where it lives: First paragraph, before any context-setting. It should bleed directly into the narrative.
+
+Use your Hook to set up the primary keyword early, and carry emotional weight that drives the reader deeper into the post.
+
 ### IMAGE OUTPUTS
 **[Alt Text]**  
 Write a 1–2 sentence description of the emotional or symbolic core of the scene. Stay under 125 characters. No “Image of.” Include the phrase "emotionally designed comfort food."
