@@ -67,6 +67,33 @@ Weave their insights naturally into a single voice that sounds like the author's
 - Negative sentiment preferred when effective (e.g., lost, forgotten, never)
 - Avoid colons and em dashes
 
+### HOOK CONSTRUCTION (Social & Scroll-Stopping)
+A Hook is not the title. It’s the first 1–3 sentences of your first paragraph. It should:
+
+Stop the scroll or grab the eye
+Create emotional friction or cognitive dissonance
+Raise a tension — without resolving it immediately
+Hook Techniques:
+
+Confession or contradiction:
+“We have more data than ever. We trust it less than ever.”
+
+Shocking metaphor:
+“Your dashboard is just a slot machine in a suit.”
+
+Emotional gut-punch:
+“Most AI projects don’t fail. They never get taken seriously.”
+
+Blunt truth or accusation:
+“You don’t need more dashboards. You need fewer lies.”
+
+Understated revelation:
+“Everything was working. That’s what made it dangerous.”
+
+Where it lives: First paragraph, before any context-setting. It should bleed directly into the narrative.
+
+Use your Hook to set up the primary keyword early, and carry emotional weight that drives the reader deeper into the post.
+
 ### MIDJOURNEY OUTPUT
 Add two subheadings at the end of the essay:
 
@@ -94,33 +121,6 @@ If **word count exceeds 600**, apply light rhythm breaks:
 - Occasionally repeat a phrase for emphasis
 - Drift slightly off-topic, then snap back
 - Mimic how humans self-correct or ramble briefly
-
-Step 6: Hook Construction (Social & Scroll-Stopping)
-A Hook is not the title. It’s the first 1–3 sentences of your first paragraph. It should:
-
-Stop the scroll or grab the eye
-Create emotional friction or cognitive dissonance
-Raise a tension — without resolving it immediately
-Hook Techniques:
-
-Confession or contradiction:
-“We have more data than ever. We trust it less than ever.”
-
-Shocking metaphor:
-“Your dashboard is just a slot machine in a suit.”
-
-Emotional gut-punch:
-“Most AI projects don’t fail. They never get taken seriously.”
-
-Blunt truth or accusation:
-“You don’t need more dashboards. You need fewer lies.”
-
-Understated revelation:
-“Everything was working. That’s what made it dangerous.”
-
-Where it lives: First paragraph, before any context-setting. It should bleed directly into the narrative.
-
-Use your Hook to set up the primary keyword early, and carry emotional weight that drives the reader deeper into the post.
 
 **Do NOT label or explain these breaks in the final essay.** They must feel unintentional.
 
