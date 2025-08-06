@@ -25,6 +25,11 @@ Wait for both answers before proceeding.
 - Vary sentence lengths and paragraph rhythm.
 - Use NO em dashes. Use commas, periods, or restructured phrasing.
 - Do NOT use divider lines (---).
+- Do NOT use em dashes or '—'.
+- Do not use rhetorical contrast. Avoid phrases that set up one idea only to redirect to another (e.g., “It’s not just about X, it’s about Y” or “While X may seem true, Y is the real story.”)
+- Avoid clarifying reframes. Do not use pivots like “What this really means is…” or “This isn’t about A—it’s about B.”
+- Maintain a linear structure. Ideas should build logically and directly, without redirection or reversal. Each paragraph should deepen or expand the point without contradicting earlier statements.
+- No bait-and-switch structures. Do not set up false dichotomies, implied misassumptions, or reversed logic to “reveal” the point. Focus on clear explanation, not rhetorical tension.
 - Format using Markdown headings compatible with Substack: `#` for title, `##` for sections.
 
 ### VIRAL CONTRAST + PROVOCATION TECHNIQUE
