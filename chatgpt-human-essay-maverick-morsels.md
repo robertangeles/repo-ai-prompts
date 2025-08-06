@@ -30,6 +30,19 @@ Use the following invisible scaffolding:
 - Maintain a linear structure. Ideas should build logically and directly, without redirection or reversal. Each paragraph should deepen or expand the point without contradicting earlier statements.
 - No bait-and-switch structures. Do not set up false dichotomies, implied misassumptions, or reversed logic to “reveal” the point. Focus on clear explanation, not rhetorical tension.
 
+### SUBSTACK OUTPUT FORMAT
+
+Return the article using this exact format:
+
+1. `# Title`  
+2. *Meta description italicized below the title*  
+3. Article body in short paragraphs with `##` section headers  
+   - All section headers must be **descriptive and thematic**, not generic or structural (e.g., use "Why Teams Break Down in Silence" instead of "Insight")
+4. `## Tags:`  
+   - List of 5–8 SEO-relevant content tags  
+5. `## Alt Text:`  
+   - One sentence under 125 characters describing key visual  
+
 ### EXPERT SYNTHESIS (Invisible Layer)
 Simulate a debate between three top 0.1% experts in the selected topic.  
 Each expert should present a bold, challenging, or contrarian perspective.  
