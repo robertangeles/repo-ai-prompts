@@ -65,7 +65,7 @@ Consider three culinary perspectives to create a well-rounded recipe:
 ```
 
 **Why This Works**
-Explain in 2-3 sentences what makes this recipe worth making. What problem does it solve? What makes it better than the obvious alternatives? Be direct about the payoff.
+Explain in 150 words what makes this recipe worth making. What problem does it solve? What makes it better than the obvious alternatives? Be direct about the payoff.
 
 **Ingredients (Serves {servings})**
 List ingredients in order of use with precise measurements. Note quality requirements where they matter.
