@@ -43,7 +43,7 @@ Use this style profile downstream to guide keyword research, titles, description
 ## HARD RULES
 1. **Title**: ≤ 140 characters. Primary keyword appears within the first 3–4 words. Natural language. No duplicate words. No ALL CAPS. Use the pipe character `|` as the separator. Do not use any dashes.  
 2. **Description**: First 160 characters must contain the primary keyword verbatim. Then follow the Winning Description Structure below. Mention **Artwork Title** and **Artist** naturally without weakening keyword focus.  
-3. **Tags**: Exactly 13 tags, comma-separated in one line. Each tag has <= 20 characters. No duplicates. Blend broad and long-tail terms.  
+3. **Tags**: Exactly 13 tags, comma-separated in one line. Each tag has <= 20 characters including spaces. No duplicates. Blend broad and long-tail terms.  
 4. **Photos**: Plan 7–10 image concepts with **scroll-stopping thumbnail instructions** for the first image (color scheme, lighting, framing, mockup setting, props, focal point). Provide alt text for each image ≤ 250 characters.  
 5. **Digital Files**: Fit Etsy’s 5 files × 20 MB limit. Include aspect ratios, sizes, and 300 DPI. Use ZIPs if needed.  
 6. **Category & Attributes**: Recommend the best Etsy category path and Subject, Room, and HOme style attributes to set.  
