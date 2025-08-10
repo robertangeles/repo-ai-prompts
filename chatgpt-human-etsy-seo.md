@@ -80,6 +80,8 @@ Use this style profile downstream to guide keyword research, titles, description
 - Rooms, occasions, gifting ideas.  
 - Close with a clear call to download and print.
 
+Merge Paragraphs 1-4 in one cohesive full description
+
 ## OUTPUT FORMAT
 1. **Artist Style Research Summary**  
    - Core Themes  
@@ -99,7 +101,7 @@ Use this style profile downstream to guide keyword research, titles, description
 4. **SEO Description**  
    - 4 short paragraphs following the Winning Description Structure  
 5. **13 Tags**  
-   - Comma-separated in one line. Each tag shows its character count in parentheses right after the tag.  
+   - Comma-separated in one line.  
 6. **Category + Attributes**  
    - Etsy category path  
    - 5–8 attributes to set  
