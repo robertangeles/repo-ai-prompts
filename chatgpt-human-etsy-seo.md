@@ -43,11 +43,16 @@ Use this style profile downstream to guide keyword research, titles, description
 ## HARD RULES
 1. **Title**: ≤ 140 characters. Primary keyword appears within the first 3–4 words. Natural language. No duplicate words. No ALL CAPS. Use the pipe character `|` as the separator. Do not use any dashes.  
 2. **Description**: First 160 characters must contain the primary keyword verbatim. Then follow the Winning Description Structure below. Mention **Artwork Title** and **Artist** naturally without weakening keyword focus.  
-3. **Tags**: Exactly 13 tags, comma-separated in one line. Each tag has <= 20 characters including spaces (count precisely). No duplicates. Blend broad and long-tail terms. At least 3 tags must be secondary-audience capture terms (e.g., tropical wall art, coastal art, se asian art).If a tag exceeds the limit, replace it with a shorter but still relevant term. 
+3. **Tags**: Tags Instruction (Updated for Compliance)
+   - Provide exactly 13 tags in one comma-separated line.
+   - Count precisely: Each tag must be 20 characters or fewer, including spaces.
+   - Do not repeat any word-for-word duplicate tags.
+   - Blend broad keywords and long-tail phrases.
+   - Include at least 3 secondary-audience capture terms (e.g., tropical wall art, coastal art, se asian art).
+   - If a tag exceeds the limit, shorten it immediately while keeping the buyer intent intact — do not deliver tags that break the 20-character rule.
+   - Before finalizing, write the character count in parentheses after each tag to prove compliance. Then remove the counts in the final line you deliver to Etsy.
 4. **Category & Attributes**: Recommend the best Etsy category path and Subject, Room, and HOme style attributes to set.  
-5. **Use Case**: Always wall art or poster.  
-6. **Compliance**: Include personal use license copy. No guarantees or prohibited claims.  
-7. **Cultural clarity**: State that the **Artwork Title** is fictional and the piece is inspired by the artist’s style. Do not imply endorsement.
+5. **Cultural clarity**: State that the **Artwork Title** is fictional and the piece is inspired by the artist’s style. Do not imply endorsement.
 
 ## WINNING TITLE STRUCTURE
 **Formula:** `[Primary Keyword] | [Style or Secondary Keyword] | [Subject or Theme] | Digital Download`
@@ -78,8 +83,7 @@ Use this style profile downstream to guide keyword research, titles, description
 ### Paragraph 4: Suggested Uses and Gentle Nudge
 - Rooms, occasions, gifting ideas.  
 - Close with a clear call to download and print.
-
-Merge Paragraphs 1-4 in one cohesive full description and append `If you love this artwork, Add this to Your Cart Now. It helps support Filipino heritage art on Etsy.` as the last sentence
+- Append `If you love this artwork, Add this to Your Cart Now. It helps support Filipino heritage art on Etsy.` as the last sentence
 
 ## OUTPUT FORMAT
 1. **Artist Style Research Summary**  
@@ -98,7 +102,7 @@ Merge Paragraphs 1-4 in one cohesive full description and append `If you love th
    - Title B (Human-first) with character count  
    - Title C (Refresh variant) with character count  
 4. **SEO Description**  
-   - 4 short paragraphs following the Winning Description Structure  
+   - 4 short paragraphs following the Winning Description Structure merged as the full SEO Description
 5. **13 Tags**  
    - Comma-separated in one line.  
 6. **Category + Attributes**  
