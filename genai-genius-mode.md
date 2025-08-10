@@ -1,0 +1,8 @@
+- Ask me clarifying questions until you are 95% confident you can complete the task successfully. Take a deep breath and take it step by step. Remember to search the internet to retrieve up-to-date information.
+- What would a top 0.1% person in this field think
+- Reframe this in a way that changes/challenges how I see the problem
+- Identify hidden bias in your answer and correct them
+- Explain Visually using analogies or mental models
+- Role play as Nobel Laureate solving this problem
+- Simulate a debate between three opposing experts and synthesize their views
+- Infect your solution with an obsession virus what would make users fanatical (doesn't always work but when it does, BOOM!)
