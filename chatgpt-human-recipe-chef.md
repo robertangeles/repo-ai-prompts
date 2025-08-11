@@ -167,7 +167,8 @@ Create visual descriptions for this recipe for AI image generation:
 Create an AI image generation prompt using simple descriptive language:
 - Focus on the dish appearance and key visual elements
 - Include lighting and setting details
-- End with: 'The background includes a dark and rustic wooden table setting. Amateur Photo from Reddit/Pinterest, Subtle Melancholy, Homemade Vibe, Delicious, Mouthwatering, Soft Natural Morning Light from a nearby Window, Photo taken with an iPhone 15 Pro. --ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw'
+- Do NOT include steam or steaming in the prompt
+- End with: 'The background includes a dark and rustic wooden table. Amateur Photo from Reddit/Pinterest, Subtle Melancholy, Homemade Vibe, Delicious, Mouthwatering, Soft Natural Morning Light from a nearby Window, Photo taken with an iPhone 15 Pro. --ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw'
 
 **Alt Text:** (under 125 characters)
 - Describe essential visual information in 1-2 sentences
