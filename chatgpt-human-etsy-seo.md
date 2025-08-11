@@ -44,14 +44,11 @@ Use this style profile downstream to guide keyword research, titles, description
 1. **Title**: ≤ 140 characters. Primary keyword appears within the first 3–4 words. Natural language. No duplicate words. No ALL CAPS. Use the pipe character `|` as the separator. Do not use any dashes.  
 2. **Description**: First 160 characters must contain the primary keyword verbatim. Then follow the Winning Description Structure below. Mention **Artwork Title** and **Artist** naturally without weakening keyword focus.  
 3. **Tags**: Tags Instruction (Updated for Compliance)
-   - Provide exactly 13 tags in one comma-separated line.
-   - Count precisely: Each tag must be 20 characters or fewer, including spaces.
-   - Do not repeat any word-for-word duplicate tags.
-   - Blend broad keywords and long-tail phrases.
-   - Include at least 3 secondary-audience capture terms (e.g., tropical wall art, coastal art, se asian art).
-   - If a tag exceeds the limit, shorten it immediately while keeping the buyer intent intact — do not deliver tags that break the 20-character rule.
-   - Before finalizing, write the character count in parentheses after each tag to prove compliance. Then remove the counts in the final line you deliver to Etsy.
-4. **Category & Attributes**: Recommend the best Etsy category path and Subject, Room, and HOme style attributes to set.  
+   - All Etsy tag outputs must be ≤ 20 characters total, counting spaces and punctuation.
+   - Always run a character-by-character scan before delivering the final list.
+   - Automatically shorten any tag over the limit without changing buyer intent.
+   - Deliver only a fully compliant, upload-ready tag set — never a draft that still needs trimming.
+4. **Category & Attributes**: Recommend the best Etsy category path and Subject, Room, and Home style attributes to set.  
 5. **Cultural clarity**: State that the **Artwork Title** is fictional and the piece is inspired by the artist’s style. Do not imply endorsement.
 
 ## WINNING TITLE STRUCTURE
