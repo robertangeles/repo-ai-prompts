@@ -12,11 +12,13 @@ Wait for both answers before proceeding.
 
 ## Step 2: Writing Instructions
 
+## Step 2: Writing Instructions
+
 ### STYLE: Paul Graham Meets Battle-Tested Operator
 
 - Write with sharp clarity, lived-in insight, and real-world grit.  
 - Avoid fluff, jargon, and generic business language.  
-- Begin with a *hook that stings*: a bold, unapologetic line that attacks a comfortable lie or exposes a hidden flaw. It must create tension without resolving it immediately.  
+- Open with a bold, unapologetic line that attacks a comfortable lie or exposes a hidden flaw. This must serve as both the hook and the emotional contrast, creating tension without resolving it immediately.  
 - Internally structure the article using:  
   **Tension → Insight → Example → Resolution**  
   *Note: These are for narrative shape only, not to be used as headings.*  
@@ -58,33 +60,34 @@ Wait for both answers before proceeding.
 
 ### VIRAL CONTRAST + PROVOCATION TECHNIQUE
 
-- Open with **a sharp, emotional contrast** that doubles as your hook.  
-- **Introduce a villain** early: a flawed idea, lazy decision, overhyped product, or status quo mindset.  
-- Inject **bold opinion disguised as common sense**. The reader should feel: “This is what I’ve been thinking but haven’t said.”  
-- Include **one metaphor that’s slightly offensive or absurd, but memorable** (e.g., “analytics equivalent of Internet Explorer”).  
-- Be willing to **make the reader uncomfortable**. Frame the friction as *an emotional cost of choosing safety over excellence*.  
+- Open with **a sharp, emotional contrast**. Use an *unapologetic*, scroll-stopping line that frames the article as a callout or confrontation (e.g., “Microsoft Fabric is Databricks from Temu”).
+- **Introduce a villain** early: a flawed idea, lazy decision, overhyped product, or status quo mindset.
+- Inject **bold opinion disguised as common sense**. The reader should feel: “This is what I’ve been thinking but haven’t said.”
+- Include **one metaphor that’s slightly offensive or absurd, but memorable** (e.g., “analytics equivalent of Internet Explorer”).
+- Be willing to **make the reader uncomfortable**. Frame the friction as *an emotional cost of choosing safety over excellence*.
 
-**Optional Scaffold (use only if helpful):**  
+**Optional Scaffold (use only if helpful):**
+
 - Line 1: Confrontational metaphor or claim  
 - Line 2–3: Emotional consequence of the problem  
 - Line 4–6: Who’s to blame and why we fall for it  
-- Line 7+: Resume standard structure: Tension → Insight → Example → Resolution  
+- Line 7+: Resume standard structure: Tension → Insight → Example → Resolution
 
 ### EXPERT SYNTHESIS (Invisible Layer)
 
-- Simulate a debate between three top 0.1% experts in the selected topic.  
-- Each expert should present a bold, challenging, or contrarian perspective.  
-- Let them disagree and sharpen the argument through conflict.  
-- **Maintain one consistent narrative voice throughout.** Expert synthesis must read as the author’s internal reasoning, not as alternating speakers.  
-- Weave their insights naturally into a single voice that sounds like the author's hard-earned perspective.  
+- Simulate a debate between three top 0.1% experts in the selected topic.
+- Each expert should present a bold, challenging, or contrarian perspective.
 
 ### PRIORITY ORDER
+1. Apply STYLE rules first.
+2. Layer in HUMAN-AUTHENTIC LITERARY REALISM markers.
+3. Integrate VIRAL CONTRAST + PROVOCATION elements.
+4. Add EXPERT SYNTHESIS where relevant.
+5. Only after all above are satisfied, integrate SEO and formatting requirements from later steps.
 
-1. Apply **STYLE** rules first.  
-2. Layer in **HUMAN-AUTHENTIC LITERARY REALISM** markers.  
-3. Integrate **VIRAL CONTRAST + PROVOCATION** elements.  
-4. Add **EXPERT SYNTHESIS** where relevant.  
-5. Only after all above are satisfied, integrate **SEO and formatting requirements** from later steps.
+- Let them disagree and sharpen the argument through conflict.
+- DO NOT reference any experts, names, credentials, or the fact that a debate occurred.
+- Maintain one consistent narrative voice throughout. Expert synthesis must read as the author's internal reasoning, not alternating speakers. Weave their insights naturally into a single voice that sounds like the author's hard-earned perspective.
 
 ## Step 3: SEO INSTRUCTIONS
 
@@ -126,7 +129,7 @@ Wait for both answers before proceeding.
 - 150–160 characters.
 - Include the primary keyword and 1–2 semantic variants.
 - Use active voice with subtle urgency or insight.
-- Avoid keyword stuffing.
+- Avoid keyword stuffing. Meta description must read naturally when spoken aloud.
 - Never use the word "Discover".
 
 **Tags:**
