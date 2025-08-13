@@ -47,66 +47,73 @@ Use this first in every pass.
 ---
 
 # Pass 0 — Terrain Map  *(run this first)*
-**Selection:** the entire file.  
-**Goal:** produce a complete map so you never read COBOL manually.
-
-**TASKS**
-1. Section Map — start/end line numbers for all divisions.  
-2. Paragraph Index — all paragraphs + PERFORM targets.  
-3. SQL Index — all EXEC SQL with type and target.  
-4. File Index — all FD records + 01 record lines.  
-5. Copybooks & Includes — all COPY statements with line numbers.  
-6. Driver Hints — likely driver paragraphs or main loops.
-
-**OUTPUT FORMAT**
-
-### SECTION MAP
-```
-||Section||Start Line||End Line||EV||
-|IDENTIFICATION DIVISION|||EV||
-|ENVIRONMENT DIVISION|||EV||
-|DATA DIVISION|||EV||
-|PROCEDURE DIVISION|||EV||
-```
-
-### PARAGRAPH INDEX
-```
-||Paragraph||Start Line||PERFORM Targets||EV||
-|1000-INIT|||EV||
-|2000-MAIN|||EV||
-```
-*(Add a row per paragraph. Use PERFORM THRU ranges when present.)*
-
-### SQL INDEX
-```
-||Line Range||Type||Target||EV||
-|1220–1248|SELECT|CLAIMS_RAW|EV||
-|4120–4170|INSERT|CLAIMS_STATUS|EV||
-```
-*(One row per EXEC SQL block. If target table unknown, leave blank and mark [Unverified].)*
-
-### FILE INDEX
-```
-||FD Name||Start Line||Record 01 Name||01 Lines||EV||
-|IN-CLAIMS||| |EV||
-|OUT-REJECT||| |EV||
-```
-*(Show FD line and the 01-level record range if present.)*
-
-### COPYBOOKS & INCLUDES
-```
-||Copy Name||Line||EV||
-|CLMREC.CPY||EV||
-|ERRHAND.CPY||EV||
-```
-
-### DRIVER HINTS
-- Main driver paragraph(s): `<name>` at line `<n>`.
-- Primary loop(s): list paragraph names and relationships (READ → PROCESS).
-
-End with: `NEXT PROMPT KEY: {{KEY}}`
+**Selection:** The entire file.  
+**Goal:** Produce a complete map so you never read COBOL manually.
 
 ---
+
+**TASKS (Do each one as a separate table in this order):**
+
+1. **SECTION MAP TABLE**  
+   - Columns: Section | Start Line | End Line | EV  
+   - One row per division (IDENTIFICATION, ENVIRONMENT, DATA, PROCEDURE).  
+
+2. **PARAGRAPH INDEX TABLE**  
+   - Columns: Paragraph | Start Line | PERFORM Targets | EV  
+   - One row per paragraph label. Include PERFORM THRU ranges if present.  
+
+3. **SQL INDEX TABLE**  
+   - Columns: Line Range | Type | Target | EV  
+   - One row per EXEC SQL block. Type is SELECT, INSERT, UPDATE, DELETE, MERGE.  
+
+4. **FILE INDEX TABLE**  
+   - Columns: FD Name | Start Line | Record 01 Name | 01 Lines | EV  
+   - One row per FD. Show 01-level range if present.  
+
+5. **COPYBOOKS & INCLUDES TABLE**  
+   - Columns: Copy Name | Line | EV  
+   - One row per COPY statement or INCLUDE.  
+
+---
+
+**FORMATTING RULES FOR ALL TABLES:**  
+- Use `||` for header cells and `|` for rows.  
+- Do not merge two tables together.  
+- Leave one blank line between tables.  
+- No narrative text before, between, or after the tables except the table titles shown above.  
+
+---
+
+**EXAMPLE OUTPUT START:**
+```
+### SECTION MAP
+||Section||Start Line||End Line||EV||
+|IDENTIFICATION DIVISION|1|12|EV1|
+|ENVIRONMENT DIVISION|13|65|EV2|
+|DATA DIVISION|66|580|EV3|
+|PROCEDURE DIVISION|581|8120|EV4|
+
+### PARAGRAPH INDEX
+||Paragraph||Start Line||PERFORM Targets||EV||
+|1000-INIT|600|N/A|EV10|
+|2000-MAIN|620|3000-READ THRU 3999-EXIT|EV11|
+
+### SQL INDEX
+||Line Range||Type||Target||EV||
+|1220–1248|SELECT|CLAIMS_RAW|EV17|
+|4120–4170|INSERT|CLAIMS_STATUS|EV44|
+
+### FILE INDEX
+||FD Name||Start Line||Record 01 Name||01 Lines||EV||
+|IN-CLAIMS|75|IN-CLAIMS-REC|80–140|EV5|
+|OUT-REJECT|220|REJECT-REC|221–260|EV9|
+
+### COPYBOOKS & INCLUDES
+||Copy Name||Line||EV||
+|CLMREC.CPY|78|EV6|
+|ERRHAND.CPY|300|EV8|
+```
+**EXAMPLE OUTPUT END**
 
 # Pass 1 — Inputs  (Section 2)
 **Selection:** use the Terrain Map line numbers. Select FILE SECTION, the 01 records, related COPY blocks, and all `EXEC SQL SELECT` ranges.
