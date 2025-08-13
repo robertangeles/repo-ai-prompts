@@ -47,6 +47,12 @@ Use this first in every pass.
 ---
 
 # Pass 0 — Terrain Map  *(run this first)*
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** The entire file.  
 **Goal:** Produce a complete map so you never read COBOL manually.
 
@@ -116,6 +122,12 @@ Use this first in every pass.
 **EXAMPLE OUTPUT END**
 
 # Pass 1 — Inputs  (Section 2)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** use the Terrain Map line numbers. Select FILE SECTION, the 01 records, related COPY blocks, and all `EXEC SQL SELECT` ranges.
 
 **TASK**
@@ -137,6 +149,12 @@ SQL Inputs
 ---
 
 # Pass 2 — Processing  (Section 3)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** the main loop and processing paragraphs found in Terrain Map.
 
 **TASK**
@@ -152,6 +170,12 @@ Uses EV3, EV7. Transform: amount = raw / 100. On error: write reject EV12.
 ---
 
 # Pass 3 — Outputs  (Section 4)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** all `EXEC SQL` write operations and WRITE statements. Include commit or checkpoint logic.
 
 **TASK**
@@ -170,6 +194,12 @@ Field Mapping
 ---
 
 # Pass 4 — Prototype SQL  (Section 5)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** only logic evidenced in prior passes.
 
 **TASK**
@@ -185,6 +215,12 @@ Field Mapping
 ---
 
 # Pass 5 — Field Mapping Summary  (Section 6)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** code that computes or moves fields that end up in outputs.
 
 **TASK**
@@ -198,6 +234,12 @@ Field Mapping
 ---
 
 # Pass 6 — Gaps + Bias Check  (Section 7 and 7.1)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** external module calls, unresolved copybooks, ALTER, ON EXCEPTION, SQLCODE handling, FILE STATUS checks.
 
 **TASK**
@@ -217,6 +259,12 @@ Q1..Qn with short answers. Cite EV where possible.
 ---
 
 # Pass 7 — Data Lineage Summary  (Section 8)
+**TABLE OUTPUT RULES FOR CONFLUENCE:**
+- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
+- Do NOT use Markdown tables or HTML <br/> tags.
+- If multiple items are in one cell, separate with commas or semicolons, all on one line.
+- No code block fences around the table.
+
 **Selection:** none. Use outputs from prior passes only.
 
 **TASK**
