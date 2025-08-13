@@ -1,4 +1,4 @@
-# COBOL Decode Protocol — Terrain-First Multi‑Pass (Copilot, Selection‑Scoped)
+# COBOL Decode Protocol — Terrain-First Multi-Pass (Copilot, Selection-Scoped)
 
 ## Operator Quickstart
 1. Open the COBOL file in VS Code.
@@ -51,55 +51,59 @@ Use this first in every pass.
 **Goal:** produce a complete map so you never read COBOL manually.
 
 **TASKS**
-1. **Section Map**
-   - Show start and end line numbers for: IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, DATA DIVISION, PROCEDURE DIVISION.
-2. **Paragraph Index**
-   - List every paragraph label with its start line.
-   - List any `PERFORM` or `PERFORM THRU` targets.
-3. **SQL Index**
-   - List all `EXEC SQL` blocks with line ranges.
-   - Show type: SELECT, INSERT, UPDATE, DELETE, MERGE.
-   - Extract target table names if visible.
-4. **File Index (FD)**
-   - List each `FD` record with start line.
-   - If record 01 layout appears, show its 01 name and line range.
-5. **Copybooks and Includes**
-   - List each `COPY` and the line where it appears.
-6. **Driver Hints**
-   - Identify likely driver paragraphs or main loops by frequency of being called or the presence of READ loops.
+1. Section Map — start/end line numbers for all divisions.  
+2. Paragraph Index — all paragraphs + PERFORM targets.  
+3. SQL Index — all EXEC SQL with type and target.  
+4. File Index — all FD records + 01 record lines.  
+5. Copybooks & Includes — all COPY statements with line numbers.  
+6. Driver Hints — likely driver paragraphs or main loops.
 
 **OUTPUT FORMAT**
-```
+
 ### SECTION MAP
-||Section||Start Line||End Line||
-|IDENTIFICATION DIVISION|1|12|
-|ENVIRONMENT DIVISION|13|65|
-|DATA DIVISION|66|580|
-|PROCEDURE DIVISION|581|8120|
+```
+||Section||Start Line||End Line||EV||
+|IDENTIFICATION DIVISION|||EV||
+|ENVIRONMENT DIVISION|||EV||
+|DATA DIVISION|||EV||
+|PROCEDURE DIVISION|||EV||
+```
 
 ### PARAGRAPH INDEX
-||Paragraph||Start Line||PERFORM Targets||
-|1000-INIT|600|N/A|
-|2000-MAIN|620|3000-READ THRU 3999-EXIT|
+```
+||Paragraph||Start Line||PERFORM Targets||EV||
+|1000-INIT|||EV||
+|2000-MAIN|||EV||
+```
+*(Add a row per paragraph. Use PERFORM THRU ranges when present.)*
 
 ### SQL INDEX
+```
 ||Line Range||Type||Target||EV||
-|1220–1248|SELECT|CLAIMS_RAW|EV17|
-|4120–4170|INSERT|CLAIMS_STATUS|EV44|
+|1220–1248|SELECT|CLAIMS_RAW|EV||
+|4120–4170|INSERT|CLAIMS_STATUS|EV||
+```
+*(One row per EXEC SQL block. If target table unknown, leave blank and mark [Unverified].)*
 
 ### FILE INDEX
+```
 ||FD Name||Start Line||Record 01 Name||01 Lines||EV||
-|IN-CLAIMS|75|IN-CLAIMS-REC|80–140|EV5|
-|OUT-REJECT|220|REJECT-REC|221–260|EV9|
+|IN-CLAIMS||| |EV||
+|OUT-REJECT||| |EV||
+```
+*(Show FD line and the 01-level record range if present.)*
 
-### COPYBOOKS
+### COPYBOOKS & INCLUDES
+```
 ||Copy Name||Line||EV||
-|CLMREC.CPY|78|EV6|
+|CLMREC.CPY||EV||
+|ERRHAND.CPY||EV||
+```
 
 ### DRIVER HINTS
-- Main driver: 2000-MAIN at line 620.
-- Primary loop: 3000-READ reads IN-CLAIMS and calls 4000-PROCESS.
-```
+- Main driver paragraph(s): `<name>` at line `<n>`.
+- Primary loop(s): list paragraph names and relationships (READ → PROCESS).
+
 End with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
