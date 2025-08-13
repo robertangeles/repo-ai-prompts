@@ -1,4 +1,4 @@
-# COBOL Decode Protocol — Terrain-First Multi-Pass (Copilot, Selection-Scoped)
+# COBOL Decode Protocol — Terrain-First Multi-Pass (Copilot, Selection-Scoped, **Markdown Table Output**)
 
 ## Operator Quickstart
 1. Open the COBOL file in VS Code.
@@ -6,7 +6,7 @@
 3. For later passes, select the exact line ranges reported by the Terrain Map.
 4. Paste **SESSION** and **RULES** at the start of every Copilot request.
 5. Run one pass at a time. Do not mix passes.
-6. Keep outputs under version control. Save to `/docs/{{PROGRAM-ID}}/{{PASS_NAME}}.md`.
+6. Save outputs to `/docs/{{PROGRAM-ID}}/{{PASS_NAME}}.md`.
 
 ---
 
@@ -37,243 +37,186 @@ Keep these rules in every pass.
 ---
 
 ## Evidence Ledger Template
-```
-||ID||Type||Line range||Exact snippet||Why||
-|EV1||||||
-|EV2||||||
-```
-Use this first in every pass.
+**Output requirement:** Use **Markdown tables** (pipes and dashes). No HTML. No Confluence wiki syntax. No code fences.
+
+| ID  | Type | Line range | Exact snippet | Why |
+|-----|------|------------|---------------|-----|
+| EV1 |      |            |               |     |
+| EV2 |      |            |               |     |
 
 ---
 
 # Pass 0 — Terrain Map  *(run this first)*
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
+**Selection:** the entire file.  
+**Goal:** produce a complete map so you never read COBOL manually.
 
-**Selection:** The entire file.  
-**Goal:** Produce a complete map so you never read COBOL manually.
+**TASKS (each as a separate table in this order)**
+1. Section Map — start and end lines for all divisions.  
+2. Paragraph Index — all paragraphs with PERFORM targets.  
+3. SQL Index — all EXEC SQL with type and target.  
+4. File Index — all FD records and 01 record ranges.  
+5. Copybooks and Includes.  
+6. Driver Hints — brief bullets after the tables.
 
----
+**TABLE OUTPUT RULES**  
+- Use **Markdown tables** only. No HTML `<br/>`. No Confluence wiki syntax. No code fences.  
+- One blank line between tables.  
+- Keep each table under 40 rows per page. If longer, continue in a second table with a note: “continued”.
 
-**TASKS (Do each one as a separate table in this order):**
-
-1. **SECTION MAP TABLE**  
-   - Columns: Section | Start Line | End Line | EV  
-   - One row per division (IDENTIFICATION, ENVIRONMENT, DATA, PROCEDURE).  
-
-2. **PARAGRAPH INDEX TABLE**  
-   - Columns: Paragraph | Start Line | PERFORM Targets | EV  
-   - One row per paragraph label. Include PERFORM THRU ranges if present.  
-
-3. **SQL INDEX TABLE**  
-   - Columns: Line Range | Type | Target | EV  
-   - One row per EXEC SQL block. Type is SELECT, INSERT, UPDATE, DELETE, MERGE.  
-
-4. **FILE INDEX TABLE**  
-   - Columns: FD Name | Start Line | Record 01 Name | 01 Lines | EV  
-   - One row per FD. Show 01-level range if present.  
-
-5. **COPYBOOKS & INCLUDES TABLE**  
-   - Columns: Copy Name | Line | EV  
-   - One row per COPY statement or INCLUDE.  
-
----
-
-**FORMATTING RULES FOR ALL TABLES:**  
-- Use `||` for header cells and `|` for rows.  
-- Do not merge two tables together.  
-- Leave one blank line between tables.  
-- No narrative text before, between, or after the tables except the table titles shown above.  
-
----
-
-**EXAMPLE OUTPUT START:**
-```
 ### SECTION MAP
-||Section||Start Line||End Line||EV||
-|IDENTIFICATION DIVISION|1|12|EV1|
-|ENVIRONMENT DIVISION|13|65|EV2|
-|DATA DIVISION|66|580|EV3|
-|PROCEDURE DIVISION|581|8120|EV4|
+**Columns:** Section | Start Line | End Line | EV
+
+| Section               | Start Line | End Line | EV  |
+|-----------------------|------------|----------|-----|
+| IDENTIFICATION DIVISION |            |          | EV  |
+| ENVIRONMENT DIVISION    |            |          | EV  |
+| DATA DIVISION           |            |          | EV  |
+| PROCEDURE DIVISION      |            |          | EV  |
 
 ### PARAGRAPH INDEX
-||Paragraph||Start Line||PERFORM Targets||EV||
-|1000-INIT|600|N/A|EV10|
-|2000-MAIN|620|3000-READ THRU 3999-EXIT|EV11|
+**Columns:** Paragraph | Start Line | PERFORM Targets | EV
+
+| Paragraph   | Start Line | PERFORM Targets                 | EV  |
+|-------------|------------|----------------------------------|-----|
+| 1000-INIT   |            |                                  | EV  |
+| 2000-MAIN   |            | 3000-READ THRU 3999-EXIT         | EV  |
 
 ### SQL INDEX
-||Line Range||Type||Target||EV||
-|1220–1248|SELECT|CLAIMS_RAW|EV17|
-|4120–4170|INSERT|CLAIMS_STATUS|EV44|
+**Columns:** Line Range | Type | Target | EV
+
+| Line Range | Type    | Target          | EV  |
+|------------|---------|-----------------|-----|
+|            | SELECT  |                 | EV  |
+|            | INSERT  |                 | EV  |
 
 ### FILE INDEX
-||FD Name||Start Line||Record 01 Name||01 Lines||EV||
-|IN-CLAIMS|75|IN-CLAIMS-REC|80–140|EV5|
-|OUT-REJECT|220|REJECT-REC|221–260|EV9|
+**Columns:** FD Name | Start Line | Record 01 Name | 01 Lines | EV
 
-### COPYBOOKS & INCLUDES
-||Copy Name||Line||EV||
-|CLMREC.CPY|78|EV6|
-|ERRHAND.CPY|300|EV8|
-```
-**EXAMPLE OUTPUT END**
+| FD Name    | Start Line | Record 01 Name | 01 Lines | EV  |
+|------------|------------|----------------|----------|-----|
+| IN-CLAIMS  |            | IN-CLAIMS-REC  |          | EV  |
+| OUT-REJECT |            | REJECT-REC     |          | EV  |
+
+### COPYBOOKS AND INCLUDES
+**Columns:** Copy Name | Line | EV
+
+| Copy Name   | Line | EV  |
+|-------------|------|-----|
+| CLMREC.CPY  |      | EV  |
+| ERRHAND.CPY |      | EV  |
+
+### DRIVER HINTS
+- Main driver paragraph(s): `<name>` at line `<n>`.
+- Primary loop(s): list paragraph names and relationships, for example: `3000-READ` reads `IN-CLAIMS` and calls `4000-PROCESS`.
+
+End Pass 0 with: `NEXT PROMPT KEY: {{KEY}}`
+
+---
 
 # Pass 1 — Inputs  (Section 2)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
+**Selection:** use Terrain Map line numbers for FILE SECTION, 01 records, related COPY blocks, and all `EXEC SQL SELECT` ranges.
 
-**Selection:** use the Terrain Map line numbers. Select FILE SECTION, the 01 records, related COPY blocks, and all `EXEC SQL SELECT` ranges.
+**Output requirement:** Use **Markdown tables** only. No HTML. No Confluence wiki syntax. No code fences.
 
-**TASK**
-- List all flat files and SQL cursors.
-- For each: COBOL names, inferred meaning, likely data type, record layout guess. Mark unknowns `[Unverified]`.
+### Sources
+| Source ID | Type | Name | Where (EV) | Purpose |
+|-----------|------|------|------------|---------|
 
-**Tables**
-```
-Sources
-||Source ID||Type||Name||Where (EV)||Purpose||
+### File Layouts
+| Source ID | Level/Name | PIC/USAGE | Occurs | Inferred SQL type | EV |
+|-----------|------------|-----------|--------|--------------------|----|
 
-File Layouts
-||Source ID||Level/Name||PIC/USAGE||Occurs||Inferred SQL type||EV||
-
-SQL Inputs
-||Cursor/Stmt||Line range||SQL target||Key columns||EV||
-```
+### SQL Inputs
+| Cursor/Stmt | Line range | SQL target | Key columns | EV |
+|-------------|------------|------------|-------------|----|
 
 ---
 
 # Pass 2 — Processing  (Section 3)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
-
 **Selection:** the main loop and processing paragraphs found in Terrain Map.
 
-**TASK**
-- Stepwise logic. One step per bullet. Tie each step to Evidence IDs.
-- For each step: paragraph, scope (always | conditional | loop), controlling flag, per-record or batch, transforms, flags or codes, constants, dependencies, error handling.
+**Task format:** use a concise bullet list. Tie each step to Evidence IDs. Short sentences.  
+**If a table helps, use Markdown tables for repeated patterns.**
 
-**Format**
-```
-Step N: Paragraph=XXXX. Scope=conditional (flag=ELIGIBLE). Per-record.
-Uses EV3, EV7. Transform: amount = raw / 100. On error: write reject EV12.
-```
+**Step pattern example**
+- Step N. Paragraph = `XXXX`. Scope = conditional (flag = `ELIGIBLE`). Per-record. Uses EV3, EV7. Transform: `AMOUNT = RAW / 100`. On error: write reject EV12.
+
+**Optional step table**
+| Step | Paragraph | Scope      | Flag      | Mode      | Transforms                 | Errors         | EVs      |
+|------|-----------|------------|-----------|-----------|----------------------------|----------------|----------|
+| 1    | 4000-PROC | conditional | ELIGIBLE  | per-record| AMOUNT = RAW / 100         | write reject   | EV3, EV7 |
+
+End Pass 2 with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
 
 # Pass 3 — Outputs  (Section 4)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
-
 **Selection:** all `EXEC SQL` write operations and WRITE statements. Include commit or checkpoint logic.
 
-**TASK**
-- For each output: show SQL or WRITE target, effect, per-record vs batch, commit behavior.
-- Provide a field mapping table.
+**Output requirement:** Markdown tables only.
 
-**Tables**
-```
-Outputs
-||Op||Target||EV||Per-record or batch||Commit behavior||
+### Outputs
+| Op     | Target         | EV  | Mode        | Commit behavior |
+|--------|----------------|-----|-------------|-----------------|
 
-Field Mapping
-||Source Field||Transform lineage||Target Column||EV||
-```
+### Field Mapping
+| Source Field | Transform lineage | Target Column | EV  |
+|--------------|-------------------|---------------|-----|
 
 ---
 
 # Pass 4 — Prototype SQL  (Section 5)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
-
 **Selection:** only logic evidenced in prior passes.
 
-**TASK**
-- SQL that mirrors evidenced logic only.
-- Label gaps `[Unverified]`.
-- Add Databricks notes if relevant.
+**Output requirement:** Markdown code blocks for SQL are OK. Tables remain Markdown tables.
 
-**Sections**
+### Sections
 1. CTEs for inputs  
 2. Transform blocks tied to EV IDs  
-3. Final INSERT or UPDATE statements  
+3. Final INSERT or UPDATE statements
+
+End Pass 4 with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
 
 # Pass 5 — Field Mapping Summary  (Section 6)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
-
 **Selection:** code that computes or moves fields that end up in outputs.
 
-**TASK**
-- Consolidated mapping table across all targets.
+**Output requirement:** Markdown tables only.
 
-**Table**
-```
-||COBOL Var||Meaning||Type||Routine||Transform lineage||Mapped To (Table.Column)||EV||
-```
+| COBOL Var | Meaning | Type | Routine | Transform lineage | Mapped To (Table.Column) | EV |
+|-----------|---------|------|---------|-------------------|---------------------------|----|
+
+End Pass 5 with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
 
 # Pass 6 — Gaps + Bias Check  (Section 7 and 7.1)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
-
 **Selection:** external module calls, unresolved copybooks, ALTER, ON EXCEPTION, SQLCODE handling, FILE STATUS checks.
 
-**TASK**
-- List gaps with tags: MISSING MODULE, UNAVAILABLE COPYBOOK, UNKNOWN RULE, UNOBSERVED PATH.
-- State impact and a proposed test.
-- Complete Bias Checklist in short answers.
+**Output requirement:** Markdown tables only.
 
-**Tables**
-```
-Gaps
-||Tag||Where (EV)||Impact||Proposed test||
+### Gaps
+| Tag                | Where (EV) | Impact | Proposed test |
+|--------------------|------------|--------|---------------|
 
-Bias Checklist
-Q1..Qn with short answers. Cite EV where possible.
-```
+### Bias Checklist
+| Question | Answer | EV (optional) |
+|----------|--------|---------------|
+
+End Pass 6 with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
 
 # Pass 7 — Data Lineage Summary  (Section 8)
-**TABLE OUTPUT RULES FOR CONFLUENCE:**
-- Use Confluence wiki table markup: ||header||header|| for headers, |cell|cell| for rows.
-- Do NOT use Markdown tables or HTML <br/> tags.
-- If multiple items are in one cell, separate with commas or semicolons, all on one line.
-- No code block fences around the table.
-
 **Selection:** none. Use outputs from prior passes only.
 
-**TASK**
-- Build a single lineage table from sources to targets.
+**Output requirement:** Markdown tables only.
 
-**Table**
-```
-||Source||Source Attrs||Transformation||Target||Target Attr||Join Condition||Rel Type||EVs||
-```
+| Source            | Source Attrs          | Transformation        | Target          | Target Attr | Join Condition             | Rel Type | EVs     |
+|-------------------|-----------------------|-----------------------|-----------------|-------------|----------------------------|---------|---------|
+
+End Pass 7 with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
 
@@ -284,8 +227,8 @@ Q1..Qn with short answers. Cite EV where possible.
 
 ## Quality Bar
 - Scope obedience. Only lines in scope used.
-- Evidence density. Each claim has an EV.
+- Evidence density. Every claim has an EV.
 - Determinism. No guessing.
-- Merge-ready. Tables and Mermaid compile.
+- Merge-ready. Tables render in GitHub and paste cleanly to Confluence.
 - Token control. 120 lines or less. Continuation key present.
 - If any item is `[Unverified]`, prepend: `[Unverified] applies to whole output.`
