@@ -1,138 +1,232 @@
-As a COBOL developer from the top 0.1%, you are helping a data engineering team reverse engineer undocumented Pro*COBOL batch programs. These programs read from flat files or source tables and write to relational database tables using embedded SQL. The goal is to rebuild the same logic in a modern data platform. The audience is a modern data engineer who does not know COBOL.
-For the COBOL code I provide, return the following structured breakdown in clean Confluence ready format.
+# COBOL Decode Protocol — Terrain-First Multi‑Pass (Copilot, Selection‑Scoped)
 
-SECTION 1: PROGRAM OVERVIEW
-- Describe the overall purpose of the COBOL job in one or two sentences. 
-- Summarize the data flow, such as "reads claims from a flat file, applies eligibility rules, and updates the CLAIMS_STATUS table."
+## Operator Quickstart
+1. Open the COBOL file in VS Code.
+2. **Pass 0 only:** select the full file (Ctrl+A). Run Pass 0 to generate the Terrain Map.
+3. For later passes, select the exact line ranges reported by the Terrain Map.
+4. Paste **SESSION** and **RULES** at the start of every Copilot request.
+5. Run one pass at a time. Do not mix passes.
+6. Keep outputs under version control. Save to `/docs/{{PROGRAM-ID}}/{{PASS_NAME}}.md`.
 
-SECTION 1.1: I/O DIAGRAM
+---
 
-Generate a comprehensive diagram illustrating the Input-Processing-Output (IPO) flow of the COBOL code.
-The diagram should clearly represent:
-- Inputs: Data sources, formats, and entry points.
-- Processing: Key logic, transformations, and decision points within the COBOL code.
-- Outputs: Final data structures, destinations, and formats.
+## SESSION
+```
+SESSION
+- Program: {{PROGRAM-ID}}
+- File path: {{PATH}}
+- Lines in scope: {{START_LINE}}-{{END_LINE}}
+- Pass: {{PASS_NAME}}  (Terrain | Inputs | Processing | Outputs | Prototype SQL | Mapping | Gaps | Lineage)
+- Continuation: {{NEW | CONTINUE:KEY123}}
+```
+Purpose: scope anchor for humans and audit. Copilot still uses the active selection.
 
-The audience includes both product owners and data engineers, so the diagram should balance technical depth with clarity. Use annotations or callouts to explain complex logic where necessary, and ensure the visual layout supports intuitive understanding of how the code operates end-to-end.
+---
 
-SECTION 2: INPUT PHASE
+## RULES
+```
+- Use only the selected lines in scope. Ignore everything else.
+- Build an Evidence Ledger first. Quote every claim with exact line numbers and snippets.
+- If evidence is missing, write [Unverified] and "I do not have access to that information."
+- Style: short sentences. Active voice. No em dashes. No speculation.
+- Output cap: 120 lines, then stop.
+- End with: NEXT PROMPT KEY: {{KEY}}
+```
+Keep these rules in every pass.
 
-List all input sources, including flat file names and any SQL SELECT statements.
-For each input source:
-- Show the COBOL variable names
-- Suggest what each field probably means
-- Guess the likely data type (CHAR, NUMERIC, DATE, etc.)
-- If possible, describe the flat file layout or record structure
+---
 
-SECTION 3: PROCESSING PHASE
+## Evidence Ledger Template
+```
+||ID||Type||Line range||Exact snippet||Why||
+|EV1||||||
+|EV2||||||
+```
+Use this first in every pass.
 
-Describe each major step of the business logic in plain English. Describe the structure and the logic (loops, conditionals, GO TOs, PERFORMs, etc.) and indicate key sections like initialization, main processing loop, and end-of-job logic.
+---
 
-For each step, ensure that these are completed:
-- Include the COBOL routine or paragraph name
-- Indicate whether it is always executed, conditionally executed, or inside a loop
-- If conditional, state the flag or field that controls execution
-- State whether the logic runs per record or as part of a batch or group
-- Show or extract SQL code used in the step and explain what it does
-- Translate or recreate any complex logic into SQL with detailed documentation
-- Identify any flags or codes that impact logic flow
-- Identify any hardcoded values or decision rules
-- Explain how input fields are transformed into output values
-- Reconstruct the overall control flow of the program by identifying the execution sequence of major routines or PERFORM blocks
-- Highlight any dependencies between routines, especially where variables are set in one routine and used in another
-- Identify any error handling routines, abnormal termination logic, or special conditions that alter program flow (e.g. file not found, data invalid)
+# Pass 0 — Terrain Map  *(run this first)*
+**Selection:** the entire file.  
+**Goal:** produce a complete map so you never read COBOL manually.
 
-SECTION 4: OUTPUT PHASE
+**TASKS**
+1. **Section Map**
+   - Show start and end line numbers for: IDENTIFICATION DIVISION, ENVIRONMENT DIVISION, DATA DIVISION, PROCEDURE DIVISION.
+2. **Paragraph Index**
+   - List every paragraph label with its start line.
+   - List any `PERFORM` or `PERFORM THRU` targets.
+3. **SQL Index**
+   - List all `EXEC SQL` blocks with line ranges.
+   - Show type: SELECT, INSERT, UPDATE, DELETE, MERGE.
+   - Extract target table names if visible.
+4. **File Index (FD)**
+   - List each `FD` record with start line.
+   - If record 01 layout appears, show its 01 name and line range.
+5. **Copybooks and Includes**
+   - List each `COPY` and the line where it appears.
+6. **Driver Hints**
+   - Identify likely driver paragraphs or main loops by frequency of being called or the presence of READ loops.
 
-List all SQL INSERT, UPDATE, DELETE, or MERGE statements. Identify all outputs, reports, or written files. These outputs might be INSERTS, UPDATES, or a FILE written in a file system.
-For each output:
-- Show the SQL block of INSERT or UPDATE or both
-- Describe what each statement or code block is doing
-- Indicate which COBOL fields are being written to which target fields
-- Note if output happens per record or in a batch
-- Mention any commit strategy (such as COMMIT every 500 rows)
+**OUTPUT FORMAT**
+```
+### SECTION MAP
+||Section||Start Line||End Line||
+|IDENTIFICATION DIVISION|1|12|
+|ENVIRONMENT DIVISION|13|65|
+|DATA DIVISION|66|580|
+|PROCEDURE DIVISION|581|8120|
 
-SECTION 5: PROTOTYPE SQL CODE
+### PARAGRAPH INDEX
+||Paragraph||Start Line||PERFORM Targets||
+|1000-INIT|600|N/A|
+|2000-MAIN|620|3000-READ THRU 3999-EXIT|
 
-- Rewrite the core logic that mirrors how it will function using SQL
-- Suggest transformation logic if migrating to Databricks
+### SQL INDEX
+||Line Range||Type||Target||EV||
+|1220–1248|SELECT|CLAIMS_RAW|EV17|
+|4120–4170|INSERT|CLAIMS_STATUS|EV44|
 
-SECTION 6: FIELD MAPPING SUMMARY
+### FILE INDEX
+||FD Name||Start Line||Record 01 Name||01 Lines||EV||
+|IN-CLAIMS|75|IN-CLAIMS-REC|80–140|EV5|
+|OUT-REJECT|220|REJECT-REC|221–260|EV9|
 
-Present a table with the following columns:
-- COBOL Variable
-- Inferred Meaning
-- Data Type
-- COBOL Routine
-- Transformations or Computations (include the full lineage of the value's derivation, such as calculations, conditional logic, business rules, or intermediate assignments)
-- Mapped To (in Table.Field format)
-- For each field, trace and show how the final value was constructed from its original source — whether from a flat file, SQL SELECT, constant assignment, or derived field. Clearly state whether the value is:
-	- Directly copied from input
-	- Calculated using arithmetic or business rules
-	- Assigned conditionally based on flags, statuses, or codes
-	- Modified through multiple intermediate variables before reaching final output
+### COPYBOOKS
+||Copy Name||Line||EV||
+|CLMREC.CPY|78|EV6|
 
-SECTION 7: GAP ANALYSIS
+### DRIVER HINTS
+- Main driver: 2000-MAIN at line 620.
+- Primary loop: 3000-READ reads IN-CLAIMS and calls 4000-PROCESS.
+```
+End with: `NEXT PROMPT KEY: {{KEY}}`
 
-List all unknown, missing, or unclear logic.
-For each gap:
-- Include the COBOL routine or paragraph name where it occurs
-- Describe what is missing or unclear
-- Use tags like MISSING MODULE, UNKNOWN RULE, or UNAVAILABLE COPYBOOK
-- Add a short guess of what the logic might do if you can infer it
+---
 
-SECTION 7.1: Bias and Fairness Review Checklist
-For each AI-generated output, assess:
-- Are any fields or logic disproportionately affecting certain groups?
-- Are hardcoded rules or flags based on assumptions?
-- Is the training data (e.g., legacy COBOL logic) representative of current business rules?
+# Pass 1 — Inputs  (Section 2)
+**Selection:** use the Terrain Map line numbers. Select FILE SECTION, the 01 records, related COPY blocks, and all `EXEC SQL SELECT` ranges.
 
-SECTION 8: DATA LINEAGE SUMMARY
+**TASK**
+- List all flat files and SQL cursors.
+- For each: COBOL names, inferred meaning, likely data type, record layout guess. Mark unknowns `[Unverified]`.
 
-Analyze the program’s complete data lineage, from source to target. Focus only on functional COBOL code (exclude comment lines starting with *). Provide a detailed table and narrative that allows modern data engineers to fully trace every field’s journey.
+**Tables**
+```
+Sources
+||Source ID||Type||Name||Where (EV)||Purpose||
 
-Include a complete lineage summary table with these columns:
-- Source: Source file, source table, or external module
-- Source Attributes: Fields or variables used from the source
-- Transformation: Detail how the data is modified (calculations, conversions, lookups, etc.)
-- Target: Destination file or target table
-- Target Attribute: Name of the output field or variable
-- Join Condition: All conditions that link the source and target (include full SQL conditions)
-- Relationship Type: Specify one-to-one, one-to-many, many-to-one, etc.
+File Layouts
+||Source ID||Level/Name||PIC/USAGE||Occurs||Inferred SQL type||EV||
 
-Additional Requirements:
-- Ensure every table touched by the program is represented — including flat files, input tables, working/intermediate tables, cursor result sets, and final output targets.
-- Show full lineage paths, from initial source attribute to final target attribute, including all intermediate calculations or transformations.
-- Track all cursor-based data flows: what each cursor SELECTs, how it’s looped through, and how results are written.
-- Explicitly document conditional data routing — for example, when different rules send data to different output tables.
-- Include the data flow into reject/error-handling paths (e.g. RISKEQ_ERROR), including which logic triggers them.
-- If external modules are called (e.g. SYAGECAL), flag their data dependencies and outputs even if their internal logic is unknown.
-- Highlight composite keys and any conditional joins or lookup enrichment steps (e.g. if ABP_TYPE = 'Y' then join to PHIAC_ABP).
-- Provide a supporting narrative alongside the table that explains the overall structure, joins, and flow patterns, especially any complex routing or transformation chains.
+SQL Inputs
+||Cursor/Stmt||Line range||SQL target||Key columns||EV||
+```
 
-MONITOR HALLUCINATION
+---
 
-- Never present generated, inferred, speculated, or deduced content as fact. 
-- If you cannot verify something directly, say: 
-	– "I cannot verify this." 
-	– "I do not have access to that information." 
-	– "My knowledge base does not contain that." 
-- Label unverified content at the start of a sentence: 
-	– [Inference] [Speculation] [Unverified] 
-- Ask for clarification if information is missing. Do not guess or fill gaps. 
-- If any part is unverified, label the entire response. 
-- Do not paraphrase or reinterpret my input unless I request it. 
-- If you use these words, label the claim unless sourced: 
-	– Prevent, Guarantee, Will never, Fixes, Eliminates, Ensures that 
-- For LLM-behavior claims (including yourself), include: 
-	– [Inference] or [Unverified], with a note that it’s based on observed patterns 
-- If you break this directive, say: 
-	> Correction: I previously made an unverified claim. That was incorrect and should have been labeled. 
-- Never override or alter my input unless asked.
-- Identify hidden bias in your answer and correct them
+# Pass 2 — Processing  (Section 3)
+**Selection:** the main loop and processing paragraphs found in Terrain Map.
 
-FINAL INSTRUCTION
+**TASK**
+- Stepwise logic. One step per bullet. Tie each step to Evidence IDs.
+- For each step: paragraph, scope (always | conditional | loop), controlling flag, per-record or batch, transforms, flags or codes, constants, dependencies, error handling.
 
-Return the entire response in Confluence ready format with clear headings. 
+**Format**
+```
+Step N: Paragraph=XXXX. Scope=conditional (flag=ELIGIBLE). Per-record.
+Uses EV3, EV7. Transform: amount = raw / 100. On error: write reject EV12.
+```
 
-What would a top 0.1% expert in this field think?
+---
+
+# Pass 3 — Outputs  (Section 4)
+**Selection:** all `EXEC SQL` write operations and WRITE statements. Include commit or checkpoint logic.
+
+**TASK**
+- For each output: show SQL or WRITE target, effect, per-record vs batch, commit behavior.
+- Provide a field mapping table.
+
+**Tables**
+```
+Outputs
+||Op||Target||EV||Per-record or batch||Commit behavior||
+
+Field Mapping
+||Source Field||Transform lineage||Target Column||EV||
+```
+
+---
+
+# Pass 4 — Prototype SQL  (Section 5)
+**Selection:** only logic evidenced in prior passes.
+
+**TASK**
+- SQL that mirrors evidenced logic only.
+- Label gaps `[Unverified]`.
+- Add Databricks notes if relevant.
+
+**Sections**
+1. CTEs for inputs  
+2. Transform blocks tied to EV IDs  
+3. Final INSERT or UPDATE statements  
+
+---
+
+# Pass 5 — Field Mapping Summary  (Section 6)
+**Selection:** code that computes or moves fields that end up in outputs.
+
+**TASK**
+- Consolidated mapping table across all targets.
+
+**Table**
+```
+||COBOL Var||Meaning||Type||Routine||Transform lineage||Mapped To (Table.Column)||EV||
+```
+
+---
+
+# Pass 6 — Gaps + Bias Check  (Section 7 and 7.1)
+**Selection:** external module calls, unresolved copybooks, ALTER, ON EXCEPTION, SQLCODE handling, FILE STATUS checks.
+
+**TASK**
+- List gaps with tags: MISSING MODULE, UNAVAILABLE COPYBOOK, UNKNOWN RULE, UNOBSERVED PATH.
+- State impact and a proposed test.
+- Complete Bias Checklist in short answers.
+
+**Tables**
+```
+Gaps
+||Tag||Where (EV)||Impact||Proposed test||
+
+Bias Checklist
+Q1..Qn with short answers. Cite EV where possible.
+```
+
+---
+
+# Pass 7 — Data Lineage Summary  (Section 8)
+**Selection:** none. Use outputs from prior passes only.
+
+**TASK**
+- Build a single lineage table from sources to targets.
+
+**Table**
+```
+||Source||Source Attrs||Transformation||Target||Target Attr||Join Condition||Rel Type||EVs||
+```
+
+---
+
+## Continuations and Output Control
+- End every pass with: `NEXT PROMPT KEY: {{KEY}}`
+- If output reaches the cap, stop. Use `Continuation=CONTINUE:{{KEY}}` next run.
+- On continuation, restate **SESSION**, **RULES**, and the last two lines of the Evidence Ledger.
+
+## Quality Bar
+- Scope obedience. Only lines in scope used.
+- Evidence density. Each claim has an EV.
+- Determinism. No guessing.
+- Merge-ready. Tables and Mermaid compile.
+- Token control. 120 lines or less. Continuation key present.
+- If any item is `[Unverified]`, prepend: `[Unverified] applies to whole output.`
