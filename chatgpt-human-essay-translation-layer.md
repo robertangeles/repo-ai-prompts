@@ -12,25 +12,51 @@ Wait for both answers before proceeding.
 
 ## Step 2: Writing Instructions
 
+## Step 2: Writing Instructions
+
 ### STYLE: Paul Graham Meets Battle-Tested Operator
 
-- Write with sharp clarity, lived-in insight, and real-world grit.
-- Avoid fluff, jargon, and generic business language.
-- Begin with tension by attacking a *comfortable lie* or *widely accepted shortcut*. The first line should sting, not explain.
+- Write with sharp clarity, lived-in insight, and real-world grit.  
+- Avoid fluff, jargon, and generic business language.  
+- Begin with tension by attacking a *comfortable lie* or *widely accepted shortcut*. The first line should sting, not explain.  
 - Internally structure the article using:  
   **Tension → Insight → Example → Resolution**  
-  *Note: These are for narrative shape only, not to be used as headings.*
-- Headings must be **thematic and content-specific**, not structural or labeled.
-- Include one grounded, culturally specific metaphor or analogy.
-- Vary sentence lengths and paragraph rhythm.
-- Use NO em dashes. Use commas, periods, or restructured phrasing.
-- Do NOT use divider lines (---).
-- Do NOT use em dashes or '—'.
-- Do not use rhetorical contrast. Avoid phrases that set up one idea only to redirect to another (e.g., “It’s not just about X, it’s about Y” or “While X may seem true, Y is the real story.”)
-- Avoid clarifying reframes. Do not use pivots like “What this really means is…” or “This isn’t about A—it’s about B.”
-- Maintain a linear structure. Ideas should build logically and directly, without redirection or reversal. Each paragraph should deepen or expand the point without contradicting earlier statements.
-- No bait-and-switch structures. Do not set up false dichotomies, implied misassumptions, or reversed logic to “reveal” the point. Focus on clear explanation, not rhetorical tension.
-- Format using Markdown headings compatible with Substack: `#` for title, `##` for sections.
+  *Note: These are for narrative shape only, not to be used as headings.*  
+- Headings must be **thematic and content-specific**, not structural or labeled.  
+- Include one grounded, culturally specific metaphor or analogy.  
+- Vary sentence lengths and paragraph rhythm.  
+- Use NO em dashes. Use commas, periods, or restructured phrasing.  
+- Do NOT use divider lines (---).  
+- Do NOT use em dashes or '—'.  
+- Do not use rhetorical contrast. Avoid phrases that set up one idea only to redirect to another.  
+- Avoid clarifying reframes.  
+- Maintain a linear structure. Each paragraph should deepen or expand the point without contradicting earlier statements.  
+- No bait-and-switch structures. Avoid false dichotomies or reversed logic “reveals.”  
+- Format using Markdown headings compatible with Substack: `#` for title, `##` for sections.  
+
+### HUMAN-AUTHENTIC LITERARY REALISM LAYER
+
+1. **Cadence Variance**  
+   - Break rhythm often. Follow a long, winding sentence with a short punch.  
+   - Allow fragments when they fit the mood.  
+
+2. **Concrete Sensory Anchors**  
+   - In every paragraph, ground at least one moment in a physical, observable detail.  
+   - Use small, specific actions, sounds, textures, sights, or environmental cues to place the reader in the scene.  
+   - Details must be precise enough to visualize but natural to the context (e.g., “A row of half-erased numbers on the whiteboard” instead of “It looked messy”).  
+   - Avoid generic placeholders like “in the meeting” or “at the office” — anchor the setting through lived specifics.  
+
+3. **Emotional Asymmetry**  
+   - Avoid one-note sentiment. Pair triumph with cost, nostalgia with unease, clarity with doubt.  
+
+4. **No Generic Fill**  
+   - Ban clichés and vague transitions. Every sentence must either push the point forward or deepen it.  
+
+5. **Specific Voice Ownership**  
+   - Let vocabulary reflect a single narrator’s lived experience. Include micro-habits of language.  
+
+6. **Imperfection Preservation**  
+   - Keep some edges rough. Not every transition needs to be smoothed if the slight bump serves tone or truth.  
 
 ### VIRAL CONTRAST + PROVOCATION TECHNIQUE
 
