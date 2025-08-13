@@ -1,5 +1,7 @@
 # COBOL Decode Protocol — Terrain-First Multi-Pass (Copilot, Selection-Scoped, **Markdown Table Output**)
 
+> Dialect: **Oracle Pro*COBOL** (embedded SQL). Recognize SQLCA/ORACA, host variables `:VARNAME` with optional indicator variables, cursors, dynamic SQL (PREPARE/EXECUTE), `WHENEVER`, and transaction control (`COMMIT`, `ROLLBACK`, `SAVEPOINT`).
+
 ## Operator Quickstart
 1. Open the COBOL file in VS Code.
 2. **Pass 0 only:** select the full file (Ctrl+A). Run Pass 0 to generate the Terrain Map.
@@ -34,6 +36,11 @@ Purpose: scope anchor for humans and audit. Copilot still uses the active select
 ```
 Keep these rules in every pass.
 
+**Anti-hallucination addenda**
+- Zero-default rows: never output example or placeholder rows. Start tables with headers only. Populate rows only from matched evidence.
+- Evidence-anchored rows: do not add a row unless it has an Evidence ID tied to a line range and exact snippet in the Evidence Ledger.
+
+
 ---
 
 ## Evidence Ledger Template
@@ -67,53 +74,110 @@ Keep these rules in every pass.
 **Columns:** Section | Start Line | End Line | EV
 
 | Section               | Start Line | End Line | EV  |
-|-----------------------|------------|----------|-----|
-| IDENTIFICATION DIVISION |            |          | EV  |
-| ENVIRONMENT DIVISION    |            |          | EV  |
-| DATA DIVISION           |            |          | EV  |
-| PROCEDURE DIVISION      |            |          | EV  |
+|        |            |          |     |
+
 
 ### PARAGRAPH INDEX
 **Columns:** Paragraph | Start Line | PERFORM Targets | EV
 
 | Paragraph   | Start Line | PERFORM Targets                 | EV  |
-|-------------|------------|----------------------------------|-----|
-| 1000-INIT   |            |                                  | EV  |
-| 2000-MAIN   |            | 3000-READ THRU 3999-EXIT         | EV  |
+|           |            |                                  |     |
+
 
 ### SQL INDEX
+**Include both DML and non-DML operations here.**
+
+### CURSOR INDEX
+**Columns:** Cursor | Line range | Declared SELECT target | For Update | Key columns | EV
+
+| Cursor | Line range | Declared SELECT target | For Update | Key columns | EV |
+|--------|------------|------------------------|------------|-------------|----|
+|        |            |                        |            |             |    |
+
+### DYNAMIC SQL INDEX
+**Columns:** Stmt Name | Line range | PREPARE source | EXECUTE/USING | EV
+
+| Stmt Name | Line range | PREPARE source | EXECUTE/USING | EV |
+|-----------|------------|----------------|---------------|----|
+|           |            |                |               |    |
+
+### TRANSACTION & WHENEVER INDEX
+**Columns:** Line | Control | Target/Label | Scope | EV
+
+| Line | Control         | Target/Label | Scope                          | EV |
+|------|------------------|--------------|---------------------------------|----|
+|      | WHENEVER SQLERROR| GOTO 9000-ERR| until next WHENEVER or program |    |
+|      | COMMIT WORK      |              | immediate                      |    |
+|      | ROLLBACK WORK    |              | immediate                      |    |
+|      | SAVEPOINT        | NAME         | until released/rolled back     |    |
+
 **Columns:** Line Range | Type | Target | EV
 
 | Line Range | Type    | Target          | EV  |
-|------------|---------|-----------------|-----|
-|            | SELECT  |                 | EV  |
-|            | INSERT  |                 | EV  |
+|            |         |                 |     |
+
 
 ### FILE INDEX
 **Columns:** FD Name | Start Line | Record 01 Name | 01 Lines | EV
 
 | FD Name    | Start Line | Record 01 Name | 01 Lines | EV  |
-|------------|------------|----------------|----------|-----|
-| IN-CLAIMS  |            | IN-CLAIMS-REC  |          | EV  |
-| OUT-REJECT |            | REJECT-REC     |          | EV  |
+|          |            |                |          |     |
+
+
 
 ### COPYBOOKS AND INCLUDES
-**Columns:** Copy Name | Line | EV
+**Output requirement:** Markdown table only. No HTML. No wiki syntax. No code fences around the table.
+
+**Detection rule:** Match only lines that explicitly contain a COBOL copy/include statement in the selection. Allowed forms:
+- `COPY <name>.`
+- `COPY '<name>'.`
+- `EXEC SQL INCLUDE <name> END-EXEC.`
+
+**Regex hint for VS Code search:** `(?i)^\s*(COPY\s+['\"]?[\w\-\./]+['\"]?\.?|EXEC\s+SQL\s+INCLUDE\s+[\w\-\./]+)`
+
+**Three steps**  
+1. Build Evidence Ledger entries first for each matched line. Include exact line number and the literal snippet.  
+2. Produce the table below with one row per Evidence item only. No inferred or guessed includes.  
+3. Output a Find Log with the raw matching lines and numbers for human cross-check.
 
 | Copy Name   | Line | EV  |
-|-------------|------|-----|
-| CLMREC.CPY  |      | EV  |
-| ERRHAND.CPY |      | EV  |
+|            |      |     |
+
+
+**Find Log**  
+```text
+<line>: <literal matched line>
+```
 
 ### DRIVER HINTS
 - Main driver paragraph(s): `<name>` at line `<n>`.
 - Primary loop(s): list paragraph names and relationships, for example: `3000-READ` reads `IN-CLAIMS` and calls `4000-PROCESS`.
+
+**Coverage check:** After tables, print a one-line summary: `COPY matches: <n>, Table rows: <n>`. If counts differ, stop and write `[Unverified] Coverage mismatch`.
 
 End Pass 0 with: `NEXT PROMPT KEY: {{KEY}}`
 
 ---
 
 # Pass 1 — Inputs  (Section 2)
+**Pro*COBOL additions**  
+Create a Host Variable Map from `EXEC SQL` usage to COBOL definitions. Include indicator variables.
+
+### Host Variable Map
+| Host Var (SQL) | COBOL Var | Level | PIC/USAGE | OCCURS | Indicator Var | EV |
+|----------------|-----------|-------|-----------|--------|---------------|----|
+| :CLM_AMT       | CLAIM-AMT | 05    | S9(9)V99  |        | :CLM_AMT_IND  | EV |
+
+### SQLCA/ORACA Usage
+| Structure | Present | Line(s) | Fields referenced (e.g., SQLCODE, SQLERRM, ORA-*) | EV |
+|-----------|---------|---------|----------------------------------------------------|----|
+| SQLCA     |         |         |                                                    |    |
+| ORACA     |         |         |                                                    |    |
+
+**Detection hints**  
+- `EXEC SQL INCLUDE SQLCA END-EXEC.` or `EXEC SQL INCLUDE ORACA END-EXEC.`  
+- Host variables start with `:` and may have an indicator `INDICATOR :var_ind` or space-separated `:var :var_ind`.
+
 **Selection:** use Terrain Map line numbers for FILE SECTION, 01 records, related COPY blocks, and all `EXEC SQL SELECT` ranges.
 
 **Output requirement:** Use **Markdown tables** only. No HTML. No Confluence wiki syntax. No code fences.
@@ -133,6 +197,17 @@ End Pass 0 with: `NEXT PROMPT KEY: {{KEY}}`
 ---
 
 # Pass 2 — Processing  (Section 3)
+**Pro*COBOL additions**  
+Track `WHENEVER` directives in effect and cursor lifecycles per step.
+
+### Control Policies in Effect (optional)
+| Paragraph | WHENEVER (NOT FOUND/SQLERROR/SQLWARNING) | Action (GOTO/CONTINUE/STOP) | Effective lines | EV |
+|-----------|------------------------------------------|-----------------------------|-----------------|----|
+
+### Cursor Lifecycle (optional)
+| Cursor | OPEN line | FETCH lines | CLOSE line | Rows per FETCH (array?) | EV |
+|--------|-----------|-------------|------------|--------------------------|----|
+
 **Selection:** the main loop and processing paragraphs found in Terrain Map.
 
 **Task format:** use a concise bullet list. Tie each step to Evidence IDs. Short sentences.  
@@ -151,6 +226,22 @@ End Pass 2 with: `NEXT PROMPT KEY: {{KEY}}`
 ---
 
 # Pass 3 — Outputs  (Section 4)
+**Pro*COBOL additions**  
+Record transaction control and positioned updates.
+
+### Transaction Control
+| Control | Line | Applies to | EV |
+|---------|------|------------|----|
+| COMMIT  |      | batch/per-record |    |
+| ROLLBACK|      | batch/per-record |    |
+| SAVEPOINT |    | name             |    |
+
+### Positioned Operations
+| Op   | Table | WHERE CURRENT OF | Cursor | Line | EV |
+|------|-------|-------------------|--------|------|----|
+| UPDATE |     | yes/no            |        |      |    |
+| DELETE |     | yes/no            |        |      |    |
+
 **Selection:** all `EXEC SQL` write operations and WRITE statements. Include commit or checkpoint logic.
 
 **Output requirement:** Markdown tables only.
@@ -166,6 +257,11 @@ End Pass 2 with: `NEXT PROMPT KEY: {{KEY}}`
 ---
 
 # Pass 4 — Prototype SQL  (Section 5)
+**Pro*COBOL additions**  
+- If dynamic SQL detected, show a static representative SQL plus a comment pointing to the PREPARE source text EV.  
+- For array DML (`FOR :N ROWS`), show a loop or a set-based equivalent with a note.
+
+
 **Selection:** only logic evidenced in prior passes.
 
 **Output requirement:** Markdown code blocks for SQL are OK. Tables remain Markdown tables.
@@ -180,6 +276,12 @@ End Pass 4 with: `NEXT PROMPT KEY: {{KEY}}`
 ---
 
 # Pass 5 — Field Mapping Summary  (Section 6)
+**Pro*COBOL additions**  
+Include host variable to target column mapping when present.
+
+| Host Var | COBOL Var | Transform lineage | Target (Table.Column) | EV |
+|----------|-----------|-------------------|-----------------------|----|
+
 **Selection:** code that computes or moves fields that end up in outputs.
 
 **Output requirement:** Markdown tables only.
