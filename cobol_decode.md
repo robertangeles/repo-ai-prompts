@@ -36,6 +36,12 @@ Purpose: scope anchor for humans and audit. Copilot still uses the active select
 ```
 Keep these rules in every pass.
 
+**Line numbering standard**
+- Use selection-relative line numbers (SelLn) starting at 1 for the current selection.
+- Compute FileLn as `START_LINE + SelLn - 1` and show both when you output any location.
+- Never guess absolute file numbers from memory.
+
+
 **Anti-hallucination addenda**
 - Zero-default rows: never output example or placeholder rows. Start tables with headers only. Populate rows only from matched evidence.
 - Evidence-anchored rows: do not add a row unless it has an Evidence ID tied to a line range and exact snippet in the Evidence Ledger.
@@ -125,29 +131,43 @@ Keep these rules in every pass.
 
 
 
+
 ### COPYBOOKS AND INCLUDES
-**Output requirement:** Markdown table only. No HTML. No wiki syntax. No code fences around the table.
+**Output requirement:** Markdown tables only.
 
-**Detection rule:** Match only lines that explicitly contain a COBOL copy/include statement in the selection. Allowed forms:
-- `COPY <name>.`
-- `COPY '<name>'.`
-- `EXEC SQL INCLUDE <name> END-EXEC.`
+**Goal:** List only real include directives inside the selection. Zero guesses.
 
-**Regex hint for VS Code search:** `(?i)^\s*(COPY\s+['\"]?[\w\-\./]+['\"]?\.?|EXEC\s+SQL\s+INCLUDE\s+[\w\-\./]+)`
+**Match rules (apply in this order):**
+1. Trim leading whitespace.
+2. If the first non-space chars are `*` or `*>`, skip the line as a comment.
+3. The line must **start** with one of:
+   - `COPY `
+   - `EXEC SQL INCLUDE `
+4. The token must not occur inside quotes on that line. If a quote appears before the token, skip.
+5. Record the exact literal snippet used.
 
-**Three steps**  
-1. Build Evidence Ledger entries first for each matched line. Include exact line number and the literal snippet.  
-2. Produce the table below with one row per Evidence item only. No inferred or guessed includes.  
-3. Output a Find Log with the raw matching lines and numbers for human cross-check.
+**Two-step output:**
 
-| Copy Name   | Line | EV  |
-|            |      |     |
-
-
-**Find Log**  
-```text
-<line>: <literal matched line>
+**A) Find Log (selection-relative)**
+Print raw matches in this exact format for human check:
 ```
+SelLn=<n> | FileLn=<START_LINE + n - 1> | <literal line text>
+```
+No other lines in this block.
+
+**B) Copybooks Table (one row per Find Log line)**
+| SelLn | FileLn | Form              | Copy Name     | EV  |
+|-------|--------|-------------------|---------------|-----|
+|       |        | COPY              |               |     |
+
+**Building the table:**
+- `Form` is `COPY` or `EXEC SQL INCLUDE`.
+- `Copy Name` is the token after COPY/INCLUDE without quotes or trailing dot.
+- Each row must have a matching EV in the Evidence Ledger with the exact same literal snippet.
+
+**Coverage check:** After the table, print one line:
+`COPY matches: <count from Find Log>, Table rows: <count rows>`
+If counts differ, stop and output `[Unverified] Coverage mismatch`.
 
 ### DRIVER HINTS
 - Main driver paragraph(s): `<name>` at line `<n>`.
