@@ -2,21 +2,43 @@ As a COBOL developer from the top 0.01%, you are helping a data engineering team
 
 For the COBOL code I provide, return the following structured breakdown in clean Confluence ready format.
 
-# SESSION
+# SCOPE SESSION
 - Program: {{rehspabp.pco}}
-- Lines in scope: {{1}}-{{3284}}
-- Pass: {{Terrain}}  (Terrain | Inputs | Processing | Outputs | Prototype SQL | Mapping | Gaps | Lineage)
-- Continuation: {{NEW}}
+- Language: PRO*COBOL with  embedded SQL
+- Scan and read the line range in scope: {{1}}-{{3284}}
 - Display the exact code in line {{1}} and line {{3284}}
+- Output for all Response: Confluence Ready Format
 - No Further Output Required
 
-
 SECTION 1: PROGRAM OVERVIEW
-- Scan the code from Line {{120}}-{{198}}
+- Scan and read the code from Lines {{120}}-{{198}}
 - Describe the overall purpose of the Pro COBOL Code in one or two sentences. 
-- Display Summary Program Flow
-- Return the entire response in Confluence ready format with clear headings. 
+- No Further Output Required
 
+What would a top 0.01% COBOL Developer think?
+READY_FOR_NEXT
+
+SECTION 2: INPUT PHASE
+- Dataset name, source type, origin path/connection
+- Format, encoding, record length or delimiter, header/footer rules, sort order
+- Schema table with columns: Field | Type | Length | Nullable | Key | Semantics | Notes
+READY_FOR_NEXT
+
+SECTION 3: PROCESSING PHASE
+- Scan and read the code from Lines {{1}}-{{3284}}
+- Identity the complete program flow from the first to the last step in a table with the following columns
+	- Step Number
+ 	- Program Flow
+  	- Detailed Program Flow Description
+  	- Map chain of program sections to the Program Flow
+  	- Step-by-step pseudo-code aligned to the chain of program sections
+- Verify you did not skip any processing steps before generating the output
+
+What would a top 0.01% COBOL Developer think?
+READY_FOR_NEXT
+
+
+ 
 # MONITOR HALLUCINATION
 - Never present generated, inferred, speculated, or deduced content as fact. 
 - If you cannot verify something directly, say: 
@@ -37,7 +59,7 @@ SECTION 1: PROGRAM OVERVIEW
 - Never override or alter my input unless asked.
 - Identify hidden bias in your answer and correct them
 
-# SESSION
+# SESSION SCOPE
 - Program: {{rehspabp.pco}}
 - Lines in scope: {{1}}-{{3284}}
 - Pass: {{Terrain}}  (Terrain | Inputs | Processing | Outputs | Prototype SQL | Mapping | Gaps | Lineage)
@@ -45,80 +67,38 @@ SECTION 1: PROGRAM OVERVIEW
 - Display the exact code in line {{1}} and line {{3284}}
 - No Further Output Required
 
-# I/O DIAGRAM
-You are generating a single Mermaid diagram. Output only one fenced code block tagged mermaid. No other text.
 
-SCOPE
-- Program: {{PROGRAM}}
-- Lines in Scope: {{START_LINE}}-{{END_LINE}}
+I/O DIAGRAM Generate a comprehensive drawio diagram (xml file) illustrating the workflow (Input-Processing-Decision Point-Outcome of Decision Point-Output) of the COBOL code.
 
-GOAL
-- Build an IPO diagram from the code in scope.
+General rules to follow:
 
-EXTRACTION RULES
-1) INPUT tables = all SQL SELECT sources (FROM/JOIN). Include documented tables and any found in code.
-2) OUTPUT tables = all SQL INSERT/UPDATE/DELETE targets.
-3) Files/queues/parms = inputs or outputs based on READ/WRITE/PUT/SEND.
-4) System modules and called programs = PROCESSING (not INPUT).
-5) Summarize processing into up to 4 major steps: main control, validation, calc/transform, db/io.
-6) If a section has >4 distinct items, group names inside node text using line breaks with |.
-7) Abbreviate long names in labels to ≤15 chars per line. Keep underscores. No other special chars.
+· Try to avoid overlapping lines in the diagram. Make it user friendly.
 
-NODE ID RULES
-- IDs use only A–Z, 0–9, underscore. Uppercase. Start with a letter. ≤12 chars.
-- Use compact IDs to keep class lines short:
-  INPUT: IN1,IN2,IN3,IN4
-  PROCESSING: PR1,PR2,PR3,PR4
-  OUTPUT: OUT1,OUT2,OUT3,OUT4
-- Define only the IDs you actually use.
+· Using different colors to differentiate each item and category. For example, having Input tables and functions in different colors for differentiation. And add a legend for the colors.
 
-LABEL RULES
-- Format: NODE_ID[Line1|Line2|Line3|Line4]
-- No HTML tags. No hyphens. Use underscores.
-- Max 15 characters per line.
+· Include a header for each section: inputs, processing, decision points, outcome of decision points, and outputs
 
-EDGES
-- Use ONLY `A --> B`. No text on edges.
+· Please do not skip any module, process, decision point (if condition), The user should be able to see a full list of process, decision points and outcome of decision points in the separate layers.
 
-VALIDATION (MANDATORY BEFORE EMIT)
-- All documented SELECT tables appear in INPUT labels.
-- All documented INSERT/UPDATE tables appear in OUTPUT labels.
-- Cross-check against actual SQL in code. Include any extra tables found.
-- Node IDs obey regex ^[A-Z][A-Z0-9_]{1,11}$
-- Each class line ≤ 60 characters. No trailing commas or spaces.
-- Each class line max 4 nodes. Every node on a class line exists above.
-- No reserved Mermaid words used as IDs.
+· Add consistent spacing between shapes to improve readability and avoid crowding.
 
-OUTPUT FORMAT (EMIT EXACTLY THIS SHAPE)
-```mermaid
-graph TB
-    subgraph "INPUT"
-        direction TB
-        %% up to 4 input nodes
-        [INPUT_NODES]
-    end
+· No \n line breaks (uses &lt;br&gt; for multi-line).
 
-    subgraph "PROCESSING"
-        direction TB
-        %% up to 4 processing nodes
-        [PROCESS_NODES]
-    end
+· No & character (uses "and" instead).
 
-    subgraph "OUTPUT"
-        direction TB
-        %% up to 4 output nodes
-        [OUTPUT_NODES]
-    end
+The diagram should clearly represent:
 
-    %% connections
-    [EDGES]
+Inputs: List down the data sources and external functions.
 
-    classDef input fill:#e1f5fe,stroke:#01579b
-    classDef process fill:#f3e5f5,stroke:#4a148c
-    classDef output fill:#e8f5e8,stroke:#1b5e20
+Processing: List down all the module names within the COBOL code. Giving a very short description of the key tranformations on the second line.
 
-    [CLASS_LINES]
-```
+Decision point: List down all the decision points if the processing logic contains more than one outcomes
+
+Output of the decision: List down the result from the decision point (e.g., printing out error message, exit) Final Outputs: Final data structures, destinations, and formats. Having each type of input labelled well and use different color to differentiate.
+
+The audience includes both product owners and data engineers, so the diagram should balance technical depth with clarity. Use annotations or callouts to explain complex logic where necessary, and ensure the visual layout supports intuitive understanding of how the code operates end-to-end.
+
+
 
 # MONITOR HALLUCINATION
 - Never present generated, inferred, speculated, or deduced content as fact. 
