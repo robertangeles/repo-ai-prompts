@@ -46,21 +46,55 @@ SECTION 1: PROGRAM OVERVIEW
 - No Further Output Required
 
 # I/O DIAGRAM
-You are generating a Mermaid diagram only. Output a single fenced code block with language tag mermaid and nothing else.
+- Scan the Lines in Scope
+- Generate a comprehensive diagram describing the Input-Processing-Output (IPO) flow of the COBOL code.
+- **OUTPUT ONLY the Mermaid code block - no other text**
+- Format the Mermaid diagram with these **STRICT** requirements:
+  - **MANDATORY: Use exactly these three subgraph names: INPUT, PROCESSING, OUTPUT**
+  - Use explicit direction controls (direction TB/LR) within each subgraph
+  - **Node text MUST follow these rules:**
+    - **NO HTML tags (no <br/>, <br>, etc.)**
+    - **NO special characters except underscore**
+    - **Use pipe | for line breaks in node text**
+    - **Maximum 15 characters per line**
+    - **Format: NODE_ID[Line1|Line2]**
+  - Use consistent connection style: ONLY `A --> B` format (no text on connections)
+  - **Class definitions MUST follow these EXACT formatting rules:**
+    - **Maximum 4 nodes per class definition line**
+    - **Each class statement on exactly ONE line with NO line breaks**
+    - **Format:** `class NODE1,NODE2,NODE3,NODE4 className`
+    - **NO trailing spaces or commas after the last node**
+    - **Node names must be ≤ 12 characters - use abbreviations**
+  - Use consistent node naming: **ONLY alphanumeric + underscore, NO hyphens or spaces**
+  - **MANDATORY: Validate total character count per class line ≤ 60 characters**
+  - Maximum diagram complexity: 12 nodes total (4 per section)
+ 
+## MANDATORY Table Coverage Validation:
+- [ ] All documented SELECT tables included in INPUT section
+- [ ] All documented UPDATE/INSERT tables included in OUTPUT section  
+- [ ] Cross-reference documented table list with actual SQL statements
+- [ ] Include tables found in code but not in documentation
+- [ ] Prioritize documented tables over undocumented usage
 
-Fill the placeholders strictly. Do not add nodes or labels beyond limits.
+## Safe Node Text Examples:
+- **CORRECT:** `HSP_CLM_FRM[Claims|Headers]`
+- **INCORRECT:** `HSP_CLM_FRM[(Claims<br/>Headers)]`
+- **CORRECT:** `VALIDATE[Validate|Quarter]`
+- **INCORRECT:** `VALIDATE[Validate Quarter & ABP Rates]`
 
-REQUIREMENTS
-- Graph type: graph TB
-- Three subgraphs named exactly: INPUT, PROCESSING, OUTPUT
-- Each subgraph uses: direction TB
-- Max 4 nodes per subgraph, max 12 nodes total
-- Node IDs: ^[A-Z][A-Z0-9_]{1,11}$
-- Connections use only: A --> B
-- No text on edges
-- classDef lines exactly as given
-- class lines format: class NODE1,NODE2,NODE3,NODE4 className
-- Each class line < 60 characters, no trailing commas, every node exists
+## Node Naming Rules:
+- Use only: A-Z, 0-9, underscore
+- Maximum 12 characters total
+- Abbreviate long names: `HSP_CLM_FRM` → `HSP_CLM`
+- No spaces in node IDs
+- No special characters in node text except pipe |
+
+## Safe Class Definition Format:
+```mermaid
+class HSP_CLM,HSP_LNE,SERV_CODE,PHIAC input
+class VALIDATE,CHECK,CALC,UPDATE process  
+class PHIAC_ABP,ERROR_LOG,HSP_UPD,REPORTS output
+```
 
 OUTPUT FORMAT
 ```mermaid
