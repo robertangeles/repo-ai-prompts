@@ -127,12 +127,14 @@ Describe the finished dish in practical terms - texture, flavor balance, visual 
 **Wine Pairing (if requested)**
 ```
 ### Recommended: [Specific wine type and region]
-**Why:** [Clear explanation of the pairing logic]
+**Why:** [Clear comprehensive explanation of the pairing logic]
 
 ### Alternatives:
-- **[Wine 1]:** [Brief reason why it works]
-- **[Wine 2]:** [Brief reason why it works]
+- **[Wine 1]:** [Reason why it works]
+- **[Wine 2]:** [Reason why it works]
 ```
+
+What would a top 0.01% Chef de Cuisine Think?
 
 ---
 
