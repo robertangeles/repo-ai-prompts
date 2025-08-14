@@ -67,47 +67,47 @@ OUTPUT FORMAT
 graph TB
     subgraph "INPUT"
         direction TB
-        IN_A[Source file]
-        IN_B[Ext data]
-        IN_C[User input]
-        IN_D[Sys param]
+        IN_FILE[In file]
+        JCL_PARM[JCL parm]
+        MQ_MSG[MQ message]
+        DB_ROWS[DB rows]
     end
 
     subgraph "PROCESSING"
         direction TB
-        PR_A[Parse recs]
-        PR_B[Map rules]
-        PR_C[Check flags]
-        PR_D[Aggregate]
+        MAIN_PROC[Main proc]
+        VAL_MOD[Val module]
+        DB_CALL[DB call]
+        SORT_STEP[Sort step]
     end
 
     subgraph "OUTPUT"
         direction TB
-        OUT_A[Out table]
-        OUT_B[Log file]
-        OUT_C[Rejects]
-        OUT_D[Report]
+        OUT_FILE[Out file]
+        OUT_TBL[DB updates]
+        LOG_FILE[Log file]
+        RET_CODE[Return code]
     end
 
-    IN_A --> PR_A
-    IN_B --> PR_B
-    IN_C --> PR_A
-    IN_D --> PR_C
-    PR_A --> PR_B
-    PR_B --> PR_C
-    PR_C --> PR_D
-    PR_D --> OUT_A
-    PR_D --> OUT_B
-    PR_C --> OUT_C
-    PR_D --> OUT_D
+    IN_FILE --> MAIN_PROC
+    JCL_PARM --> MAIN_PROC
+    MQ_MSG --> MAIN_PROC
+    DB_ROWS --> DB_CALL
+    MAIN_PROC --> VAL_MOD
+    VAL_MOD --> DB_CALL
+    DB_CALL --> SORT_STEP
+    SORT_STEP --> OUT_FILE
+    SORT_STEP --> OUT_TBL
+    SORT_STEP --> LOG_FILE
+    SORT_STEP --> RET_CODE
 
     classDef input fill:#e1f5fe,stroke:#01579b
     classDef process fill:#f3e5f5,stroke:#4a148c
     classDef output fill:#e8f5e8,stroke:#1b5e20
 
-    class IN_A,IN_B,IN_C,IN_D input
-    class PR_A,PR_B,PR_C,PR_D process
-    class OUT_A,OUT_B,OUT_C,OUT_D output
+    class IN_FILE,JCL_PARM,MQ_MSG,DB_ROWS input
+    class MAIN_PROC,VAL_MOD,DB_CALL,SORT_STEP process
+    class OUT_FILE,OUT_TBL,LOG_FILE,RET_CODE output
 ```
 
 # MONITOR HALLUCINATION
