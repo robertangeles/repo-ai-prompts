@@ -65,28 +65,49 @@ REQUIREMENTS
 OUTPUT FORMAT
 ```mermaid
 graph TB
-    subgraph INPUT ["INPUT"]
+    subgraph "INPUT"
         direction TB
-        [DECLARE INPUT NODES]
+        IN_A[Source file]
+        IN_B[Ext data]
+        IN_C[User input]
+        IN_D[Sys param]
     end
 
-    subgraph PROCESSING ["PROCESSING"]
+    subgraph "PROCESSING"
         direction TB
-        [DECLARE PROCESS NODES]
+        PR_A[Parse recs]
+        PR_B[Map rules]
+        PR_C[Check flags]
+        PR_D[Aggregate]
     end
 
-    subgraph OUTPUT ["OUTPUT"]
+    subgraph "OUTPUT"
         direction TB
-        [DECLARE OUTPUT NODES]
+        OUT_A[Out table]
+        OUT_B[Log file]
+        OUT_C[Rejects]
+        OUT_D[Report]
     end
 
-    [DECLARE CONNECTIONS ONLY USING -->]
+    IN_A --> PR_A
+    IN_B --> PR_B
+    IN_C --> PR_A
+    IN_D --> PR_C
+    PR_A --> PR_B
+    PR_B --> PR_C
+    PR_C --> PR_D
+    PR_D --> OUT_A
+    PR_D --> OUT_B
+    PR_C --> OUT_C
+    PR_D --> OUT_D
 
     classDef input fill:#e1f5fe,stroke:#01579b
     classDef process fill:#f3e5f5,stroke:#4a148c
     classDef output fill:#e8f5e8,stroke:#1b5e20
 
-    [CLASS LINES: 1 for input, 1 for process, 1 for output]
+    class IN_A,IN_B,IN_C,IN_D input
+    class PR_A,PR_B,PR_C,PR_D process
+    class OUT_A,OUT_B,OUT_C,OUT_D output
 ```
 
 # MONITOR HALLUCINATION
