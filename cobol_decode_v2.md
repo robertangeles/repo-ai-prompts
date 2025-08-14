@@ -46,71 +46,48 @@ SECTION 1: PROGRAM OVERVIEW
 - No Further Output Required
 
 # I/O DIAGRAM
-- Scan the code from Line {{208}}-{{3284}}
-- Generate a comprehensive diagram illustrating the Input-Processing-Output (IPO) flow of the COBOL code.
-- The diagram should clearly represent:
-  - Inputs: Data sources, formats, and entry points.
-  - Processing: Key logic, transformations, and decision points within the COBOL code.
-  - Outputs: Final data structures, destinations, and formats.
-- Format the Mermaid diagram with these **STRICT** requirements:
-  - **MANDATORY: Use exactly these three subgraph names: INPUT, PROCESSING, OUTPUT**
-  - Use explicit direction controls (direction TB/LR) within each subgraph
-  - Keep node text brief (max 20 characters per line)
-  - Use consistent connection style: ONLY `A --> B` format (no text on connections)
-  - **Class definitions MUST follow these EXACT formatting rules:**
-    - **Maximum 4 nodes per class definition line** (reduced from 6 for safety)
-    - **Each class statement on exactly ONE line with NO line breaks**
-    - **Format:** `class NODE1,NODE2,NODE3,NODE4 className`
-    - **NO trailing spaces or commas after the last node**
-    - **If more than 4 nodes needed, use multiple class lines**
-    - **Node names must be ≤ 12 characters to prevent line overflow**
-  - Use consistent node naming (alphanumeric + underscore only, no spaces or hyphens)
-  - **MANDATORY: Validate total character count per class line ≤ 80 characters**
-  - Maximum diagram complexity: 12 nodes total (4 per section - reduced for reliability)
+You are generating a Mermaid diagram only. Output a single fenced code block with language tag mermaid and nothing else.
 
-## Required Diagram Structure:
+Fill the placeholders strictly. Do not add nodes or labels beyond limits.
+
+REQUIREMENTS
+- Graph type: graph TB
+- Three subgraphs named exactly: INPUT, PROCESSING, OUTPUT
+- Each subgraph uses: direction TB
+- Max 4 nodes per subgraph, max 12 nodes total
+- Node IDs: ^[A-Z][A-Z0-9_]{1,11}$
+- Connections use only: A --> B
+- No text on edges
+- classDef lines exactly as given
+- class lines format: class NODE1,NODE2,NODE3,NODE4 className
+- Each class line < 60 characters, no trailing commas, every node exists
+
+OUTPUT FORMAT
 ```mermaid
 graph TB
     subgraph INPUT ["INPUT"]
         direction TB
-        [input nodes here - max 4]
+        [DECLARE INPUT NODES]
     end
 
     subgraph PROCESSING ["PROCESSING"]
         direction TB
-        [processing nodes here - max 4]
+        [DECLARE PROCESS NODES]
     end
 
     subgraph OUTPUT ["OUTPUT"]
         direction TB
-        [output nodes here - max 4]
+        [DECLARE OUTPUT NODES]
     end
 
-    [connections between sections]
+    [DECLARE CONNECTIONS ONLY USING -->]
 
     classDef input fill:#e1f5fe,stroke:#01579b
     classDef process fill:#f3e5f5,stroke:#4a148c
     classDef output fill:#e8f5e8,stroke:#1b5e20
 
-    class NODE1,NODE2,NODE3,NODE4 input
-    class NODE5,NODE6,NODE7,NODE8 process
-    class NODE9,NODE10,NODE11,NODE12 output
+    [CLASS LINES: 1 for input, 1 for process, 1 for output]
 ```
-## MANDATORY Pre-Response Validation Checklist:
-Before generating any Mermaid diagram, verify:
-- [ ] **Syntax Check**: Manually verify each class definition follows exact format
-- [ ] **Character Count**: Each class line ≤ 60 characters total
-- [ ] **Node Count**: Maximum 4 nodes per class line
-- [ ] **Node Existence**: All nodes in class definitions exist in diagram
-- [ ] **Reserved Words**: No Mermaid reserved words as node names
-- [ ] **Special Characters**: Only alphanumeric + underscore in node names
-- [ ] **Line Termination**: Each statement properly terminated
-
-## Built-in Validation Rules:
-1. **Class Definition Pattern**: `^class [A-Z_,]{1,40} (input|process|output)$`
-2. **Node Name Pattern**: `^[A-Z][A-Z0-9_]{1,11}$`
-3. **Total Line Length**: `< 60 characters`
-4. **Reserved Word Check**: Avoid: `graph`, `subgraph`, `direction`, `class`, `classDef`
 
 # MONITOR HALLUCINATION
 - Never present generated, inferred, speculated, or deduced content as fact. 
