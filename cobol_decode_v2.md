@@ -46,102 +46,78 @@ SECTION 1: PROGRAM OVERVIEW
 - No Further Output Required
 
 # I/O DIAGRAM
-- Scan the Lines in Scope
-- Generate a comprehensive diagram describing the Input-Processing-Output (IPO) flow of the COBOL code.
-- **OUTPUT ONLY the Mermaid code block - no other text**
-- Format the Mermaid diagram with these **STRICT** requirements:
-  - **MANDATORY: Use exactly these three subgraph names: INPUT, PROCESSING, OUTPUT**
-  - Use explicit direction controls (direction TB/LR) within each subgraph
-  - **Node text MUST follow these rules:**
-    - **NO HTML tags (no <br/>, <br>, etc.)**
-    - **NO special characters except underscore**
-    - **Use pipe | for line breaks in node text**
-    - **Maximum 15 characters per line**
-    - **Format: NODE_ID[Line1|Line2]**
-  - Use consistent connection style: ONLY `A --> B` format (no text on connections)
-  - **Class definitions MUST follow these EXACT formatting rules:**
-    - **Maximum 4 nodes per class definition line**
-    - **Each class statement on exactly ONE line with NO line breaks**
-    - **Format:** `class NODE1,NODE2,NODE3,NODE4 className`
-    - **NO trailing spaces or commas after the last node**
-    - **Node names must be ≤ 12 characters - use abbreviations**
-  - Use consistent node naming: **ONLY alphanumeric + underscore, NO hyphens or spaces**
-  - **MANDATORY: Validate total character count per class line ≤ 60 characters**
-  - Maximum diagram complexity: 12 nodes total (4 per section)
- 
-## MANDATORY Table Coverage Validation:
-- [ ] All documented SELECT tables included in INPUT section
-- [ ] All documented UPDATE/INSERT tables included in OUTPUT section  
-- [ ] Cross-reference documented table list with actual SQL statements
-- [ ] Include tables found in code but not in documentation
-- [ ] Prioritize documented tables over undocumented usage
+You are generating a single Mermaid diagram. Output only one fenced code block tagged mermaid. No other text.
 
-## Safe Node Text Examples:
-- **CORRECT:** `HSP_CLM_FRM[Claims|Headers]`
-- **INCORRECT:** `HSP_CLM_FRM[(Claims<br/>Headers)]`
-- **CORRECT:** `VALIDATE[Validate|Quarter]`
-- **INCORRECT:** `VALIDATE[Validate Quarter & ABP Rates]`
+SCOPE
+- Program: {{PROGRAM}}
+- Lines in Scope: {{START_LINE}}-{{END_LINE}}
 
-## Node Naming Rules:
-- Use only: A-Z, 0-9, underscore
-- Maximum 12 characters total
-- Abbreviate long names: `HSP_CLM_FRM` → `HSP_CLM`
-- No spaces in node IDs
-- No special characters in node text except pipe |
+GOAL
+- Build an IPO diagram from the code in scope.
 
-## Safe Class Definition Format:
-```mermaid
-class HSP_CLM,HSP_LNE,SERV_CODE,PHIAC input
-class VALIDATE,CHECK,CALC,UPDATE process  
-class PHIAC_ABP,ERROR_LOG,HSP_UPD,REPORTS output
-```
+EXTRACTION RULES
+1) INPUT tables = all SQL SELECT sources (FROM/JOIN). Include documented tables and any found in code.
+2) OUTPUT tables = all SQL INSERT/UPDATE/DELETE targets.
+3) Files/queues/parms = inputs or outputs based on READ/WRITE/PUT/SEND.
+4) System modules and called programs = PROCESSING (not INPUT).
+5) Summarize processing into up to 4 major steps: main control, validation, calc/transform, db/io.
+6) If a section has >4 distinct items, group names inside node text using line breaks with |.
+7) Abbreviate long names in labels to ≤15 chars per line. Keep underscores. No other special chars.
 
-OUTPUT FORMAT
+NODE ID RULES
+- IDs use only A–Z, 0–9, underscore. Uppercase. Start with a letter. ≤12 chars.
+- Use compact IDs to keep class lines short:
+  INPUT: IN1,IN2,IN3,IN4
+  PROCESSING: PR1,PR2,PR3,PR4
+  OUTPUT: OUT1,OUT2,OUT3,OUT4
+- Define only the IDs you actually use.
+
+LABEL RULES
+- Format: NODE_ID[Line1|Line2|Line3|Line4]
+- No HTML tags. No hyphens. Use underscores.
+- Max 15 characters per line.
+
+EDGES
+- Use ONLY `A --> B`. No text on edges.
+
+VALIDATION (MANDATORY BEFORE EMIT)
+- All documented SELECT tables appear in INPUT labels.
+- All documented INSERT/UPDATE tables appear in OUTPUT labels.
+- Cross-check against actual SQL in code. Include any extra tables found.
+- Node IDs obey regex ^[A-Z][A-Z0-9_]{1,11}$
+- Each class line ≤ 60 characters. No trailing commas or spaces.
+- Each class line max 4 nodes. Every node on a class line exists above.
+- No reserved Mermaid words used as IDs.
+
+OUTPUT FORMAT (EMIT EXACTLY THIS SHAPE)
 ```mermaid
 graph TB
     subgraph "INPUT"
         direction TB
-        IN_FILE[In file]
-        JCL_PARM[JCL parm]
-        MQ_MSG[MQ message]
-        DB_ROWS[DB rows]
+        %% up to 4 input nodes
+        [INPUT_NODES]
     end
 
     subgraph "PROCESSING"
         direction TB
-        MAIN_PROC[Main proc]
-        VAL_MOD[Val module]
-        DB_CALL[DB call]
-        SORT_STEP[Sort step]
+        %% up to 4 processing nodes
+        [PROCESS_NODES]
     end
 
     subgraph "OUTPUT"
         direction TB
-        OUT_FILE[Out file]
-        OUT_TBL[DB updates]
-        LOG_FILE[Log file]
-        RET_CODE[Return code]
+        %% up to 4 output nodes
+        [OUTPUT_NODES]
     end
 
-    IN_FILE --> MAIN_PROC
-    JCL_PARM --> MAIN_PROC
-    MQ_MSG --> MAIN_PROC
-    DB_ROWS --> DB_CALL
-    MAIN_PROC --> VAL_MOD
-    VAL_MOD --> DB_CALL
-    DB_CALL --> SORT_STEP
-    SORT_STEP --> OUT_FILE
-    SORT_STEP --> OUT_TBL
-    SORT_STEP --> LOG_FILE
-    SORT_STEP --> RET_CODE
+    %% connections
+    [EDGES]
 
     classDef input fill:#e1f5fe,stroke:#01579b
     classDef process fill:#f3e5f5,stroke:#4a148c
     classDef output fill:#e8f5e8,stroke:#1b5e20
 
-    class IN_FILE,JCL_PARM,MQ_MSG,DB_ROWS input
-    class MAIN_PROC,VAL_MOD,DB_CALL,SORT_STEP process
-    class OUT_FILE,OUT_TBL,LOG_FILE,RET_CODE output
+    [CLASS_LINES]
 ```
 
 # MONITOR HALLUCINATION
