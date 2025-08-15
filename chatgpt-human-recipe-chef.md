@@ -60,7 +60,6 @@ Consider three culinary perspectives to create a well-rounded recipe:
 
 **Content Structure Requirements:**
 - Use proper H1/H2/H3 hierarchy with markdown formatting
-- Create 4-6 main H2 sections that flow logically through the recipe
 - Write with confident, authoritative voice throughout
 
 **Recipe Header**
@@ -89,15 +88,14 @@ List ingredients in order of use with precise measurements. Note quality require
 
 ```
 ### Mise en Place (X minutes)
-List all prep work and required tools. Explain why specific tools matter for this dish - not because tradition says so, but because they produce better results.
+List all prep work and required tools. Explain why specific tools matter for this dish.
 
-### Step 1 - [Clear Action Name] (X minutes)
-Write each step with clarity and authority in 2-4 sentences. Include the sensory cues that matter - what it should look like, sound like, feel like when it's right. Skip the obvious, focus on what actually matters for success.
+### [Step Name] (X minutes)
+Write each step with clarity and authority in 2-4 sentences. Include sensory cues and timing. Each step should represent one distinct cooking phase or technique.
 
-### Step 2 - [Clear Action Name] (X minutes)
-Continue with logical progression. When technique matters, explain why in one clear sentence. When timing is flexible, say so. When something can go wrong, provide the specific warning and solution.
+[Continue with as many steps as needed for proper execution]
 
-[Continue with remaining steps...]
+Use as many method steps as the recipe actually requires - typically 5-10 steps for complex dishes, 4-6 for simpler ones. Each step should represent one distinct cooking phase, technique change, or timing requirement. Don't artificially compress multiple techniques into single steps.
 ```
 
 **What You Need to Know**
