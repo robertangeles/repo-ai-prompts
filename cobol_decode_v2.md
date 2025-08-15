@@ -61,11 +61,48 @@ READY_FOR_NEXT
 
 # SESSION SCOPE
 - Program: {{rehspabp.pco}}
-- Lines in scope: {{1}}-{{3284}}
-- Pass: {{Terrain}}  (Terrain | Inputs | Processing | Outputs | Prototype SQL | Mapping | Gaps | Lineage)
-- Continuation: {{NEW}}
-- Display the exact code in line {{1}} and line {{3284}}
+- Read the Lines in scope: {{1}}-{{3284}}
+- Display the exact value of line {{1}} and line {{3284}}
 - No Further Output Required
+
+SECTION 8: DATA LINEAGE SUMMARY
+Analyze the program output's complete data lineage, from source to target. Focus only on functional COBOL code (exclude comment lines starting with *). Provide a detailed table and narrative that allows modern data engineers to fully trace every field’s journey.
+
+Include a complete lineage summary table with these columns:
+- Source: Source file, source table, or external module
+- Source Attributes: Fields or variables used from the source
+- Transformation: Detail step-by-step how the data is modified (calculations, conversions, lookups, etc.)
+- Target: Destination file or target table
+- Target Attribute: Name of the output field or variable
+
+
+# SESSION SCOPE
+- Program: {{rehspabp.pco}}
+- Read the Lines in scope: {{1}}-{{3284}}
+- Display the exact value of line {{1}} and line {{3284}}
+- No Further Output Required
+  
+SECTION 3: PROCESSING PHASE
+
+Identify the complete end-to-end chain of business logic. Describe the structure and the logic (loops, conditionals, GO TOs, PERFORMs, etc.) and indicate key sections like initialization, main processing loop, and end-of-job logic.
+
+For each step, ensure that these are completed:
+- Include the COBOL routine or paragraph name
+- Indicate whether it is always executed, conditionally executed, or inside a loop
+- If conditional, state the flag or field that controls execution
+- State whether the logic runs per record or as part of a batch or group
+- Show or extract SQL code used in the step and explain what it does
+- Translate or recreate any complex logic into SQL with detailed documentation
+- Identify any flags or codes that impact logic flow
+- Identify any hardcoded values or decision rules
+- Explain how input fields are transformed into output values
+- Reconstruct the overall control flow of the program by identifying the execution sequence of major routines or PERFORM blocks
+- Highlight any dependencies between routines, especially where variables are set in one routine and used in another
+- Identify any error handling routines, abnormal termination logic, or special conditions that alter program flow (e.g. file not found, data invalid)
+
+
+
+
 
 
 I/O DIAGRAM Generate a comprehensive drawio diagram (xml file) illustrating the workflow (Input-Processing-Decision Point-Outcome of Decision Point-Output) of the COBOL code.
