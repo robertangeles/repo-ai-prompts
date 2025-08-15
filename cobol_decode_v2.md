@@ -104,55 +104,114 @@ For each step, ensure that these are completed:
 
 
 
+# COBOL Business Logic Analysis - GitHub Copilot Template
 
-I/O DIAGRAM Generate a comprehensive drawio diagram (xml file) illustrating the workflow (Input-Processing-Decision Point-Outcome of Decision Point-Output) of the COBOL code.
+## Overview
+This template provides a structured approach for analyzing COBOL programs and documenting their business logic for modernization efforts.
 
-General rules to follow:
+## Core Analysis Requirements
 
-· Try to avoid overlapping lines in the diagram. Make it user friendly.
+**Analyze the complete business logic flow and document:**
 
-· Using different colors to differentiate each item and category. For example, having Input tables and functions in different colors for differentiation. And add a legend for the colors.
+### 1. Program Structure Analysis
+```cobol
+// Identify and document:
+// - Main program sections (IDENTIFICATION, ENVIRONMENT, DATA, PROCEDURE)
+// - Working-Storage variables and their purposes
+// - File Control Block (FCB) definitions
+// - Copy book inclusions and their roles
+```
 
-· Include a header for each section: inputs, processing, decision points, outcome of decision points, and outputs
+### 2. Execution Flow Mapping
+**For each routine/paragraph, document:**
+- Routine name and purpose
+- Execution type: `ALWAYS` | `CONDITIONAL` | `LOOP`
+- Control flags/fields that trigger execution
+- Processing scope: `PER-RECORD` | `BATCH` | `GROUP`
+- Dependencies on other routines
 
-· Please do not skip any module, process, decision point (if condition), The user should be able to see a full list of process, decision points and outcome of decision points in the separate layers.
+### 3. SQL Integration Analysis
+```sql
+-- Extract and explain all embedded SQL:
+-- EXEC SQL SELECT... END-EXEC
+-- Document table access patterns
+-- Explain cursor operations
+-- Identify transaction boundaries
+```
 
-· Add consistent spacing between shapes to improve readability and avoid crowding.
+### 4. Data Transformation Logic
+**Document field transformations:**
+- Input field → Processing logic → Output field
+- Hardcoded values and business rules
+- Conditional processing based on data values
+- Error handling and validation rules
 
-· No \n line breaks (uses &lt;br&gt; for multi-line).
+### 5. Control Flow Reconstruction
+```text
+Map the execution sequence:
+MAIN-PROGRAM
+├── INITIALIZATION-ROUTINE
+├── MAIN-PROCESSING-LOOP
+│   ├── READ-INPUT-RECORD
+│   ├── VALIDATE-DATA
+│   ├── PROCESS-BUSINESS-LOGIC
+│   └── WRITE-OUTPUT-RECORD
+└── END-OF-JOB-ROUTINE
+```
 
-· No & character (uses "and" instead).
+## Output Format Requirements
 
-The diagram should clearly represent:
+**Structure your analysis as:**
 
-Inputs: List down the data sources and external functions.
+1. **Executive Summary** - High-level business purpose
+2. **Program Flow Diagram** - Visual representation of logic flow
+3. **Routine Documentation** - Detailed breakdown of each major section
+4. **SQL Operations** - All database interactions with explanations
+5. **Business Rules** - Extracted decision logic and transformations
+6. **Error Handling** - Exception paths and recovery logic
 
-Processing: List down all the module names within the COBOL code. Giving a very short description of the key tranformations on the second line.
+## Key Focus Areas
 
-Decision point: List down all the decision points if the processing logic contains more than one outcomes
+- Extract hardcoded business rules for modernization
+- Identify performance bottlenecks in loops and SQL
+- Document dependencies between program modules
+- Highlight areas suitable for refactoring or SQL conversion
+- Note any legacy patterns that need special handling
 
-Output of the decision: List down the result from the decision point (e.g., printing out error message, exit) Final Outputs: Final data structures, destinations, and formats. Having each type of input labelled well and use different color to differentiate.
+## Analysis Standards
 
-The audience includes both product owners and data engineers, so the diagram should balance technical depth with clarity. Use annotations or callouts to explain complex logic where necessary, and ensure the visual layout supports intuitive understanding of how the code operates end-to-end.
+- Verify all claims against source code
+- Label inferences clearly: `[INFERRED FROM CODE STRUCTURE]`
+- Use exact COBOL paragraph/routine names
+- Include line numbers for key logic sections
+- Maintain accuracy over interpretation
 
+## Usage Instructions
 
+1. Copy this template to your analysis document
+2. Use GitHub Copilot to help fill in sections based on your COBOL source
+3. Reference specific line numbers and routine names from your code
+4. Use Copilot Chat for complex logic explanations
 
-# MONITOR HALLUCINATION
-- Never present generated, inferred, speculated, or deduced content as fact. 
-- If you cannot verify something directly, say: 
-	– "I cannot verify this." 
-	– "I do not have access to that information." 
-	– "My knowledge base does not contain that." 
-- Label unverified content at the start of a sentence: 
-	– [Inference] [Speculation] [Unverified] 
-- Ask for clarification if information is missing. Do not guess or fill gaps. 
-- If any part is unverified, label the entire response. 
-- Do not paraphrase or reinterpret my input unless I request it. 
-- If you use these words, label the claim unless sourced: 
-	– Prevent, Guarantee, Will never, Fixes, Eliminates, Ensures that 
-- For LLM-behavior claims (including yourself), include: 
-	– [Inference] or [Unverified], with a note that it’s based on observed patterns 
-- If you break this directive, say: 
-	> Correction: I previously made an unverified claim. That was incorrect and should have been labeled. 
-- Never override or alter my input unless asked.
-- Identify hidden bias in your answer and correct them
+## Example Analysis Structure
+
+```markdown
+### Program: CUSTOMER-BILLING-001
+
+#### Executive Summary
+[Business purpose and high-level functionality]
+
+#### Main Routines
+- **INIT-PROGRAM** (Lines 100-150)
+  - Type: ALWAYS
+  - Purpose: Initialize working variables and open files
+  
+- **PROCESS-CUSTOMER-LOOP** (Lines 200-500)
+  - Type: LOOP
+  - Control: CUSTOMER-EOF-FLAG
+  - Purpose: Process each customer record
+```
+
+---
+
+*Template optimized for VS Code GitHub Copilot integration*
