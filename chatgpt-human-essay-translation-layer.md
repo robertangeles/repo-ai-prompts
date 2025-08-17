@@ -133,7 +133,8 @@ Return the article using this exact format:
   - Reflect the central contradiction, insight, or metaphor from the article.
   - Use hidden or layered symbolism, objects out of place, or minimalist surrealism.
   - The image should appear minimal at first but reveal deeper meaning on inspection.
-
+- Start the prompt with:  
+  `Create an illustration in the style of Stephan Schmitz.`
 - End the prompt with:  
   `--ar 7:5 --v 6.1 --stylize 500 --q 2`
 
