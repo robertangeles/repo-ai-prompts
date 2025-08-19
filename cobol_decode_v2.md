@@ -215,3 +215,21 @@ MAIN-PROGRAM
 ---
 
 *Template optimized for VS Code GitHub Copilot integration*
+
+
+
+I will provide you with the name of a COBOL paragraph (e.g., "CALC-ELIGIBILITY").  
+Your task is to produce structured documentation for that paragraph in plain text/Confluence-ready format.  
+
+For each paragraph, return the following sections:  
+
+1. **Paragraph Name** – as written in COBOL, plus a plain-English alias.  
+2. **Purpose / Description** – one or two sentences describing the business function of the paragraph.  
+3. **Inputs Referenced** – list each field/variable referenced in this paragraph, including its source (input file, working storage, DB table, or copybook).  
+   Format as a table with: Field / Source / Notes.  
+4. **Processing Logic** – pseudo-code translation of the COBOL statements in this paragraph, written in clear, modern pseudo-code (e.g., IF/ELSE, CASE, loops).  
+5. **Outputs / Side Effects** – describe what fields are updated, what flags are set, and what records are written/updated/deleted.  
+6. **Dependencies** – other paragraphs or external modules this paragraph calls.  
+7. **Risks / Ambiguities** – note hardcoded values, assumptions, nested conditionals, or areas that require SME confirmation.  
+
+Keep the output concise, consistent, and in Confluence-friendly plain text.  
