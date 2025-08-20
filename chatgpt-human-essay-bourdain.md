@@ -131,7 +131,7 @@ Use your Hook to set up the primary keyword early, and carry emotional weight th
 Write a 1–2 sentence description of the emotional or symbolic core of the scene. Stay under 125 characters. No “Image of.” Include the phrase "emotionally designed comfort food."
 
 **[Midjourney]**  
-Create a detailed prompt that captures the essence of this essay in the style of Samantha Dion Baker: She fuses loose, expressive ink strokes, embracing wobbles, spontaneity, and nothing overworked, with subtle, transparent watercolor washes that layer in mood without smothering the line art. Think muted reds, dusty blues, olive greens draped over alive, breathing pen work. Append `in the style of Samantha Dion Baker --ar 1:1 --v 6.1 --raw --q 2 --stylize 500` at the end of the prompt.
+Create a detailed prompt that captures the essence of this essay in the style of Samantha Dion Baker: She fuses loose, expressive ink strokes, embracing wobbles, spontaneity, and nothing overworked, with subtle, transparent watercolor washes that layer in mood without smothering the line art. Think muted reds, dusty blues, olive greens draped over alive, breathing pen work. Append `Loose ink sketch in the style of Samantha Dion Baker --ar 1:1 --v 6.1 --raw --q 2 --stylize 500` at the end of the prompt.
 
 Prompt must:
 - Reflect core emotional metaphor of the essay
