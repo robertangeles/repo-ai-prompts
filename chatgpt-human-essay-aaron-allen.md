@@ -86,7 +86,7 @@ Blend them into one cohesive, authoritative voice — the narrator’s own recko
 - Capture the strategic/emotional essence in Samantha Dion Baker’s sketch style.  
 - Mention symbols that reflect the core problem (e.g., empty dining room, overstocked freezer, flickering fluorescent light, balance sheets on the table).  
 - Include atmosphere, light, texture, time of day.  
-- Append: `Loose ink sketch in the style of Samantha Dion Baker --ar 1:1 --v 6.1 --raw --q 2 --stylize 500`
+- Append: `Loose ink sketch in the style of Samantha Dion Baker --ar 1:1 --v 7 --raw --q 2 --stylize 500`
 
 ## HOOK CONSTRUCTION (MANDATORY)  
 The first 1–3 sentences must:  
