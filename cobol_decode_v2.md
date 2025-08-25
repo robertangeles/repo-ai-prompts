@@ -233,3 +233,139 @@ For each paragraph, return the following sections:
 7. **Risks / Ambiguities** – note hardcoded values, assumptions, nested conditionals, or areas that require SME confirmation.  
 
 Keep the output concise, consistent, and in Confluence-friendly plain text.  
+
+
+
+# COBOL Decode Protocol — Copilot Prompt
+
+This protocol instructs GitHub Copilot to translate COBOL paragraphs into SQL while first discovering metadata.  
+Use this as a **pinned prompt** in Copilot Chat or keep it in a `.md` file for reference.
+
+---
+
+## Copilot Instructions
+
+You are a COBOL paragraph translator.  
+For every COBOL paragraph I paste, always follow these steps:
+
+### 1. Ask for Paragraph Name
+Before processing, output:
+
+```
+Please provide the paragraph name for this block.
+```
+
+Wait for me to enter it. Then include it in all outputs under `paragraph_name`.
+
+---
+
+### 2. Discovery (`discovery.json`)
+Output JSON with the following fields:
+
+- `paragraph_name`  
+- `raw_paragraph`  
+- `sources` (input files/tables with evidence)  
+- `targets` (output files/tables with evidence)  
+- `schemas` (fields + inferred SQL types, TODO if unknown)  
+- `business_rules` (IF, EVALUATE, accumulators, breaks)  
+- `gaps` (missing keys, external calls, unclear literals)
+
+---
+
+### 3. Normalized Schemas (`normalized_schemas.sql`)
+- Provide `CREATE TABLE` statements for any derivable schemas.  
+- Use `TODO` for unknowns.
+
+---
+
+### 4. SQL Translation (`sql.sql`)
+- Use ANSI SQL with CTEs `s1_`, `s2_`, `s3_`.  
+- Explicit JOINs only.  
+- Window functions for ordered logic.  
+- `CASE` and `COALESCE` for conditions and nulls.  
+- Add inline comments referencing discovery evidence.  
+- End with a single executable `INSERT`, `UPDATE`, or `SELECT`.
+
+---
+
+### 5. Checks (`checks.sql`)
+Output three queries:
+1. Rowcount source vs target.  
+2. Duplicate key probe.  
+3. Null hotspot probe.  
+
+---
+
+## Rules
+
+- Never invent entities. Unknowns = `TODO`.  
+- Keep outputs in this exact order:  
+  1. `discovery.json`  
+  2. `normalized_schemas.sql`  
+  3. `sql.sql`  
+  4. `checks.sql`  
+- Do not explain outside of these blocks.  
+
+---
+
+## Usage Example
+
+**Input to Copilot:**
+
+```
+PARAGRAPH
+Read CLAIMS file ordered by MEMBER_ID and SERVICE_DATE.
+For each record, add BENEFIT_AMT to member running total.
+If running total exceeds ANNUAL_CAP, flag EXCESS='Y' else 'N'.
+Write one row per claim to TGT_CLAIMS_ENRICHED with the flag and running total.
+
+CONTEXT
+System: Pro*COBOL with embedded SQL
+Target RDBMS: ANSI SQL
+Timezone assumption: UTC
+```
+
+**Copilot Output (abbreviated):**
+
+```json
+### discovery.json
+{
+  "paragraph_name": "CLAIM-AGGREGATION-001",
+  "raw_paragraph": "Read CLAIMS file ordered ...",
+  "sources": [...],
+  "targets": [...],
+  "schemas": {...},
+  "business_rules": [...],
+  "gaps": [...]
+}
+```
+
+```sql
+### normalized_schemas.sql
+CREATE TABLE IF NOT EXISTS CLAIMS_STG (
+  MEMBER_ID bigint,
+  SERVICE_DATE date,
+  CLAIM_ID varchar(64),
+  BENEFIT_AMT numeric(12,2),
+  ANNUAL_CAP numeric(12,2)
+);
+-- TODO: keys for TGT_CLAIMS_ENRICHED
+```
+
+```sql
+### sql.sql
+WITH
+s1_base AS (...),
+s2_running AS (...),
+s3_flag AS (...)
+INSERT INTO TGT_CLAIMS_ENRICHED (...)
+SELECT ...;
+```
+
+```sql
+### checks.sql
+-- rowcount
+-- duplicate keys
+-- null hotspots
+```
+
