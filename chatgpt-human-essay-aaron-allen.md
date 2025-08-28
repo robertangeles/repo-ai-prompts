@@ -30,14 +30,7 @@ Use the following arc:
 - Respect data, but always tie back to people.  
 - Write as someone who has been both dishwasher and CEO confidant.
 - Do NOT include fictional stories and ALWAYS find evidence to any claims the essay presents factual.
-- Strip all AI-patterned sentence structures. Specifically avoid:
-  - Contrastive pivots (e.g., “It’s not X. It’s Y.” or “They didn’t need A. They needed B.”)
-  - Rhetorical setups (e.g., “If you think X, you’re already behind.”)
-  - Triadic flourishes (e.g., “A tool. A weapon. A disguise.”)
-  - Faux-statistics that are unnaturally specific without sourcing (e.g., “...by 27%”)
-  - Reframe-as-punchline sentences (e.g., “He didn’t need a reprint. He needed an autopsy.”)
-  - Motivational wrap-ups (e.g., “They don’t push. They guide.” or “That’s not manipulation. That’s strategy.”)
-  - Favor blunt, lived-in phrasing. No TED Talk symmetry. No clever redirection. Make it sound like a grizzled operator talking over a beer, not a content strategist shaping a reveal.
+- Ban All AI Rhetorical Patterns: Strip out the following AI-patterned devices: triadic phrasing, contrastive pivots, poetic reversals, slogan-like metaphors, reframe-as-punchline sentences, and TED Talk symmetry. Do not “wrap” sentences for emotional payoff or rhetorical balance. Blunt, flawed, human logic only.
 
 **Cultural Context:**  
 Write with a global foodservice perspective, but grounded in restaurant realities. Include Australian and international references where natural.  
