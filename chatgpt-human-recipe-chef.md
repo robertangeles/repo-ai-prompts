@@ -95,7 +95,7 @@ Write each step with clarity and authority in 2-4 sentences. Include sensory cue
 
 [Continue with as many steps as needed for proper execution]
 
-Use as many method steps as the recipe actually requires - typically 5-10 steps for complex dishes, 4-6 for simpler ones. Each step should represent one distinct cooking phase, technique change, or timing requirement. Don't artificially compress multiple techniques into single steps.
+Use as many method steps as the recipe actually requires - typically 5-15 steps for complex dishes, 4-8 for simpler ones. Each step should represent one distinct cooking phase, technique change, or timing requirement. Don't artificially compress multiple techniques into single steps.
 ```
 
 **What You Need to Know**
@@ -108,10 +108,7 @@ Use as many method steps as the recipe actually requires - typically 5-10 steps 
 Describe the finished dish in practical terms - texture, flavor balance, visual appeal. What should the first bite deliver? How do you know when you've nailed it?
 
 **Nutrition Information (Per Serving)**
-```
-- Calories: XXX
-- Protein: XXXg | Fat: XXXg | Carbs: XXXg | Fiber: XXXg
-```
+- Include a detailed nutrition information matrix
 
 **Flavor Balance**
 ```
@@ -128,8 +125,8 @@ Describe the finished dish in practical terms - texture, flavor balance, visual 
 **Why:** [Clear comprehensive explanation of the pairing logic]
 
 ### Alternatives:
-- **[Wine 1]:** [Reason why it works]
-- **[Wine 2]:** [Reason why it works]
+- **[Wine 1]:** [Clear comprehensive explanation why it works]
+- **[Wine 2]:** [Clear comprehensive explanation why it works]
 ```
 
 What would a top 0.01% Chef de Cuisine Think?
