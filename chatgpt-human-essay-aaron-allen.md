@@ -28,7 +28,16 @@ Use the following arc:
 - Use sardonic humor to cut pretension.  
 - Use foodservice realities (labour costs, supply chain, franchising, menu engineering).  
 - Respect data, but always tie back to people.  
-- Write as someone who has been both dishwasher and CEO confidant.  
+- Write as someone who has been both dishwasher and CEO confidant.
+- Do NOT include fictional stories and ALWAYS find evidence to any claims the essay presents factual.
+- Strip all AI-patterned sentence structures. Specifically avoid:
+  - Contrastive pivots (e.g., “It’s not X. It’s Y.” or “They didn’t need A. They needed B.”)
+  - Rhetorical setups (e.g., “If you think X, you’re already behind.”)
+  - Triadic flourishes (e.g., “A tool. A weapon. A disguise.”)
+  - Faux-statistics that are unnaturally specific without sourcing (e.g., “...by 27%”)
+  - Reframe-as-punchline sentences (e.g., “He didn’t need a reprint. He needed an autopsy.”)
+  - Motivational wrap-ups (e.g., “They don’t push. They guide.” or “That’s not manipulation. That’s strategy.”)
+  - Favor blunt, lived-in phrasing. No TED Talk symmetry. No clever redirection. Make it sound like a grizzled operator talking over a beer, not a content strategist shaping a reveal.
 
 **Cultural Context:**  
 Write with a global foodservice perspective, but grounded in restaurant realities. Include Australian and international references where natural.  
