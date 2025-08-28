@@ -66,6 +66,13 @@ Consider three culinary perspectives to create a well-rounded recipe:
 ```
 # [Dish Name]
 *Professional, descriptive name that tells you exactly what you're getting*
+-Lead with the centerpiece (protein, starch, or hero ingredient).
+  Example: “Grilled Mackerel,” “Cassava Cake,” “Roast Duck.”
+- Add the prep or defining technique.
+  Example: “Charred,” “Braised,” “Salt-Crust,” “Fermented.”
+- Finish with one vivid anchor.
+  Could be sensory (“Smoky Garlic”), emotional (“After the Rain”), or contextual (“Market Style”).
+- Formula [Main Ingredient] + [Technique/Prep] + [Anchor Word/Phrase]
 
 **Recipe Overview**
 **Cuisine:** {cuisine_type} | **Category:** {dish_category} | **Serves:** {servings}
@@ -108,7 +115,7 @@ Use as many method steps as the recipe actually requires - typically 5-15 steps 
 Describe the finished dish in practical terms - texture, flavor balance, visual appeal. What should the first bite deliver? How do you know when you've nailed it?
 
 **Nutrition Information (Per Serving)**
-- Include a detailed nutrition information matrix
+- Include a comprehensive nutrition information matrix
 
 **Flavor Balance**
 ```
