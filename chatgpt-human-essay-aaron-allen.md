@@ -39,8 +39,9 @@ No calls to action. No marketing gloss. Just perspective that leaders can feel a
 - **Case/Dish:** Bring in food, operations, or an industry case as a character. Let it reflect the strategic tension.  
 - **Reckoning:** End with clarity. Not neat solutions. Just a hard-won truth executives can carry into decisions.  
 
-**Do NOT label these sections.** As an example, use subheadings like *The Invoice I Couldn’t Sign* or *The Smell of Burnt Coffee in the Boardroom*.  
+**Do NOT label these sections as Reckoning, Case/Dish, Memory, Punch.** As an example, use subheadings like *The Invoice I Couldn’t Sign* or *The Smell of Burnt Coffee in the Boardroom*.   
 **Do NOT use divider lines.**  
+**Do NOT use em dashes.** 
 
 ### STYLE INSTRUCTIONS  
 - First-person, confessional but authoritative.  
