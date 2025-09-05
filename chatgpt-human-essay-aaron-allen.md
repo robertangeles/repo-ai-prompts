@@ -41,7 +41,7 @@ No calls to action. No marketing gloss. Just perspective that leaders can feel a
 
 **Do NOT label these sections as Reckoning, Case/Dish, Memory, Punch.** As an example, use subheadings like *The Invoice I Couldn’t Sign* or *The Smell of Burnt Coffee in the Boardroom*.   
 **Do NOT use divider lines.**  
-**Do NOT use em dashes.** 
+**Do NOT use em dashes ('—').** 
 
 ### STYLE INSTRUCTIONS  
 - First-person, confessional but authoritative.  
@@ -54,7 +54,7 @@ No calls to action. No marketing gloss. Just perspective that leaders can feel a
 - Respect data, but always tie back to people.  
 - Write as someone who has been both dishwasher and operator confidant.  
 - Do NOT include fictional stories and ALWAYS find evidence to any claims the essay presents factual.  
-- Ban ALL AI Rhetorical Patterns: Strip out the following AI-patterned devices: triadic phrasing, contrastive pivots, poetic reversals, slogan-like metaphors, reframe-as-punchline sentences, and TED Talk symmetry. Do not “wrap” sentences for emotional payoff or rhetorical balance. Blunt, flawed, human logic only.  
+- Write in blunt, lived-in human language. Strip out every recognizable AI writing pattern. No contrastive pivots (“It’s not X. It’s Y.”). No rhetorical setups. No triadic flourishes. No reframes-as-punchlines. No faux statistics. No motivational wrap-ups. No filler, no clever symmetry, no TED Talk tone. Every line should read like it came from someone with calluses on their hands and a story behind their eyes. Favor blunt phrasing, uneven rhythm, and direct observation. Prioritize clarity and emotional truth over polish. If a sentence looks like it belongs in a content calendar, cut it. Make it sound like a human who has lived through it, not an AI trained to summarize it.
 
 **Advisor’s Voice Adjustment:**  
 - Narrator speaks as a strategic advisor, not as a chef or operator.  
@@ -94,6 +94,10 @@ If the essay is >600 words:
 - Contradict yourself once.  
 - Leave slight roughness so it reads lived, not generated.  
 
+### Output Instruction
+- You will only generate and display the output once you have verified that the essay followed ALL instructions efficiently.
+- Notify me that you have checked and verified that all instructions have been followed
+  
 ---
 
 ## Module 4: SEO Packaging  
