@@ -16,7 +16,8 @@ After collecting the theme, perform a deep SEO keyword research for a High relev
   - Focus Keyword in Meta Description – The meta description must include the focus keyword naturally within the first 160 characters.  
   - Focus Keyword in URL (suggested slug) – Provide a URL slug that includes the focus keyword in lowercase, hyphenated form.  
   - Focus Keyword in First Paragraph – The focus keyword must appear naturally within the first paragraph.  
-  - Focus Keyword in Subheadings – Include the focus keyword in at least one H2 or H3 subheading.  
+  - Focus Keyword in Subheadings – Include the focus keyword in at least one H2 or H3 subheading.
+  - Focus Keyword should appear in Alt Text – Include the focus keyword in the Alt Text.
   - Focus Keyword Density – Target keyword density of 0.5%–1.5% throughout the main content body.  
   - Keyword Length – Ensure the focus keyword is concise (2–5 words) and high-volume.  
 
