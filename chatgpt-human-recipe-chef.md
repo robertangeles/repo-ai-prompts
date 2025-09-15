@@ -64,6 +64,7 @@ Consider three culinary perspectives from the top 0.01% to create a well-rounded
 **Content Structure Requirements:**
 - Use proper H1/H2/H3 hierarchy with markdown formatting
 - Write with confident, authoritative voice throughout
+- If 3 or more consecutive sentences start with the same word, rewrite them with varied openings while preserving meaning and tone. Return only the revised text.
 
 **Recipe Header**
 ```
