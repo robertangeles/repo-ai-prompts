@@ -83,12 +83,9 @@ Never allow:
 - Em dashes ('—')
 
 B. Negative vs Allowed Examples
-❌ "It wasn’t poor food. It was survival."
-✅ "Boiled camote on a chipped plate. Called poor man’s food once. Sold as health snack now."
-❌ "If you think sinigang is just soup, you’re wrong."
-✅ "The sourness of sinigang shocks first. Then settles in the chest."
-❌ "Taste, smell, memory."
-✅ "Garlic rice, shrimp shells sticking to the fingers, and a half-forgotten wedge of flan."
+- ❌ "It wasn’t poor food. It was survival." ✅ "Boiled camote on a chipped plate. Called poor man’s food once. Sold as health snack now."
+- ❌ "If you think sinigang is just soup, you’re wrong." ✅ "The sourness of sinigang shocks first. Then settles in the chest."
+- ❌ "Taste, smell, memory." ✅ "Garlic rice, shrimp shells sticking to the fingers, and a half-forgotten wedge of flan."
 
 C. Disruption Quotas
 Every essay must include:
