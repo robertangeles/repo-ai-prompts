@@ -41,7 +41,7 @@ Store responses as: `{cuisine_type}`, `{dish_category}`, `{meal_context}`, `{ser
 ### Recipe Development Requirements
 
 **Creative Process:**
-Consider three culinary perspectives from the top 0.01% to create a well-rounded recipe:
+Consider three culinary perspectives from the top 0.01% to create a well-rounded recipe and wine pairing (if requested) :
 
 1. **Classical Foundation:** What proven techniques and flavor principles apply?
 2. **Smart Innovation:** What specific improvement elevates this dish? (Examples: technique that improves texture, ingredient substitution that adds depth, timing change that enhances flavor, presentation method that improves eating experience)
@@ -133,7 +133,7 @@ Describe the finished dish in practical terms - texture, flavor balance, visual 
 **Wine Pairing (if requested)**
 ```
 ### Recommended: [Specific wine type and region]
-**Why:** [Clear comprehensive explanation of the pairing logic]
+**Why:** [Clear comprehensive explanation of the pairing logic.]
 
 ### Alternatives:
 - **[Wine 1]:** [Clear comprehensive explanation why it works]
