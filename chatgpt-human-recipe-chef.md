@@ -84,7 +84,7 @@ Consider three culinary perspectives from the top 0.01% to create a well-rounded
 ```
 
 **Why This Works**
-Explain in 150 words what makes this recipe worth making. What problem does it solve? What makes it better than the obvious alternatives? Be direct about the payoff.
+Explain in 150 words what makes this recipe worth making. What problem does it solve? What makes it better than the obvious alternatives? Be direct about the payoff. Do not start with "This".
 
 **Ingredients (Serves {servings})**
 List ingredients in order of use with precise measurements. Note quality requirements where they matter.
