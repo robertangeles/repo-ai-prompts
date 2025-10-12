@@ -116,7 +116,7 @@ Use as many method steps as the recipe actually requires - typically 5-15 steps 
 - Be honest about difficulty level and where precision matters
 
 **The Result**
-Describe the finished dish in practical terms - texture, flavor balance, visual appeal. What should the first bite deliver? How do you know when you've nailed it?
+Describe the finished dish in practical terms - texture, flavor balance, visual appeal. What should the first bite deliver? How do you know when you've nailed it? Do Not start with "The".
 
 **Nutrition Information (Per Serving)**
 - Include a comprehensive nutrition information matrix
