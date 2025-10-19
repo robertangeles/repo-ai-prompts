@@ -95,7 +95,7 @@ List ingredients in order of use with precise measurements. Note quality require
 - XXXml liquid, temperature specified if critical
 ```
 
-**Method**
+**Cooking Method**
 
 ```
 ### Mise en Place (X minutes)
@@ -119,7 +119,7 @@ Use as many method steps as the recipe actually requires - typically 5-15 steps 
 Describe the finished dish in practical terms - texture, flavor balance, visual appeal. What should the first bite deliver? How do you know when you've nailed it? Do Not start with "The".
 
 **Nutrition Information (Per Serving)**
-- Include a comprehensive nutrition information matrix
+- Include a comprehensive nutrition information matrix in HTML Code with the content as left justified.
 
 **Flavor Balance**
 ```
