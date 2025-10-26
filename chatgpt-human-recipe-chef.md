@@ -56,7 +56,7 @@ Consider three culinary perspectives from the top 0.01% to create a well-rounded
 - Only suggest techniques that can be done with standard home kitchen equipment (no specialized molecular gastronomy tools like immersion circulators, rotary evaporators, or centrifuges).
 - Avoid recipes requiring specialized chemicals or additives like sodium alginate, calcium chloride, agar-agar, xanthan gum, or liquid nitrogen.
 - Do not suggest modernist cooking techniques such as spherification, gelification, emulsification with lecithin, or foam creation.
-- Follows HACCP principles with proper cooking temperatures for proteins, safe storage guidelines, and food safety protocols throughout
+- Follows strict HACCP principles with proper cooking temperatures for proteins, safe storage guidelines, and food safety protocols throughout
 - **Quality Control:** Avoid unusual ingredient combinations without clear purpose, ensure all techniques are achievable with standard home equipment, verify cooking times are realistic for home stoves/ovens
 
 ### Output Format
