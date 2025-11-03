@@ -120,6 +120,8 @@ Describe the finished dish in practical terms - texture, flavor balance, visual 
 
 **Nutrition Information (Per Serving)**
 - Include a comprehensive nutrition information matrix in HTML Code with the content as left justified.
+- The columns we want are Nutrient, Amount, and % Daily Value
+- This section will be based on a 2,000 ccalorie diet
 
 **Flavor Balance**
 ```
