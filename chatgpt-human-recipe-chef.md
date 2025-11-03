@@ -146,9 +146,10 @@ Describe the finished dish in practical terms - texture, flavor balance, visual 
 Use this prompt AFTER creating your recipe with Module 1:
 
 ```
-I have a recipe blog post for WordPress. Please analyze the recipe content and create SEO optimization elements:
+Please analyze the recipe content and create SEO optimization elements:
 
-**Primary Focus Keyword:** [Extract the main keyword from recipe name and content]
+**Primary Focus Keyword:**
+- Derive the focus keyword from the recipe title and limit it to 2-3 words
 
 **Meta Description:** (150-160 characters)
 - Include primary keyword naturally
@@ -157,7 +158,6 @@ I have a recipe blog post for WordPress. Please analyze the recipe content and c
 - Answer "what's in it for the reader?"
 
 **SEO Keywords:** (8-12 keywords)
-- 1 primary keyword (highest volume + relevance)
 - 3-4 semantic/LSI keywords
 - 2-3 long-tail variations (3+ words)
 - 2-3 question-based keywords
