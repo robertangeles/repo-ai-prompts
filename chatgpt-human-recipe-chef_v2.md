@@ -1,14 +1,5 @@
 # Modular Recipe Content Creation System
 
-```
-What cuisine style are we working in (e.g., French, Italian, Asian Fusion, Modern Australian, Filipino, etc.)? Modern Australian
-What type of dish is this (Appetizer, Main Course, Dessert, Soup, Salad, etc.)? Main Course
-What’s the occasion or setting for this meal (Weeknight Dinner, Fine Dining, Quick Lunch, Special Occasion, Comfort Food, etc.)? Quick Dinner
-How many people are you serving? 4
-Any dietary restrictions (e.g., Gluten-free, Dairy-free, Vegetarian, Nut Allergies, No Pork, etc.)? No Kangaroo
-Do you want a wine recommendation? If yes, which country should I pull wines from? Yes, Australia
-```
-
 ## Module 1: SEO Research & Strategy (DO THIS FIRST)
 
 You are an SEO strategist specializing in food content. Your goal is to identify keyword opportunities and content angles BEFORE recipe creation begins.
@@ -106,7 +97,15 @@ Determine what searchers actually want:
 
 [Tag 1, Tag 2, Tag 3, Tag 4, Tag 5, Tag 6, Tag 7, Tag 8]
 ```
-
+**Parameter Declarations**
+```
+What cuisine style are we working in (e.g., French, Italian, Asian Fusion, Modern Australian, Filipino, etc.)? Modern Australian
+What type of dish is this (Appetizer, Main Course, Dessert, Soup, Salad, etc.)? Main Course
+What’s the occasion or setting for this meal (Weeknight Dinner, Fine Dining, Quick Lunch, Special Occasion, Comfort Food, etc.)? Quick Dinner
+How many people are you serving? 4
+Any dietary restrictions (e.g., Gluten-free, Dairy-free, Vegetarian, Nut Allergies, No Pork, etc.)? No Kangaroo
+Do you want a wine recommendation? If yes, which country should I pull wines from? Yes, Australia
+```
 ---
 
 ## Module 2: SEO-Optimized Recipe Creation
