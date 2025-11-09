@@ -248,9 +248,10 @@ Use as many method steps as the recipe actually requires - typically 5-15 steps 
 
 Describe the finished dish in practical terms - texture, flavor balance, visual appeal. What should the first bite deliver? How do you know when you've nailed it?
 
-**Nutrition Information (Per Serving)**
-
-- Include a detailed nutrition information matrix
+**Nutrition Information Based on a 2,000 Calorie Diet(Per Serving)**
+- Include a comprehensive nutrition information matrix in HTML Code with the content as left justified.
+- The columns we want are Nutrient, Amount, and % Daily Value
+- This section will be based on a 2,000 calorie diet
 
 **Flavor Balance**
 
