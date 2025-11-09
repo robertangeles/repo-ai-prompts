@@ -273,6 +273,20 @@ Describe the finished dish in practical terms - texture, flavor balance, visual 
 - **[Wine 2]:** [Clear comprehensive explanation why it works]
 ```
 
+**HACCP-Compliant Storage and Safety**
+```
+Generate a detailed storage and food safety section for this recipe following HACCP principles.
+
+Include:
+- Safe cooling times and methods
+- Refrigeration and freezing guidelines
+- Maximum holding times (for each storage condition)
+- Reheating temperatures and procedures
+- Disposal guidance for expired or unsafe food
+
+Use concise, professional tone with time–temperature controls clearly stated in °C.
+```
+
 **SEO Elements (From Module 1)**
 
 ```
