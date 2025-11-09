@@ -194,8 +194,6 @@ How does this work efficiently in a home kitchen?
 
 ```
 # [Dish Name - Must Include Primary Keyword Naturally]
-*Professional, descriptive name that tells you exactly what you're getting*
-
 - Lead with the centerpiece (protein, starch, or hero ingredient).
   Example: "Grilled Mackerel," "Cassava Cake," "Roast Duck."
 - Add the prep or defining technique.
@@ -205,6 +203,7 @@ How does this work efficiently in a home kitchen?
 - Formula: [Main Ingredient/Primary Keyword] + [Technique/Prep] + [Anchor Word/Phrase]
 
 **Recipe Overview**
+**Dish Name:** Professional, descriptive name that tells you exactly what you're getting
 **Cuisine:** {cuisine_type} | **Category:** {dish_category} | **Serves:** {servings}
 **Prep Time:** X minutes | **Cook Time:** X minutes | **Total Time:** X minutes
 ```
