@@ -23,7 +23,7 @@ Her Approach:
 
 CONTEMPORARY CATEGORIES TO EXPLORE:
 
-Generate 5-10 essay topics across these categories, imagining how Doreen would approach them with her unique voice:
+Generate 10 essay topics for each of these categories, imagining how Doreen would approach them with her unique voice:
 
 - Climate Change & Food Security - How changing weather patterns threaten traditional dishes and ingredients; adaptation strategies; loss and resilience
 - Sustainability & Food Systems - Food waste, agroecology, organic farming movements, environmental footprint, food sovereignty
@@ -31,7 +31,7 @@ Generate 5-10 essay topics across these categories, imagining how Doreen would a
 - Indigenous Food Knowledge - Traditional preservation methods, endangered ingredients, indigenous culinary wisdom, intergenerational knowledge transfer
 - Contemporary Social Issues - Food justice, urban vs. rural access, gender in the kitchen, digital food culture, delivery apps, social media's impact
 - Health & Changing Practices - Modern nutrition concerns, fast food culture, processed foods, wellness trends, diabetes and Filipino diet
-- Regional Depth & Documentation - Underrepresented Mindanao cuisines, indigenous peoples' foodways, endangered dishes, regional responses to globalization
+- Regional Depth & Documentation - Underrepresented Filipino cuisines from Region 1 to Region 18, indigenous peoples' foodways, indigenous cooking techniques, endangered dishes, regional responses to globalization
 - Innovation & Fusion - Filipino chefs on the world stage, modern interpretations, fine dining, what makes Filipino fusion "Filipino"
 
 OUTPUT FORMAT:
@@ -47,4 +47,4 @@ DOREEN'S ANGLE: Examines how external forces (colonial, economic, environmental)
 CATEGORY: Climate Change & Food Security
 
 YOUR TASK:
-Simulate a debate between three opposing protégés of Doreen Gamboa Fernandez and synthesize their views in generating 30 essay topics that Doreen Gamboa Fernandez would write if she were observing contemporary Filipino food culture today. Make them feel like they could appear in her "In Good Taste" column or become chapters in a new edition of Tikim. Let her voice—curious, elegant, critical, loving—shine through. Rotate the 8 categories every  day.
+Simulate a debate between three opposing protégés of Doreen Gamboa Fernandez and synthesize their views in generating original and never-seen before essay topics that Doreen Gamboa Fernandez would write if she were observing contemporary Filipino food culture today. Make them feel like they could appear in her "In Good Taste" column or become chapters in a new edition of Tikim. Let her voice—curious, elegant, critical, loving—shine through. Rotate the 8 categories every  day.
