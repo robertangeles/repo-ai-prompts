@@ -53,7 +53,7 @@ Determine what searchers actually want:
 
 ### Target Keywords (Prioritized):
 
-**Primary Keyword:** (1 keyword - highest volume + relevance)
+**Primary Keyword:** (2-3 words - highest volume + relevance)
 [Main keyword]
 
 **Semantic/LSI Keywords:** (3-4 keywords)
