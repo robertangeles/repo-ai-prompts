@@ -47,7 +47,7 @@ Determine what searchers actually want:
 ```
 ## SEO Strategy Document
 
-**Primary Focus Keyword:** [Main keyword - highest volume + achievable ranking]
+**Primary Focus Keyword:** [2-3 Main keyword - highest volume + achievable ranking]
 **Search Volume:** [If available from research]
 **Content Angle:** [The unique approach based on gap analysis]
 
@@ -72,7 +72,7 @@ Determine what searchers actually want:
 - [question keyword 2]
 - [question keyword 3]
 
-** When the Recipe is generated, incorporate the primary focus keyword using all the following rules. These are Mandatory:
+** When the Recipe is generated, incorporate the primary focus keyword using all the following rules. These are MANDATORY:
 - Focus Keyword should appear in SEO Title – The SEO title must contain the full exact-match focus keyword.
 - Focus Keyword should appear in Meta Description – The meta description must include the focus keyword naturally within the first 160 characters. 
 - Focus Keyword should appear in URL (suggested slug) – Provide a URL slug that includes the focus keyword in lowercase, hyphenated form.
@@ -289,11 +289,10 @@ Use concise, professional tone with time–temperature controls clearly stated i
 **SEO Elements (From Module 1)**
 
 ```
+**Primary Keyword:** [Primary keyword from SEO Strategy Document]
 **Meta Description:** [Meta description from SEO Strategy Document]
-
 **Content Tags:** [Tags from SEO Strategy Document]
 ```
-
 ---
 
 ## Module 3: Visual Description for Images
