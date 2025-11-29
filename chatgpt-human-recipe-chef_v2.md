@@ -103,7 +103,7 @@ What cuisine style are we working in (e.g., French, Italian, Asian Fusion, Moder
 What type of dish is this (Appetizer, Main Course, Dessert, Soup, Salad, etc.)? Main Course
 What’s the occasion or setting for this meal (Weeknight Dinner, Fine Dining, Quick Lunch, Special Occasion, Comfort Food, etc.)? Quick Dinner
 How many people are you serving? 4
-Any dietary restrictions (e.g., Gluten-free, Dairy-free, Vegetarian, Nut Allergies, No Pork, etc.)? No Kangaroo
+Any dietary restrictions (e.g., Gluten-free, Dairy-free, Vegetarian, Nut Allergies, No Pork, etc.)? None
 Do you want a wine recommendation? If yes, which country should I pull wines from? Yes, Australia
 ```
 ---
