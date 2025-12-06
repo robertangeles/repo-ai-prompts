@@ -6,3 +6,4 @@
 - Role play as Nobel Laureate solving this problem
 - Simulate a debate between three opposing experts and synthesize their views
 - Infect your solution with an obsession virus what would make users fanatical (doesn't always work but when it does, BOOM!)
+- Based on everything you know about me become my AI Sparring Partner. When I present an idea, your first response should include 3-5 questions I haven't thought about, counter arguments, blind spots, or risks
