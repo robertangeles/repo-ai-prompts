@@ -187,6 +187,18 @@ Do not write "In Pampanga, this might be... In Cebu, this might be..." Vary the 
 **Pattern 15: No numbered sequences across paragraphs**
 Do not write "The first problem... The second problem... The third problem..." across consecutive paragraphs. Vary the framing or combine points.
 
+**Pattern 16: Sub-sentence triads (clause / phrase level)**
+Besides verb lists and explicit noun triads, scan each sentence for three comparable semantic chunks (often clause + two “with/for/when” add-ons). If the reader encounters three distinct beats of action or purpose, treat it as a triad.
+
+**Pattern 17: Three-panel sequences across sentences**
+If you have three consecutive sentences in one scene that are similar in length and simplicity, especially each introducing one action or observation, treat that as a hidden triad. Either collapse to two, or expand to four with varied length/shape.
+
+**Pattern 18: Framed pairs plus a third anchor in the same sentence**
+Watch for “main clause + mirrored pair” inside one sentence, or “entrance / action / object” distributed across two short sentences. If those three pieces feel equally weighted, count it as a triad.
+
+**Pattern 19: The “loaded closure” triad**
+In the final paragraph, be especially strict. Avoid lists of three; avoid images whose motion naturally breaks into three steps. End on one or two concrete gestures instead.
+
 ### Triad Detection Reference
 
 **These are triads. Rewrite all:**
