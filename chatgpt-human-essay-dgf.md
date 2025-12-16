@@ -1,4 +1,4 @@
-# Filipino Food Essay Prompt v2
+# Filipino Food Essay Prompt v3
 
 ## Step 1: Interactive Setup
 
@@ -141,82 +141,177 @@ Start with a small sensory moment that shows culture through food. Describe what
 
 Scan every paragraph before output. Rewrite any violations.
 
-**Pattern 1: No triads or lists of three**
-Do not group three items in a sentence. If you have three things to say, cut one, combine two, or break into separate sentences. Two items is acceptable. Four is acceptable. Three triggers pattern detection.
+**CRITICAL: The Real Issue is RHYTHM, Not Counting to Three**
 
-Exception: Data requiring three distinct numerical values (e.g., "1970s, 1980s, and 1990s census data"). Conceptual or descriptive triads are banned.
+AI writes in sequences. Consecutive similar sentences create detectable patterns regardless of count:
+- 2 similar sentences = detectable
+- 4 similar sentences = detectable
+- 5 similar sentences = detectable
 
-Collapsing framework triads: When source material uses three-part frameworks, do not reproduce the structure. Reframe as a single insight.
+Do not just avoid three. Avoid sequential delivery of information across multiple similar sentences.
 
-**Pattern 2: No contrast pivots or reveal setups**
-Do not use "but," "still," "yet," "what this means is," or "the real story is" to create dramatic turns. State points directly.
+---
 
-**Pattern 3: No mirrored sentences**
-Do not write A then B then restate in reverse. If a sentence echoes the structure of the previous one, rewrite it.
+**Core Principle: AI Writes in Sequences. Humans Don't.**
 
-**Pattern 4: No polished wrap-ups**
-Do not end with a tidy lesson, rhythmic callback, or inspirational reframe. No "one step at a time," "and that makes all the difference," or "from X into Y." End on concrete observation or specific detail.
+AI delivers information as sequential beats:
+- Detail A in sentence 1
+- Detail B in sentence 2  
+- Detail C in sentence 3
 
-**Pattern 5: No lyrical balance**
-If a sentence feels rhythmically pretty, break it. Uneven is better than musical.
+This creates detectable rhythm with ANY count. Even two consecutive similar sentences = pattern.
 
-**Pattern 6: No repeated sentence openers for effect**
-If two consecutive sentences start with the same word, rewrite one. Three is a hard ban.
+---
 
-**Pattern 7: No colon setups that announce importance**
-Do not write "Here's the truth:" or "The real question:" or "The key insight:" — state the point.
+**The Master Rule**
 
-**Pattern 8: No escalating comparisons**
-Do not stack good/great/best or some/most/all. Make one claim at the level you mean.
+Scan for consecutive sentences sharing ALL THREE traits:
+1. **Similar length** (within 5-10 words)
+2. **Similar structure** (mostly subject-verb-object declaratives)
+3. **Similar purpose** (all describing space, all describing actions, all delivering details)
 
-**Pattern 9: No rhetorical questions followed by immediate answers**
-Do not write "Why does this happen? Because..." — state the point as a direct claim.
+**If 2+ consecutive sentences match all three traits → REWRITE by:**
+- Combining into one complex sentence, OR
+- Dramatically varying one sentence (much longer/shorter, fragment, question)
 
-**Pattern 10: No restating the same point in different words**
-Do not use "In other words," "Put simply," "To put it another way." Say it once.
+---
 
-**Pattern 11: No narrating the structure**
-Do not write "As we've seen," "Now let's turn to," "Let's explore," "Consider this." Move between sections without announcement.
+**Specific Pattern Bans (subsets of master rule)**
 
-**Pattern 12: No setup-and-pivot patterns**
-Do not write "Most people think X. But actually Y." Do not write "It's not X, it's Y" or "rarely X, actually Y." State your position directly without contrasting it against a misconception.
+**Pattern 1: No three-item lists**
+Do not write "X, Y, and Z" in any form. Cut to two or expand to four.
 
-**Pattern 13: No hidden triads across sentences**
-Do not split three parallel items across three consecutive sentences with similar rhythm. If you need sequential steps, vary sentence structure or combine two steps into one sentence.
+Exception: Numerical data requiring three distinct values (e.g., "1970s, 1980s, and 1990s census data").
 
-**Pattern 14: No mirrored sentence openings in consecutive sentences**
-Do not write "In Pampanga, this might be... In Cebu, this might be..." Vary the structure of the second sentence completely.
+**Pattern 2: No verb sequences**
+Do not write three verbs in sequence: "lifts, taps, sets" or "opens, pulls, bites."
+Maximum two verbs per action sequence.
 
-**Pattern 15: No numbered sequences across paragraphs**
-Do not write "The first problem... The second problem... The third problem..." across consecutive paragraphs. Vary the framing or combine points.
+**Pattern 3: No sequential detail sentences**
+WRONG: "The store sits on the ground floor. The grille stays half-open. Shelves hold sachets."
+(Three sentences, all describing physical space, similar length/structure)
 
-**Pattern 16: Sub-sentence triads (clause / phrase level)**
-Besides verb lists and explicit noun triads, scan each sentence for three comparable semantic chunks (often clause + two “with/for/when” add-ons). If the reader encounters three distinct beats of action or purpose, treat it as a triad.
+RIGHT: "The store sits on the ground floor, grille half-open, shelves holding sachets."
+(Combined into one sentence)
 
-**Pattern 17: Three-panel sequences across sentences**
-If you have three consecutive sentences in one scene that are similar in length and simplicity, especially each introducing one action or observation, treat that as a hidden triad. Either collapse to two, or expand to four with varied length/shape.
+**Pattern 4: No sequential action sentences**
+WRONG: "A customer arrives. He buys cigarettes. They talk about his daughter."
+(Three sentences, each delivering one action)
 
-**Pattern 18: Framed pairs plus a third anchor in the same sentence**
-Watch for “main clause + mirrored pair” inside one sentence, or “entrance / action / object” distributed across two short sentences. If those three pieces feel equally weighted, count it as a triad.
+RIGHT: "A customer arrives and buys cigarettes, then mentions his daughter while she asks about his wife."
+(Actions combined into one complex sentence)
 
-**Pattern 19: The “loaded closure” triad**
-In the final paragraph, be especially strict. Avoid lists of three; avoid images whose motion naturally breaks into three steps. End on one or two concrete gestures instead.
+**Pattern 5: No consecutive similar sentences (ANY count)**
+If you write 2+ consecutive sentences with similar length AND structure AND purpose, rewrite.
 
-### Triad Detection Reference
+Examples of violations:
+- 2 sentences both describing space
+- 3 sentences each delivering one action  
+- 5 sentences listing store features
+- 4 sentences with same opener ("She...")
 
-**These are triads. Rewrite all:**
-- "X, Y, and Z" (classic list)
-- "First... Second... Third..." (numbered sequence)
-- "She cooked, seasoned, and served" (verb sequence)
-- "The first reason... The second reason... The third reason..." (parallel paragraph openings)
-- Three beats in narrative sequence
+Fix: Combine sentences or dramatically vary length/structure.
 
-**These are NOT triads:**
-- "X and Y" (two items)
-- "W, X, Y, and Z" (four items)
-- Numerical data requiring three values
+**Pattern 6: No mirrored sentence openings**
+Do not start consecutive sentences with the same word or phrase:
+WRONG: "She opens the freezer. She pulls out juice. She sits on the stool."
 
-When in doubt, cut to two or split into sentences with varied structure.
+**Pattern 7: No contrast pivots**
+Do not use "but," "still," "yet," "however" to create dramatic turns. State points directly.
+
+**Pattern 8: No colon announcements**
+Do not write "Here's the truth:" or "The key insight:" or "The real question:"
+State the point without announcing it.
+
+**Pattern 9: No polished wrap-ups**
+Do not end with tidy lessons, rhythmic callbacks, or inspirational reframes.
+No "one step at a time," "and that makes all the difference," or "from X into Y."
+End on concrete observation or specific detail.
+
+**Pattern 10: No setup-and-pivot patterns**
+Do not write "Most people think X. But actually Y."
+Do not write "It's not X, it's Y" or "rarely X, actually Y."
+State your position directly.
+
+**Pattern 11: No numbered sequences**
+Do not write "First... Second... Third..." or "The first problem... The second problem..."
+
+**Pattern 12: No restating the same point**
+Do not use "In other words," "Put simply," "To put it another way."
+Say it once.
+
+**Pattern 13: No narrating the structure**
+Do not write "As we've seen," "Now let's turn to," "Let's explore," "Consider this."
+
+---
+
+**The Real Test**
+
+Read each paragraph aloud. If it sounds like a list being delivered item by item, REWRITE.
+
+If five sentences in a row feel like they're walking through a checklist, REWRITE.
+
+If two sentences in a row have similar rhythm and structure, REWRITE.
+
+---
+
+### Common Violations with Fixes
+
+**VIOLATION 1: Sequential detail delivery**
+
+WRONG:
+"The store sits on the ground floor. The grille stays half-open. Shelves hold sachets."
+(Three sentences, all describing physical space, similar length and structure)
+
+RIGHT:
+"The store sits on the ground floor, grille half-open, shelves holding sachets."
+(Combined into one sentence to eliminate rhythm)
+
+---
+
+**VIOLATION 2: Sequential action delivery**
+
+WRONG:
+"A customer arrives. He buys cigarettes. They talk about his daughter."
+(Three sentences, each delivering one action in sequence)
+
+RIGHT:
+"A customer arrives and buys cigarettes, then mentions his daughter while she asks about his wife."
+(Collapsed into one complex sentence with varied rhythm)
+
+---
+
+**VIOLATION 3: Two-sentence rhythm (most commonly missed)**
+
+WRONG:
+"The store has occupied the ground floor for twenty years. Shelves hold sachets of coffee."
+(Two sentences, both describing space, similar length, similar structure = VIOLATION)
+
+RIGHT:
+"The store has occupied the ground floor for twenty years, shelves holding sachets of coffee."
+(Combined to eliminate the two-sentence rhythm)
+
+---
+
+**VIOLATION 4: Five-sentence checklist**
+
+WRONG: A paragraph with five consecutive sentences, all 8-12 words, all describing the store's features one by one.
+
+RIGHT: Vary dramatically:
+- One 25-word complex sentence combining multiple details
+- One 5-word fragment
+- One 15-word observation with different structure
+
+---
+
+**VIOLATION 5: Even-length paragraph creating rhythm**
+
+WRONG: Seven sentences, all approximately same length, walking through a vendor interaction step by step.
+
+RIGHT: Break the rhythm:
+- Combine two sequential actions into one longer sentence
+- Use one very short sentence (3-5 words) for emphasis
+- Vary structure (not all subject-verb-object)
 
 ## Step 3: Draft the Essay
 
@@ -229,55 +324,76 @@ Write the essay following all instructions above.
 
 ## Step 4: Pattern Audit (Mandatory)
 
-After drafting, scan the essay for pattern violations. This is a three-pass process.
+After drafting, perform four passes. This is non-negotiable.
 
-**Pass 1: Verb Sequence Check**
+**Pass 1: Paragraph Rhythm Scan (MOST IMPORTANT)**
 
-Quote every sentence that contains more than two verbs. For each, answer:
-- How many verbs appear in this sentence?
-- Do they form a triad (three actions in sequence)?
-- If yes, mark for rewrite.
-
-Format as:
-| Sentence | Verb Count | Triad? | Action |
-|----------|------------|--------|--------|
-
-Example of a triad to catch:
-"He lifts the bundle, taps it twice, then sets it on the board." (Three verbs: lifts, taps, sets. This is a triad. Rewrite.)
-
-Example of acceptable:
-"He lifts the bundle and sets it on the board." (Two verbs. Acceptable.)
-
-Do not skip this pass. Verb triads in action sequences are the most common violation.
-
-**Pass 2: Identify Other Violations**
-
-List every instance of:
-- Noun triads (three items in a list)
-- Mirrored sentence structures (same opening pattern in consecutive sentences)
-- Contrast pivots ("but," "still," "yet," "however" creating dramatic turns)
-- Hidden triads across sentences (three consecutive sentences with similar rhythm)
+For EACH paragraph, identify ANY 2+ consecutive sentences that share:
+- Similar length (within 5-10 words of each other)
+- Similar structure (declarative subject-verb-object)
+- Similar purpose (describing space/actions/details/features)
 
 Format as:
-| Violation | Text | Pattern Number |
-|-----------|------|----------------|
+| Paragraph # | Consecutive Sentences | All 3 Traits Match? | Action |
+|-------------|----------------------|---------------------|--------|
 
-If you find zero violations in Pass 1 and Pass 2, state: "No violations found" and proceed. Do not skip these passes.
+Example violation to catch:
+Para 2: "The store sits on ground floor. Shelves hold sachets."
+YES - both describe space, similar length, similar structure → REWRITE
 
-**Pass 3: Rewrite Violations**
+**DO NOT SKIP THIS PASS. Cross-sentence rhythm is the most common violation and the hardest to detect.**
 
-For each violation found in Pass 1 and Pass 2, provide:
-- Original text
-- Rewritten text (two verbs instead of three, two items instead of three, varied sentence structure, direct statement instead of pivot)
+---
 
-Then output the corrected essay in full, with all rewrites incorporated.
+**Pass 2: Verb Sequence Check**
+
+Quote every sentence that contains 3+ verbs.
+
+Format as:
+| Sentence | Verb Count | Sequential Actions? | Action |
+|----------|------------|-------------------|--------|
+
+Example violation to catch:
+"She opens the freezer, pulls out juice, bites off the corner."
+3 verbs (opens, pulls, bites) = REWRITE to 2 verbs
+
+Example acceptable:
+"She opens the freezer and pulls out juice."
+2 verbs = ACCEPTABLE
+
+---
+
+**Pass 3: Three-Item Lists**
+
+Find ANY occurrence of:
+- Noun triads (X, Y, and Z)
+- Verb triads (cooks, seasons, serves)
+- Concept triads (tradition, identity, and pride)
+- Enumeration creating rhythm (one X, two Y, three Z)
+
+Format as:
+| Location | Text | Action |
+|----------|------|--------|
+
+---
+
+**Pass 4: Apply All Rewrites**
+
+For EACH violation found in Passes 1-3:
+- Quote original text
+- Provide rewrite (combined sentence, varied structure, or dramatically different length)
+
+Then output the FULL corrected essay with ALL rewrites incorporated.
+
+---
 
 **Label clearly:**
-- First draft (with violations)
-- Pass 1: Verb sequence table
-- Pass 2: Other violations table
-- Pass 3: Rewrites
-- Final draft (corrected)
+- **First draft** (with violations present)
+- **Pass 1: Rhythm violations table**
+- **Pass 2: Verb sequence table**
+- **Pass 3: List violations table**
+- **Pass 4: All rewrites applied**
+- **Final corrected essay** (complete text with all fixes)
 
 The user will review the final draft. Proceed to verification only after the corrected essay is complete.
 
@@ -305,6 +421,9 @@ Flag any claim you could not verify. The user makes the final call on whether to
 ## Step 6: WordPress Metadata
 
 After verification, provide:
+
+**Focus Keyword:**
+Primary search term (usually the main food item or cultural element). Single phrase, 2-4 words.
 
 **SEO Title:**
 [Filipino Food/Element] + [Cultural or Emotional Lens]
