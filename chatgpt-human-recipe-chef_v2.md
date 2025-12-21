@@ -303,17 +303,28 @@ Use this prompt AFTER creating your recipe with Module 2:
 Create visual descriptions for this recipe for AI image generation:
 
 **Midjourney Prompt:**
-Create an AI image generation prompt using simple descriptive language:
-- Focus on the dish appearance and key visual elements
-- Include lighting and setting details
-- Do NOT include steam or steaming in the prompt
-- End with: 'The background includes an empty, dark, and rustic wooden table. Amateur Photo from Reddit, Photo taken with an iPhone 15 Pro Max. --ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw'
-
-**Alt Text:** (under 125 characters)
-- Describe essential visual information in 1-2 sentences
-- Include primary keyword if natural
-- Focus on elements relevant to the recipe content
-- Avoid starting with 'Image of' or 'Picture showing'
+- **List visible elements in order of visual dominance.** Focus on proteins, sauces, textures, garnishes, and natural plating. Describe what you see, not what should be perfect.
+  Example: "uneven slices of grey-brown brisket with torn edges, oil-slicked broth with floating chili and lemongrass bits, wilted greens partially submerged."
+- **Include natural imperfections.** Describe real cooking results: browned herb edges, pooled oil, soggy garnishes, broken or hanging noodles, asymmetrical cuts, organic plating irregularities.
+- **Define vessel and placement.** Mention bowl/plate shape, color, wear, glaze variation, side dishes, and how items sit in or touch the dish.
+  Example: "wide white ceramic bowl with subtle glaze variation, small dish of chili oil beside the bowl."
+- **Scene and lighting.** Always specify:
+  - Angle (e.g., "shot from 45-degree angle")
+  - Light source (e.g., "soft natural window light from left")
+  - Shadow behavior (e.g., "gentle shadows falling to the right")
+- **Camera realism.** Describe as editorial food photography with natural characteristics:
+  - Lens: "85mm" or "70mm"
+  - Aperture: "f/1.8" or "f/2.0"
+  - Details: "shallow depth of field," "focus on [main subject]," "natural bokeh," "slight warmth"
+- **Ban artificial perfection.**
+  - "no CG rendering"
+  - "no studio lighting setup"
+  - "editorial home cooking style"
+- **Do NOT include** the word `steam` or `steaming`.
+- **Start the prompt with:**
+  `Editorial food photography of home cooking.`
+- **End the prompt with:**
+  `Natural window light. The background is an empty, rustic, dark mahogany wooden table. Shot on 24-70mm f/2.8. --ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw`
 ```
 
 ---
