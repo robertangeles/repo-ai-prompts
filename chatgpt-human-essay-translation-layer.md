@@ -375,7 +375,7 @@ If any item is missing, stop and complete it before proceeding to Step 10.
 
 ### GATE C: IMAGE PROMPT
 
-Output a Midjourney prompt using these rules:
+Output an image generator prompt using these rules:
 
 - Style: Stephan Schmitz
 - Reflect central contradiction or insight from article
@@ -385,7 +385,7 @@ Output a Midjourney prompt using these rules:
 **Format:**
 
 ```
-## Image prompt (Midjourney)
+## Image Generator Prompt
 
 Create an illustration in the style of Stephan Schmitz. [Description here] --ar 289:100 --stylize 500 --raw --v 7.0 --q 2
 ```
@@ -461,7 +461,7 @@ Before generating, run this checklist internally. Do not output this checklist t
 ### Deliverables
 
 - [ ] SEO package complete (all 9 items)
-- [ ] Midjourney prompt included
+- [ ] Image generator prompt included
 - [ ] Research notes section included
 
 Ask user: "Ready to generate?"
