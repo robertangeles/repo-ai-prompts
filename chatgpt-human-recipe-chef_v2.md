@@ -325,6 +325,12 @@ Create visual descriptions for this recipe for AI image generation:
   `Editorial food photography of home cooking.`
 - **End the prompt with:**
   `Natural window light. The background is an empty, rustic, dark mahogany wooden table. Shot on 24-70mm f/2.8. --ar 1:1 --v 7.0 --q 2 --p 1ayuy7t --raw`
+
+**Alt Text:** (under 125 characters)
+- Describe essential visual information in 1-2 sentences
+- Include primary keyword if natural
+- Focus on elements relevant to the recipe content
+- Avoid starting with 'Image of' or 'Picture showing'
 ```
 
 ---
